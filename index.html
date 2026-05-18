@@ -1,200 +1,544 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="VIGORRE | Plataforma premium de People Analytics, análise comportamental, fit cultural e recrutamento estratégico. Soluções para Agro, Construção Civil e Mercado Geral.">
+    <meta name="keywords" content="Vigorre, People Analytics, DISC, Inteligência Emocional, Fit Cultural, Recrutamento Agro, Recrutamento Construção Civil, Assessment Comportamental, RH Estratégico">
+    <meta name="author" content="Vigorre Consultoria">
+    <meta name="robots" content="index, follow">
     
-    <title>Vigorre - Inteligência e Gestão Estratégica</title>
-
-    <meta name="description" content="Consultoria estratégica em RH, recrutamento, análise comportamental, gestão empresarial e inteligência humana.">
-
+    <!-- Open Graph / Social -->
+    <meta property="og:title" content="VIGORRE | Inteligência Humana & People Analytics">
+    <meta property="og:description" content="Transforme comportamento em performance. Plataforma premium para gestão de pessoas, recrutamento setorial e desenvolvimento organizacional.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://vigorre.com.br">
+    <meta property="og:image" content="https://vigorre.com.br/og-image.jpg">
+    
+    <title>VIGORRE | People Analytics • Recrutamento Estratégico • Gestão de Pessoas</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- CSS & JS (Serão criados nas próximas etapas) -->
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="logo-vigorre.png">
 </head>
-
 <body>
-
-<header>
-    <img src="logo-vigorre.png" class="logo">
-
-    <nav>
-        <a href="#inicio">Início</a>
-        <a href="#quem-somos">Quem Somos</a>
-        <a href="#servicos">Serviços</a>
-        <a href="#recrutamento">Recrutamento</a>
-        <a href="#contato">Contato</a>
-    </nav>
-</header>
-
-<section class="hero" id="inicio">
-
-    <div class="hero-content">
-
-        <h1>
-            Transformamos
-            <span>pessoas</span>
-            em resultado.
-        </h1>
-
-        <p>
-            A Vigorre atua como parceira estratégica de empresas nacionais e internacionais, oferecendo soluções em recrutamento, análise comportamental, gestão de pessoas, estruturação organizacional e desenvolvimento humano.
-        </p>
-
-        <div class="buttons">
-            <a href="#contato" class="btn-primary">
-                Solicitar Diagnóstico
+    <!-- ================= HEADER ================= -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="#home" class="logo-link">
+                <img src="logo-vigorre.png" alt="Logo VIGORRE" class="logo-img">
             </a>
+            
+            <nav class="main-nav" aria-label="Navegação principal">
+                <ul class="nav-list">
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#servicos">Soluções</a></li>
+                    <li><a href="#setores">Setores</a></li>
+                    <li><a href="#planos">Planos</a></li>
+                    <li><a href="#app">Aplicativo</a></li>
+                    <li><a href="#sobre">Quem Somos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
 
-            <a href="#servicos" class="btn-secondary">
-                Conhecer Serviços
-            </a>
+            <div class="header-actions">
+                <a href="https://sistema.vigorre.com.br" target="_blank" class="btn btn-outline">Acessar Sistema</a>
+                <a href="#contato" class="btn btn-primary">Solicitar Demo</a>
+                <button class="mobile-toggle" aria-label="Abrir menu" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
         </div>
+        
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" aria-hidden="true">
+            <ul class="mobile-nav-list">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#servicos">Soluções</a></li>
+                <li><a href="#setores">Setores</a></li>
+                <li><a href="#planos">Planos</a></li>
+                <li><a href="#app">Aplicativo</a></li>
+                <li><a href="#sobre">Quem Somos</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="https://sistema.vigorre.com.br" target="_blank">Acessar Sistema</a></li>
+            </ul>
+        </div>
+    </header>
 
+    <main>
+        <!-- ================= HERO ================= -->
+        <section id="home" class="hero-section">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <span class="badge">HR Tech Premium • Padrão Internacional</span>
+                    <h1>Inteligência Humana aplicada à <span class="highlight">gestão estratégica</span> de pessoas</h1>
+                    <p>Plataforma completa de People Analytics, assessment comportamental e recrutamento setorial. Conecte tecnologia, dados e humanização para resultados mensuráveis.</p>
+                    <div class="hero-cta">
+                        <a href="#contato" class="btn btn-primary">Agendar Demonstração</a>
+                        <a href="#servicos" class="btn btn-ghost">Conhecer Soluções</a>
+                    </div>
+                    <div class="hero-trust">
+                        <div class="trust-item">
+                            <strong>+500</strong>
+                            <span>Empresas Atendidas</span>
+                        </div>
+                        <div class="trust-item">
+                            <strong>94%</strong>
+                            <span>Retenção de Talentos</span>
+                        </div>
+                        <div class="trust-item">
+                            <strong>ISO 27001</strong>
+                            <span>Segurança de Dados</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="dashboard-mockup">
+                        <div class="mockup-header">
+                            <div class="dot red"></div><div class="dot yellow"></div><div class="dot green"></div>
+                            <span>Vigorre Analytics Dashboard</span>
+                        </div>
+                        <div class="mockup-body">
+                            <div class="mockup-chart">
+                                <div class="bar" style="--h: 78%; --c: #3b82f6;"></div>
+                                <div class="bar" style="--h: 65%; --c: #6366f1;"></div>
+                                <div class="bar" style="--h: 88%; --c: #8b5cf6;"></div>
+                                <div class="bar" style="--h: 52%; --c: #ec4899;"></div>
+                            </div>
+                            <div class="mockup-stats">
+                                <div class="stat-card">
+                                    <span>Fit Cultural</span>
+                                    <strong>92%</strong>
+                                </div>
+                                <div class="stat-card">
+                                    <span>Engajamento</span>
+                                    <strong>87%</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= SERVIÇOS ================= -->
+        <section id="servicos" class="section section-dark">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Soluções</span>
+                    <h2>Tecnologia comportamental para decisões estratégicas</h2>
+                    <p>Ferramentas validadas cientificamente para mapeamento, desenvolvimento e retenção de talentos.</p>
+                </div>
+                
+                <div class="services-grid">
+                    <article class="service-card">
+                        <div class="icon-box">🧠</div>
+                        <h3>People Analytics</h3>
+                        <p>Dashboards executivos com indicadores preditivos de turnover, performance e clima organizacional.</p>
+                        <a href="#contato" class="link-arrow">Solicitar acesso →</a>
+                    </article>
+                    
+                    <article class="service-card">
+                        <div class="icon-box">📊</div>
+                        <h3>Análise DISC Profissional</h3>
+                        <p>Mapeamento de perfil comportamental para liderança, comunicação e produtividade.</p>
+                        <a href="#contato" class="link-arrow">Solicitar acesso →</a>
+                    </article>
+                    
+                    <article class="service-card">
+                        <div class="icon-box">💡</div>
+                        <h3>Inteligência Emocional</h3>
+                        <p>Avaliação de autoconhecimento, resiliência, empatia e gestão de conflitos.</p>
+                        <a href="#contato" class="link-arrow">Solicitar acesso →</a>
+                    </article>
+                    
+                    <article class="service-card highlight-card">
+                        <div class="icon-box">🔗</div>
+                        <h3>Sistema de Análise Comportamental</h3>
+                        <p>Plataforma externa dedicada para aplicação de assessments, geração de laudos e acompanhamento de PDI.</p>
+                        <a href="https://sistema.vigorre.com.br" target="_blank" class="btn btn-primary btn-sm">Acessar Sistema Externo</a>
+                    </article>
+                    
+                    <article class="service-card">
+                        <div class="icon-box">🎯</div>
+                        <h3>Fit Cultural & Values</h3>
+                        <p>Compatibilidade entre candidato, liderança, equipe e cultura organizacional.</p>
+                        <a href="#contato" class="link-arrow">Solicitar acesso →</a>
+                    </article>
+                    
+                    <article class="service-card">
+                        <div class="icon-box"></div>
+                        <h3>Assessment Corporativo Premium</h3>
+                        <p>Laudo completo com recomendações estratégicas, plano de desenvolvimento e métricas de evolução.</p>
+                        <a href="#contato" class="link-arrow">Solicitar acesso →</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= SETORES ================= -->
+        <section id="setores" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Recrutamento Setorial</span>
+                    <h2>Especialização técnica por segmento</h2>
+                    <p>Metodologias adaptadas às particularidades de cada cadeia produtiva.</p>
+                </div>
+                
+                <div class="sectors-grid">
+                    <div class="sector-card">
+                        <div class="sector-icon"></div>
+                        <h3>Agro & Agronegócio</h3>
+                        <p>Recrutamento para operações de campo, gestão rural, logística agrícola e indústria de alimentos. Foco em segurança, produtividade e adaptação climática.</p>
+                        <ul class="sector-list">
+                            <li>Mapeamento de perfil operacional</li>
+                            <li>Assessment para lideranças de campo</li>
+                            <li>Fit com cultura rural e segurança</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="sector-card">
+                        <div class="sector-icon">🏗️</div>
+                        <h3>Construção Civil</h3>
+                        <p>Seleção técnica e comportamental para engenharia, mestre de obras, encarregados e equipes de execução. Ênfase em compliance, NR's e gestão de cronograma.</p>
+                        <ul class="sector-list">
+                            <li>Validação de competências técnicas</li>
+                            <li>Avaliação de resiliência sob pressão</li>
+                            <li>Alinhamento com normas de segurança</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="sector-card">
+                        <div class="sector-icon">🌐</div>
+                        <h3>Mercado Geral & Corporativo</h3>
+                        <p>Soluções flexíveis para tecnologia, serviços, indústria, varejo e saúde. Modelos escaláveis para startups até multinacionais.</p>
+                        <ul class="sector-list">
+                            <li>Recrutamento em escala</li>
+                            <li>People Analytics integrado</li>
+                            <li>Desenvolvimento de liderança</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= PLANOS ================= -->
+        <section id="planos" class="section section-dark">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Investimento</span>
+                    <h2>Planos alinhados ao tamanho da sua operação</h2>
+                    <p>Transparência total. Sem taxa de adesão. Cancele quando quiser.</p>
+                </div>
+                
+                <div class="pricing-grid">
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h3>Starter</h3>
+                            <p>Para pequenas equipes e startups</p>
+                        </div>
+                        <div class="pricing-price">
+                            <span class="currency">R$</span>
+                            <span class="amount">297</span>
+                            <span class="period">/mês</span>
+                        </div>
+                        <ul class="pricing-features">
+                            <li>Até 50 avaliações/mês</li>
+                            <li>DISC & Fit Cultural básico</li>
+                            <li>Dashboard simplificado</li>
+                            <li>Suporte por e-mail</li>
+                            <li>1 usuário administrador</li>
+                        </ul>
+                        <a href="#contato" class="btn btn-outline btn-block">Começar Agora</a>
+                    </div>
+                    
+                    <div class="pricing-card popular">
+                        <div class="popular-badge">Mais Escolhido</div>
+                        <div class="pricing-header">
+                            <h3>Professional</h3>
+                            <p>Para médias empresas e consultorias</p>
+                        </div>
+                        <div class="pricing-price">
+                            <span class="currency">R$</span>
+                            <span class="amount">897</span>
+                            <span class="period">/mês</span>
+                        </div>
+                        <ul class="pricing-features">
+                            <li>Até 300 avaliações/mês</li>
+                            <li>Todas as análises comportamentais</li>
+                            <li>People Analytics avançado</li>
+                            <li>API de integração</li>
+                            <li>Suporte prioritário</li>
+                            <li>5 usuários administradores</li>
+                        </ul>
+                        <a href="#contato" class="btn btn-primary btn-block">Solicitar Proposta</a>
+                    </div>
+                    
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h3>Enterprise</h3>
+                            <p>Para corporações e operações nacionais</p>
+                        </div>
+                        <div class="pricing-price">
+                            <span class="amount">Sob Consulta</span>
+                        </div>
+                        <ul class="pricing-features">
+                            <li>Avaliações ilimitadas</li>
+                            <li>Modelos customizados por setor</li>
+                            <li>IA preditiva & relatórios executivos</li>
+                            <li>SSO & LGPD Compliance avançado</li>
+                            <li>Gerente de conta dedicado</li>
+                            <li>Usuários ilimitados</li>
+                        </ul>
+                        <a href="#contato" class="btn btn-outline btn-block">Falar com Especialista</a>
+                    </div>
+                </div>
+                <p class="pricing-note">* Valores sujeitos a ajuste anual. Todos os planos incluem SSL, backup diário e conformidade com a LGPD.</p>
+            </div>
+        </section>
+
+        <!-- ================= APP ================= -->
+        <section id="app" class="section">
+            <div class="container app-grid">
+                <div class="app-content">
+                    <span class="section-tag">Novo</span>
+                    <h2>VIGORRE App: Conectando talentos e oportunidades</h2>
+                    <p>Plataforma independente para candidatos e empresas. Cadastre-se, publique vagas, encontre afiliados e acelere contratações com inteligência comportamental integrada.</p>
+                    
+                    <div class="app-features">
+                        <div class="app-feature">
+                            <div class="feature-icon">📄</div>
+                            <div>
+                                <h4>Cadastro de Currículo</h4>
+                                <p>Perfil profissional com autoavaliação comportamental integrada.</p>
+                            </div>
+                        </div>
+                        <div class="app-feature">
+                            <div class="feature-icon"></div>
+                            <div>
+                                <h4>Vagas de Empresas</h4>
+                                <p>Publicação inteligente com match automático de perfil.</p>
+                            </div>
+                        </div>
+                        <div class="app-feature">
+                            <div class="feature-icon"></div>
+                            <div>
+                                <h4>Programa de Afiliados</h4>
+                                <p>Indique talentos ou vagas e receba comissões por contratação.</p>
+                            </div>
+                        </div>
+                        <div class="app-feature">
+                            <div class="feature-icon">🔍</div>
+                            <div>
+                                <h4>Busca Inteligente</h4>
+                                <p>Filtros por setor, localização, senioridade e compatibilidade DISC.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="app-cta">
+                        <a href="https://app.vigorre.com.br" target="_blank" class="btn btn-primary">Acessar o Aplicativo</a>
+                        <a href="#contato" class="btn btn-ghost">Quero ser Afiliado</a>
+                    </div>
+                </div>
+                <div class="app-visual">
+                    <div class="phone-mockup">
+                        <div class="phone-screen">
+                            <div class="screen-header">VIGORRE App</div>
+                            <div class="screen-card">Vagas Recomendadas</div>
+                            <div class="screen-card">Seu Perfil DISC</div>
+                            <div class="screen-card">Indique & Ganhe</div>
+                            <div class="screen-bottom">Navegação</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= QUEM SOMOS ================= -->
+        <section id="sobre" class="section section-dark">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Institucional</span>
+                    <h2>Quem Somos</h2>
+                    <p>Somos uma HR Tech brasileira com DNA global. Unimos ciência comportamental, tecnologia de ponta e visão estratégica para transformar a gestão de pessoas.</p>
+                </div>
+                
+                <div class="values-grid">
+                    <div class="value-card">
+                        <div class="value-icon">🎯</div>
+                        <h3>Missão</h3>
+                        <p>Democratizar o acesso a ferramentas de People Analytics de alta performance, permitindo que empresas de todos os portes tomem decisões de gestão de pessoas baseadas em dados, ética e humanização.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon"></div>
+                        <h3>Visão</h3>
+                        <p>Ser a plataforma líder em inteligência comportamental na América Latina até 2030, reconhecida pela precisão científica, inovação contínua e impacto mensurável na retenção e desenvolvimento de talentos.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon">💎</div>
+                        <h3>Valores</h3>
+                        <p><strong>Ética & Transparência:</strong> Dados tratados com responsabilidade LGPD.<br>
+                        <strong>Ciência Aplicada:</strong> Metodologias validadas academicamente.<br>
+                        <strong>Humanização:</strong> Tecnologia a serviço das pessoas, não o contrário.<br>
+                        <strong>Excelência:</strong> Padrão executivo em cada entrega.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= CONTATO ================= -->
+        <section id="contato" class="section">
+            <div class="container contact-grid">
+                <div class="contact-info">
+                    <span class="section-tag">Contato</span>
+                    <h2>Vamos transformar pessoas em resultados?</h2>
+                    <p>Preencha o formulário ou fale diretamente com nossa equipe comercial. Retornamos em até 2 horas úteis.</p>
+                    
+                    <div class="contact-methods">
+                        <a href="mailto:contato@vigorre.com.br" class="contact-item">
+                            <span class="contact-icon">✉️</span>
+                            <div>
+                                <strong>E-mail</strong>
+                                <span>contato@vigorre.com.br</span>
+                            </div>
+                        </a>
+                        <a href="https://wa.me/5534991850735" target="_blank" class="contact-item">
+                            <span class="contact-icon">📱</span>
+                            <div>
+                                <strong>WhatsApp</strong>
+                                <span>+55 34 99185-0735</span>
+                            </div>
+                        </a>
+                        <a href="https://instagram.com/vigorre.consultoria" target="_blank" class="contact-item">
+                            <span class="contact-icon"></span>
+                            <div>
+                                <strong>Instagram</strong>
+                                <span>@vigorre.consultoria</span>
+                            </div>
+                        </a>
+                        <a href="https://linkedin.com/company/vigorreoficial" target="_blank" class="contact-item">
+                            <span class="contact-icon">💼</span>
+                            <div>
+                                <strong>LinkedIn</strong>
+                                <span>Vigorre Oficial</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contactForm" novalidate>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Nome completo *</label>
+                            <input type="text" id="name" name="name" required placeholder="Seu nome">
+                        </div>
+                        <div class="form-group">
+                            <label for="company">Empresa *</label>
+                            <input type="text" id="company" name="company" required placeholder="Nome da empresa">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">E-mail corporativo *</label>
+                            <input type="email" id="email" name="email" required placeholder="seu@empresa.com.br">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">WhatsApp / Telefone</label>
+                            <input type="tel" id="phone" name="phone" placeholder="(00) 00000-0000">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="interest">Interesse principal</label>
+                        <select id="interest" name="interest">
+                            <option value="">Selecione...</option>
+                            <option value="demo">Solicitar Demonstração</option>
+                            <option value="pricing">Proposta Comercial</option>
+                            <option value="affiliate">Programa de Afiliados</option>
+                            <option value="support">Suporte Técnico</option>
+                            <option value="other">Outro</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensagem</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Como podemos ajudar sua operação?"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Enviar Solicitação</button>
+                    <p class="form-notice">Ao enviar, você concorda com nossa Política de Privacidade e LGPD.</p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <img src="logo-vigorre.png" alt="Vigorre Logo" class="footer-logo">
+                <p>People Analytics • Inteligência Humana • Performance Corporativa</p>
+                <div class="footer-social">
+                    <a href="https://instagram.com/vigorre.consultoria" target="_blank" aria-label="Instagram">IG</a>
+                    <a href="https://linkedin.com/company/vigorreoficial" target="_blank" aria-label="LinkedIn">IN</a>
+                    <a href="https://wa.me/5534991850735" target="_blank" aria-label="WhatsApp">WA</a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Plataforma</h4>
+                <ul>
+                    <li><a href="#servicos">Soluções</a></li>
+                    <li><a href="#planos">Planos</a></li>
+                    <li><a href="https://sistema.vigorre.com.br" target="_blank">Sistema Comportamental</a></li>
+                    <li><a href="https://app.vigorre.com.br" target="_blank">Aplicativo</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Empresa</h4>
+                <ul>
+                    <li><a href="#sobre">Quem Somos</a></li>
+                    <li><a href="#setores">Setores</a></li>
+                    <li><a href="#">Carreiras</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Termos de Uso</a></li>
+                    <li><a href="#">Política de Privacidade</a></li>
+                    <li><a href="#">LGPD & Cookies</a></li>
+                    <li><a href="#">SLA & Suporte</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 VIGORRE Consultoria e Tecnologia Ltda. Todos os direitos reservados. CNPJ: XX.XXX.XXX/0001-XX</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Flutuante -->
+    <a href="https://wa.me/5534991850735" target="_blank" class="whatsapp-float" aria-label="Falar no WhatsApp">
+        <svg viewBox="0 0 32 32" width="32" height="32" fill="white">
+            <path d="M16 2C8.268 2 2 8.268 2 16c0 2.58.704 5.002 1.936 7.104L2 29.5l6.58-1.92A13.94 13.94 0 0016 30c7.732 0 14-6.268 14-14S23.732 2 16 2zm0 25.5c-2.24 0-4.36-.62-6.2-1.72l-.44-.26-4.08 1.2 1.22-4.06-.26-.44A11.46 11.46 0 014.5 16c0-6.34 5.16-11.5 11.5-11.5s11.5 5.16 11.5 11.5-5.16 11.5-11.5 11.5z"/>
+            <path d="M21.68 18.48c-.28-.14-1.66-.82-1.92-.92-.26-.1-.44-.14-.64.14-.2.28-.76.92-.94 1.12-.18.2-.34.22-.62.08-.28-.14-1.18-.44-2.24-1.38-.82-.74-1.38-1.64-1.54-1.92-.16-.28-.02-.44.12-.58.12-.12.28-.32.42-.48.14-.16.18-.28.28-.46.1-.18.06-.34-.02-.48-.08-.14-.72-1.72-1-2.34-.26-.56-.52-.48-.72-.48-.18 0-.38-.02-.58-.02-.2 0-.52.08-.78.36-.26.28-1.02 1.02-1.02 2.48s1.04 2.86 1.18 3.06c.14.2 2.04 3.12 4.96 4.38.68.3 1.22.48 1.64.62.68.22 1.3.18 1.78.12.54-.08 1.66-.68 1.9-1.34.24-.66.24-1.22.16-1.34-.06-.12-.24-.18-.52-.32z"/>
+        </svg>
+    </a>
+
+    <!-- Modal de Sucesso (Oculto) -->
+    <div class="modal-overlay" id="successModal" aria-hidden="true">
+        <div class="modal-content">
+            <div class="modal-icon">✅</div>
+            <h3>Solicitação Enviada!</h3>
+            <p>Nossa equipe comercial entrará em contato em até 2 horas úteis.</p>
+            <button class="btn btn-primary" onclick="closeModal()">Entendido</button>
+        </div>
     </div>
-
-</section>
-
-<section class="section" id="quem-somos">
-
-    <h2 class="section-title">
-        Quem Somos
-    </h2>
-
-    <p class="section-text">
-        A Vigorre nasceu para atuar além do RH tradicional. Nossa estrutura une inteligência comportamental, recrutamento estratégico, desenvolvimento humano e consultoria organizacional em um modelo premium de alta performance empresarial.
-    </p>
-
-</section>
-
-<section class="section" id="servicos">
-
-    <h2 class="section-title">
-        Serviços Estratégicos
-    </h2>
-
-    <div class="cards">
-
-        <div class="card">
-            <h3>Recrutamento & Seleção</h3>
-
-            <p>
-                Captação estratégica de talentos para operações corporativas, agroindustriais e construção civil.
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>Análise Comportamental</h3>
-
-            <p>
-                Plataforma inteligente para mapeamento comportamental e desenvolvimento humano.
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>Consultoria Organizacional</h3>
-
-            <p>
-                Estruturação de processos, cultura organizacional e gestão estratégica de pessoas.
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>Treinamentos Corporativos</h3>
-
-            <p>
-                Desenvolvimento de liderança, comunicação, performance e gestão de equipes.
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>Business Partner RH</h3>
-
-            <p>
-                Atuação estratégica junto à diretoria para crescimento sustentável da operação.
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>Portal Inteligente de Vagas</h3>
-
-            <p>
-                Sistema de currículos, vagas empresariais, afiliados recrutadores e conexão inteligente.
-            </p>
-        </div>
-
-    </div>
-
-</section>
-
-<section class="section" id="recrutamento">
-
-    <h2 class="section-title">
-        Especialistas em Recrutamento
-    </h2>
-
-    <div class="cards">
-
-        <div class="card">
-            <h3>Agro</h3>
-
-            <p>
-                Recrutamento especializado para fazendas, usinas, agroindústrias e grandes operações rurais.
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>Construção Civil</h3>
-
-            <p>
-                Gestão de contratação em escala, alojamentos e operações de obra.
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>Corporativo</h3>
-
-            <p>
-                Captação de profissionais administrativos, estratégicos e executivos.
-            </p>
-        </div>
-
-    </div>
-
-</section>
-
-<section class="section" id="contato">
-
-    <h2 class="section-title">
-        Contato Estratégico
-    </h2>
-
-    <p class="section-text">
-        contato@vigorre.com.br<br><br>
-
-        WhatsApp: (34) 99185-0735<br><br>
-
-        vigorre.com.br
-    </p>
-
-</section>
-
-<footer>
-
-    <h3>
-        Vigorre — Inteligência e Gestão Estratégica
-    </h3>
-
-    <p style="margin-top:20px; color:#94a3b8;">
-        Estruturando empresas, fortalecendo pessoas e gerando resultados sustentáveis.
-    </p>
-
-</footer>
-
-<a
-href="https://wa.me/5534991850735"
-class="whatsapp"
-target="_blank">
-💬
-</a>
-
 </body>
 </html>
