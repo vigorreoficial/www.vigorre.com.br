@@ -3,17 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="VIGORRE | Plataforma premium de People Analytics, análise comportamental, fit cultural e recrutamento estratégico. Soluções para Agro, Construção Civil e Mercado Geral.">
-    <meta name="keywords" content="Vigorre, People Analytics, DISC, Inteligência Emocional, Fit Cultural, Recrutamento Agro, Recrutamento Construção Civil, Assessment Comportamental, RH Estratégico">
+    <meta name="description" content="VIGORRE | Plataforma premium de People Analytics, análise comportamental, fit cultural e recrutamento estratégico.">
+    <meta name="keywords" content="Vigorre, People Analytics, DISC, Inteligência Emocional, Fit Cultural, Recrutamento, Assessment Comportamental">
     <meta name="author" content="Vigorre Consultoria">
-    <meta name="robots" content="index, follow">
     
-    <!-- Open Graph / Social -->
+    <!-- Open Graph -->
     <meta property="og:title" content="VIGORRE | Inteligência Humana & People Analytics">
-    <meta property="og:description" content="Transforme comportamento em performance. Plataforma premium para gestão de pessoas, recrutamento setorial e desenvolvimento organizacional.">
+    <meta property="og:description" content="Transforme comportamento em performance. Plataforma premium para gestão de pessoas.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://vigorre.com.br">
-    <meta property="og:image" content="https://vigorre.com.br/og-image.jpg">
     
     <title>VIGORRE | People Analytics • Recrutamento Estratégico • Gestão de Pessoas</title>
     
@@ -22,7 +20,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     
-    <!-- CSS & JS (Serão criados nas próximas etapas) -->
+    <!-- CSS & JS -->
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
     
@@ -30,29 +28,44 @@
     <link rel="icon" type="image/png" href="logo-vigorre.png">
 </head>
 <body>
-    <!-- ================= HEADER ================= -->
+
+    <!-- ================= HEADER PREMIUM ================= -->
     <header class="site-header">
         <div class="container header-inner">
-            <a href="#home" class="logo-link">
-                <img src="logo-vigorre.png" alt="Logo VIGORRE" class="logo-img">
+            
+            <!-- Logo + Texto -->
+            <a href="#home" class="logo-wrapper">
+                <img src="logo-vigorre.png" alt="VIGORRE" class="logo-img">
+                <div class="logo-text">
+                    <span class="logo-name">Vigorre</span>
+                    <span class="logo-tagline">Inteligência e Gestão Estratégica</span>
+                </div>
             </a>
             
+            <!-- Navegação Internacional -->
             <nav class="main-nav" aria-label="Navegação principal">
                 <ul class="nav-list">
-                    <li><a href="#home">Início</a></li>
-                    <li><a href="#servicos">Soluções</a></li>
-                    <li><a href="#setores">Setores</a></li>
-                    <li><a href="#planos">Planos</a></li>
-                    <li><a href="#app">Aplicativo</a></li>
-                    <li><a href="#sobre">Quem Somos</a></li>
-                    <li><a href="#contato">Contato</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#solucoes">Solutions</a></li>
+                    <li><a href="#setores">Industries</a></li>
+                    <li><a href="#planos">Pricing</a></li>
+                    <li><a href="#sobre">About</a></li>
                 </ul>
             </nav>
 
+            <!-- Ações do Header -->
             <div class="header-actions">
-                <a href="https://sistema.vigorre.com.br" target="_blank" class="btn btn-outline">Acessar Sistema</a>
-                <a href="#contato" class="btn btn-primary">Solicitar Demo</a>
-                <button class="mobile-toggle" aria-label="Abrir menu" aria-expanded="false">
+                <a href="https://vigorre.vercel.app/" target="_blank" class="btn btn-system">
+                    <span class="btn-icon">⚙️</span>
+                    Sistema V.I.G.O.R.
+                </a>
+                <a href="#talent" class="btn btn-talent">
+                    <span class="btn-icon">👥</span>
+                    Vigorre Talent
+                </a>
+                <a href="#contato" class="btn btn-primary">Contact Us</a>
+                
+                <button class="mobile-toggle" aria-label="Menu">
                     <span></span><span></span><span></span>
                 </button>
             </div>
@@ -61,42 +74,43 @@
         <!-- Mobile Menu -->
         <div class="mobile-menu" aria-hidden="true">
             <ul class="mobile-nav-list">
-                <li><a href="#home">Início</a></li>
-                <li><a href="#servicos">Soluções</a></li>
-                <li><a href="#setores">Setores</a></li>
-                <li><a href="#planos">Planos</a></li>
-                <li><a href="#app">Aplicativo</a></li>
-                <li><a href="#sobre">Quem Somos</a></li>
-                <li><a href="#contato">Contato</a></li>
-                <li><a href="https://sistema.vigorre.com.br" target="_blank">Acessar Sistema</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#solucoes">Solutions</a></li>
+                <li><a href="#setores">Industries</a></li>
+                <li><a href="#planos">Pricing</a></li>
+                <li><a href="#sobre">About</a></li>
+                <li class="mobile-divider"></li>
+                <li><a href="https://vigorre.vercel.app/" target="_blank">Sistema V.I.G.O.R.</a></li>
+                <li><a href="#talent">Vigorre Talent</a></li>
             </ul>
         </div>
     </header>
 
     <main>
-        <!-- ================= HERO ================= -->
+        <!-- ================= HERO SECTION ================= -->
         <section id="home" class="hero-section">
+            <div class="hero-bg-gradient"></div>
             <div class="container hero-grid">
                 <div class="hero-content">
-                    <span class="badge">HR Tech Premium • Padrão Internacional</span>
-                    <h1>Inteligência Humana aplicada à <span class="highlight">gestão estratégica</span> de pessoas</h1>
-                    <p>Plataforma completa de People Analytics, assessment comportamental e recrutamento setorial. Conecte tecnologia, dados e humanização para resultados mensuráveis.</p>
+                    <span class="badge">Enterprise HR Tech • Global Standard</span>
+                    <h1>Human Intelligence applied to <span class="highlight">strategic people management</span></h1>
+                    <p>Complete platform for People Analytics, behavioral assessment and sectorial recruitment. Connect technology, data and humanization for measurable results.</p>
                     <div class="hero-cta">
-                        <a href="#contato" class="btn btn-primary">Agendar Demonstração</a>
-                        <a href="#servicos" class="btn btn-ghost">Conhecer Soluções</a>
+                        <a href="#contato" class="btn btn-primary btn-lg">Request Demo</a>
+                        <a href="#solucoes" class="btn btn-outline btn-lg">Explore Solutions</a>
                     </div>
                     <div class="hero-trust">
                         <div class="trust-item">
-                            <strong>+500</strong>
-                            <span>Empresas Atendidas</span>
+                            <strong>500+</strong>
+                            <span>Enterprise Clients</span>
                         </div>
                         <div class="trust-item">
                             <strong>94%</strong>
-                            <span>Retenção de Talentos</span>
+                            <span>Talent Retention</span>
                         </div>
                         <div class="trust-item">
                             <strong>ISO 27001</strong>
-                            <span>Segurança de Dados</span>
+                            <span>Security Certified</span>
                         </div>
                     </div>
                 </div>
@@ -104,22 +118,22 @@
                     <div class="dashboard-mockup">
                         <div class="mockup-header">
                             <div class="dot red"></div><div class="dot yellow"></div><div class="dot green"></div>
-                            <span>Vigorre Analytics Dashboard</span>
+                            <span>Vigorre Analytics • Executive Dashboard</span>
                         </div>
                         <div class="mockup-body">
                             <div class="mockup-chart">
-                                <div class="bar" style="--h: 78%; --c: #3b82f6;"></div>
-                                <div class="bar" style="--h: 65%; --c: #6366f1;"></div>
-                                <div class="bar" style="--h: 88%; --c: #8b5cf6;"></div>
-                                <div class="bar" style="--h: 52%; --c: #ec4899;"></div>
+                                <div class="bar" style="--h: 78%; --c: #3B82F6;"></div>
+                                <div class="bar" style="--h: 65%; --c: #6366F1;"></div>
+                                <div class="bar" style="--h: 88%; --c: #8B5CF6;"></div>
+                                <div class="bar" style="--h: 52%; --c: #EC4899;"></div>
                             </div>
                             <div class="mockup-stats">
                                 <div class="stat-card">
-                                    <span>Fit Cultural</span>
+                                    <span>Cultural Fit</span>
                                     <strong>92%</strong>
                                 </div>
                                 <div class="stat-card">
-                                    <span>Engajamento</span>
+                                    <span>Engagement</span>
                                     <strong>87%</strong>
                                 </div>
                             </div>
@@ -129,56 +143,56 @@
             </div>
         </section>
 
-        <!-- ================= SERVIÇOS ================= -->
-        <section id="servicos" class="section section-dark">
+        <!-- ================= SOLUÇÕES ================= -->
+        <section id="solucoes" class="section section-blue">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-tag">Soluções</span>
-                    <h2>Tecnologia comportamental para decisões estratégicas</h2>
-                    <p>Ferramentas validadas cientificamente para mapeamento, desenvolvimento e retenção de talentos.</p>
+                    <span class="section-tag">Our Solutions</span>
+                    <h2>Behavioral technology for strategic decisions</h2>
+                    <p>Scientifically validated tools for mapping, development and talent retention.</p>
                 </div>
                 
                 <div class="services-grid">
                     <article class="service-card">
                         <div class="icon-box">🧠</div>
                         <h3>People Analytics</h3>
-                        <p>Dashboards executivos com indicadores preditivos de turnover, performance e clima organizacional.</p>
-                        <a href="#contato" class="link-arrow">Solicitar acesso →</a>
+                        <p>Executive dashboards with predictive indicators of turnover, performance and organizational climate.</p>
+                        <a href="#contato" class="link-arrow">Learn more →</a>
                     </article>
                     
                     <article class="service-card">
                         <div class="icon-box">📊</div>
-                        <h3>Análise DISC Profissional</h3>
-                        <p>Mapeamento de perfil comportamental para liderança, comunicação e produtividade.</p>
-                        <a href="#contato" class="link-arrow">Solicitar acesso →</a>
+                        <h3>Professional DISC Analysis</h3>
+                        <p>Behavioral profile mapping for leadership, communication and productivity optimization.</p>
+                        <a href="#contato" class="link-arrow">Learn more →</a>
                     </article>
                     
                     <article class="service-card">
                         <div class="icon-box">💡</div>
-                        <h3>Inteligência Emocional</h3>
-                        <p>Avaliação de autoconhecimento, resiliência, empatia e gestão de conflitos.</p>
-                        <a href="#contato" class="link-arrow">Solicitar acesso →</a>
+                        <h3>Emotional Intelligence</h3>
+                        <p>Assessment of self-awareness, resilience, empathy and conflict management capabilities.</p>
+                        <a href="#contato" class="link-arrow">Learn more →</a>
                     </article>
                     
                     <article class="service-card highlight-card">
                         <div class="icon-box">🔗</div>
-                        <h3>Sistema de Análise Comportamental</h3>
-                        <p>Plataforma externa dedicada para aplicação de assessments, geração de laudos e acompanhamento de PDI.</p>
-                        <a href="https://sistema.vigorre.com.br" target="_blank" class="btn btn-primary btn-sm">Acessar Sistema Externo</a>
+                        <h3>Behavioral Analysis System</h3>
+                        <p>Dedicated external platform for assessments, report generation and PDI tracking.</p>
+                        <a href="https://vigorre.vercel.app/" target="_blank" class="btn btn-primary btn-sm">Access System V.I.G.O.R.</a>
                     </article>
                     
                     <article class="service-card">
                         <div class="icon-box">🎯</div>
-                        <h3>Fit Cultural & Values</h3>
-                        <p>Compatibilidade entre candidato, liderança, equipe e cultura organizacional.</p>
-                        <a href="#contato" class="link-arrow">Solicitar acesso →</a>
+                        <h3>Cultural Fit & Values</h3>
+                        <p>Compatibility assessment between candidate, leadership, team and organizational culture.</p>
+                        <a href="#contato" class="link-arrow">Learn more →</a>
                     </article>
                     
                     <article class="service-card">
                         <div class="icon-box"></div>
-                        <h3>Assessment Corporativo Premium</h3>
-                        <p>Laudo completo com recomendações estratégicas, plano de desenvolvimento e métricas de evolução.</p>
-                        <a href="#contato" class="link-arrow">Solicitar acesso →</a>
+                        <h3>Premium Corporate Assessment</h3>
+                        <p>Complete report with strategic recommendations, development plan and evolution metrics.</p>
+                        <a href="#contato" class="link-arrow">Learn more →</a>
                     </article>
                 </div>
             </div>
@@ -188,42 +202,42 @@
         <section id="setores" class="section">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-tag">Recrutamento Setorial</span>
-                    <h2>Especialização técnica por segmento</h2>
-                    <p>Metodologias adaptadas às particularidades de cada cadeia produtiva.</p>
+                    <span class="section-tag">Industry Expertise</span>
+                    <h2>Technical specialization by segment</h2>
+                    <p>Methodologies adapted to the particularities of each productive chain.</p>
                 </div>
                 
                 <div class="sectors-grid">
                     <div class="sector-card">
-                        <div class="sector-icon"></div>
-                        <h3>Agro & Agronegócio</h3>
-                        <p>Recrutamento para operações de campo, gestão rural, logística agrícola e indústria de alimentos. Foco em segurança, produtividade e adaptação climática.</p>
+                        <div class="sector-icon">🌾</div>
+                        <h3>Agro & Agribusiness</h3>
+                        <p>Recruitment for field operations, rural management, agricultural logistics and food industry. Focus on safety, productivity and climate adaptation.</p>
                         <ul class="sector-list">
-                            <li>Mapeamento de perfil operacional</li>
-                            <li>Assessment para lideranças de campo</li>
-                            <li>Fit com cultura rural e segurança</li>
+                            <li>Operational profile mapping</li>
+                            <li>Assessment for field leadership</li>
+                            <li>Fit with rural culture and safety</li>
                         </ul>
                     </div>
                     
                     <div class="sector-card">
                         <div class="sector-icon">🏗️</div>
-                        <h3>Construção Civil</h3>
-                        <p>Seleção técnica e comportamental para engenharia, mestre de obras, encarregados e equipes de execução. Ênfase em compliance, NR's e gestão de cronograma.</p>
+                        <h3>Construction & Civil Engineering</h3>
+                        <p>Technical and behavioral selection for engineering, site managers, foremen and execution teams. Emphasis on compliance, NR standards and schedule management.</p>
                         <ul class="sector-list">
-                            <li>Validação de competências técnicas</li>
-                            <li>Avaliação de resiliência sob pressão</li>
-                            <li>Alinhamento com normas de segurança</li>
+                            <li>Technical competencies validation</li>
+                            <li>Pressure resilience assessment</li>
+                            <li>Alignment with safety regulations</li>
                         </ul>
                     </div>
                     
                     <div class="sector-card">
                         <div class="sector-icon">🌐</div>
-                        <h3>Mercado Geral & Corporativo</h3>
-                        <p>Soluções flexíveis para tecnologia, serviços, indústria, varejo e saúde. Modelos escaláveis para startups até multinacionais.</p>
+                        <h3>General Market & Corporate</h3>
+                        <p>Flexible solutions for technology, services, industry, retail and healthcare. Scalable models from startups to multinationals.</p>
                         <ul class="sector-list">
-                            <li>Recrutamento em escala</li>
-                            <li>People Analytics integrado</li>
-                            <li>Desenvolvimento de liderança</li>
+                            <li>Scale recruitment</li>
+                            <li>Integrated People Analytics</li>
+                            <li>Leadership development</li>
                         </ul>
                     </div>
                 </div>
@@ -231,132 +245,132 @@
         </section>
 
         <!-- ================= PLANOS ================= -->
-        <section id="planos" class="section section-dark">
+        <section id="planos" class="section section-blue">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-tag">Investimento</span>
-                    <h2>Planos alinhados ao tamanho da sua operação</h2>
-                    <p>Transparência total. Sem taxa de adesão. Cancele quando quiser.</p>
+                    <span class="section-tag">Investment</span>
+                    <h2>Plans aligned to your operation size</h2>
+                    <p>Complete transparency. No setup fees. Cancel anytime.</p>
                 </div>
                 
                 <div class="pricing-grid">
                     <div class="pricing-card">
                         <div class="pricing-header">
                             <h3>Starter</h3>
-                            <p>Para pequenas equipes e startups</p>
+                            <p>For small teams and startups</p>
                         </div>
                         <div class="pricing-price">
                             <span class="currency">R$</span>
                             <span class="amount">297</span>
-                            <span class="period">/mês</span>
+                            <span class="period">/month</span>
                         </div>
                         <ul class="pricing-features">
-                            <li>Até 50 avaliações/mês</li>
-                            <li>DISC & Fit Cultural básico</li>
-                            <li>Dashboard simplificado</li>
-                            <li>Suporte por e-mail</li>
-                            <li>1 usuário administrador</li>
+                            <li>Up to 50 assessments/month</li>
+                            <li>DISC & Basic Cultural Fit</li>
+                            <li>Simplified dashboard</li>
+                            <li>Email support</li>
+                            <li>1 admin user</li>
                         </ul>
-                        <a href="#contato" class="btn btn-outline btn-block">Começar Agora</a>
+                        <a href="#contato" class="btn btn-outline btn-block">Get Started</a>
                     </div>
                     
                     <div class="pricing-card popular">
-                        <div class="popular-badge">Mais Escolhido</div>
+                        <div class="popular-badge">Most Popular</div>
                         <div class="pricing-header">
                             <h3>Professional</h3>
-                            <p>Para médias empresas e consultorias</p>
+                            <p>For mid-size companies and consultancies</p>
                         </div>
                         <div class="pricing-price">
                             <span class="currency">R$</span>
                             <span class="amount">897</span>
-                            <span class="period">/mês</span>
+                            <span class="period">/month</span>
                         </div>
                         <ul class="pricing-features">
-                            <li>Até 300 avaliações/mês</li>
-                            <li>Todas as análises comportamentais</li>
-                            <li>People Analytics avançado</li>
-                            <li>API de integração</li>
-                            <li>Suporte prioritário</li>
-                            <li>5 usuários administradores</li>
+                            <li>Up to 300 assessments/month</li>
+                            <li>All behavioral analyses</li>
+                            <li>Advanced People Analytics</li>
+                            <li>API integration</li>
+                            <li>Priority support</li>
+                            <li>5 admin users</li>
                         </ul>
-                        <a href="#contato" class="btn btn-primary btn-block">Solicitar Proposta</a>
+                        <a href="#contato" class="btn btn-primary btn-block">Request Proposal</a>
                     </div>
                     
                     <div class="pricing-card">
                         <div class="pricing-header">
                             <h3>Enterprise</h3>
-                            <p>Para corporações e operações nacionais</p>
+                            <p>For corporations and national operations</p>
                         </div>
                         <div class="pricing-price">
-                            <span class="amount">Sob Consulta</span>
+                            <span class="amount">Custom</span>
                         </div>
                         <ul class="pricing-features">
-                            <li>Avaliações ilimitadas</li>
-                            <li>Modelos customizados por setor</li>
-                            <li>IA preditiva & relatórios executivos</li>
-                            <li>SSO & LGPD Compliance avançado</li>
-                            <li>Gerente de conta dedicado</li>
-                            <li>Usuários ilimitados</li>
+                            <li>Unlimited assessments</li>
+                            <li>Custom models by sector</li>
+                            <li>Predictive AI & executive reports</li>
+                            <li>SSO & Advanced LGPD Compliance</li>
+                            <li>Dedicated account manager</li>
+                            <li>Unlimited users</li>
                         </ul>
-                        <a href="#contato" class="btn btn-outline btn-block">Falar com Especialista</a>
+                        <a href="#contato" class="btn btn-outline btn-block">Talk to Specialist</a>
                     </div>
                 </div>
-                <p class="pricing-note">* Valores sujeitos a ajuste anual. Todos os planos incluem SSL, backup diário e conformidade com a LGPD.</p>
+                <p class="pricing-note">* Prices subject to annual adjustment. All plans include SSL, daily backup and LGPD compliance.</p>
             </div>
         </section>
 
-        <!-- ================= APP ================= -->
-        <section id="app" class="section">
+        <!-- ================= VIGORRE TALENT ================= -->
+        <section id="talent" class="section">
             <div class="container app-grid">
                 <div class="app-content">
-                    <span class="section-tag">Novo</span>
-                    <h2>VIGORRE App: Conectando talentos e oportunidades</h2>
-                    <p>Plataforma independente para candidatos e empresas. Cadastre-se, publique vagas, encontre afiliados e acelere contratações com inteligência comportamental integrada.</p>
+                    <span class="badge badge-talent">New Platform</span>
+                    <h2>Vigorre Talent: Connecting talents and opportunities</h2>
+                    <p>Independent platform for candidates and companies. Register, post jobs, find affiliates and accelerate hiring with integrated behavioral intelligence.</p>
                     
                     <div class="app-features">
                         <div class="app-feature">
                             <div class="feature-icon">📄</div>
                             <div>
-                                <h4>Cadastro de Currículo</h4>
-                                <p>Perfil profissional com autoavaliação comportamental integrada.</p>
+                                <h4>Resume Builder</h4>
+                                <p>Professional profile with integrated behavioral self-assessment.</p>
                             </div>
                         </div>
                         <div class="app-feature">
                             <div class="feature-icon"></div>
                             <div>
-                                <h4>Vagas de Empresas</h4>
-                                <p>Publicação inteligente com match automático de perfil.</p>
+                                <h4>Smart Job Board</h4>
+                                <p>Intelligent posting with automatic profile matching.</p>
                             </div>
                         </div>
                         <div class="app-feature">
                             <div class="feature-icon"></div>
                             <div>
-                                <h4>Programa de Afiliados</h4>
-                                <p>Indique talentos ou vagas e receba comissões por contratação.</p>
+                                <h4>Affiliate Program</h4>
+                                <p>Refer talents or jobs and earn commissions per hire.</p>
                             </div>
                         </div>
                         <div class="app-feature">
                             <div class="feature-icon">🔍</div>
                             <div>
-                                <h4>Busca Inteligente</h4>
-                                <p>Filtros por setor, localização, senioridade e compatibilidade DISC.</p>
+                                <h4>Smart Search</h4>
+                                <p>Filters by sector, location, seniority and DISC compatibility.</p>
                             </div>
                         </div>
                     </div>
                     
                     <div class="app-cta">
-                        <a href="https://app.vigorre.com.br" target="_blank" class="btn btn-primary">Acessar o Aplicativo</a>
-                        <a href="#contato" class="btn btn-ghost">Quero ser Afiliado</a>
+                        <a href="#" class="btn btn-primary">Access Vigorre Talent</a>
+                        <a href="#contato" class="btn btn-outline">Become an Affiliate</a>
                     </div>
                 </div>
                 <div class="app-visual">
                     <div class="phone-mockup">
                         <div class="phone-screen">
-                            <div class="screen-header">VIGORRE App</div>
-                            <div class="screen-card">Vagas Recomendadas</div>
-                            <div class="screen-card">Seu Perfil DISC</div>
-                            <div class="screen-card">Indique & Ganhe</div>
-                            <div class="screen-bottom">Navegação</div>
+                            <div class="screen-header">Vigorre Talent</div>
+                            <div class="screen-card">Recommended Jobs</div>
+                            <div class="screen-card">Your DISC Profile</div>
+                            <div class="screen-card">Refer & Earn</div>
+                            <div class="screen-bottom">Navigation</div>
                         </div>
                     </div>
                 </div>
@@ -364,32 +378,32 @@
         </section>
 
         <!-- ================= QUEM SOMOS ================= -->
-        <section id="sobre" class="section section-dark">
+        <section id="sobre" class="section section-blue">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-tag">Institucional</span>
-                    <h2>Quem Somos</h2>
-                    <p>Somos uma HR Tech brasileira com DNA global. Unimos ciência comportamental, tecnologia de ponta e visão estratégica para transformar a gestão de pessoas.</p>
+                    <span class="section-tag">About Us</span>
+                    <h2>Who We Are</h2>
+                    <p>We are a Brazilian HR Tech with global DNA. We combine behavioral science, cutting-edge technology and strategic vision to transform people management.</p>
                 </div>
                 
                 <div class="values-grid">
                     <div class="value-card">
                         <div class="value-icon">🎯</div>
-                        <h3>Missão</h3>
-                        <p>Democratizar o acesso a ferramentas de People Analytics de alta performance, permitindo que empresas de todos os portes tomem decisões de gestão de pessoas baseadas em dados, ética e humanização.</p>
+                        <h3>Mission</h3>
+                        <p>Democratize access to high-performance People Analytics tools, enabling companies of all sizes to make people management decisions based on data, ethics and humanization.</p>
                     </div>
                     <div class="value-card">
                         <div class="value-icon"></div>
-                        <h3>Visão</h3>
-                        <p>Ser a plataforma líder em inteligência comportamental na América Latina até 2030, reconhecida pela precisão científica, inovação contínua e impacto mensurável na retenção e desenvolvimento de talentos.</p>
+                        <h3>Vision</h3>
+                        <p>Be the leading behavioral intelligence platform in Latin America by 2030, recognized for scientific accuracy, continuous innovation and measurable impact on talent retention and development.</p>
                     </div>
                     <div class="value-card">
                         <div class="value-icon">💎</div>
-                        <h3>Valores</h3>
-                        <p><strong>Ética & Transparência:</strong> Dados tratados com responsabilidade LGPD.<br>
-                        <strong>Ciência Aplicada:</strong> Metodologias validadas academicamente.<br>
-                        <strong>Humanização:</strong> Tecnologia a serviço das pessoas, não o contrário.<br>
-                        <strong>Excelência:</strong> Padrão executivo em cada entrega.</p>
+                        <h3>Values</h3>
+                        <p><strong>Ethics & Transparency:</strong> Data handled with LGPD responsibility.<br>
+                        <strong>Applied Science:</strong> Academically validated methodologies.<br>
+                        <strong>Humanization:</strong> Technology serving people, not the opposite.<br>
+                        <strong>Excellence:</strong> Executive standard in every delivery.</p>
                     </div>
                 </div>
             </div>
@@ -399,15 +413,15 @@
         <section id="contato" class="section">
             <div class="container contact-grid">
                 <div class="contact-info">
-                    <span class="section-tag">Contato</span>
-                    <h2>Vamos transformar pessoas em resultados?</h2>
-                    <p>Preencha o formulário ou fale diretamente com nossa equipe comercial. Retornamos em até 2 horas úteis.</p>
+                    <span class="section-tag">Contact</span>
+                    <h2>Let's transform people into results?</h2>
+                    <p>Fill out the form or speak directly with our commercial team. We respond within 2 business hours.</p>
                     
                     <div class="contact-methods">
                         <a href="mailto:contato@vigorre.com.br" class="contact-item">
                             <span class="contact-icon">✉️</span>
                             <div>
-                                <strong>E-mail</strong>
+                                <strong>Email</strong>
                                 <span>contato@vigorre.com.br</span>
                             </div>
                         </a>
@@ -429,7 +443,7 @@
                             <span class="contact-icon">💼</span>
                             <div>
                                 <strong>LinkedIn</strong>
-                                <span>Vigorre Oficial</span>
+                                <span>Vigorre Official</span>
                             </div>
                         </a>
                     </div>
@@ -438,41 +452,41 @@
                 <form class="contact-form" id="contactForm" novalidate>
                     <div class="form-row">
                         <div class="form-group">
-                            <label for="name">Nome completo *</label>
-                            <input type="text" id="name" name="name" required placeholder="Seu nome">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required placeholder="Your name">
                         </div>
                         <div class="form-group">
-                            <label for="company">Empresa *</label>
-                            <input type="text" id="company" name="company" required placeholder="Nome da empresa">
+                            <label for="company">Company *</label>
+                            <input type="text" id="company" name="company" required placeholder="Company name">
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group">
-                            <label for="email">E-mail corporativo *</label>
-                            <input type="email" id="email" name="email" required placeholder="seu@empresa.com.br">
+                            <label for="email">Corporate Email *</label>
+                            <input type="email" id="email" name="email" required placeholder="you@company.com">
                         </div>
                         <div class="form-group">
-                            <label for="phone">WhatsApp / Telefone</label>
+                            <label for="phone">WhatsApp / Phone</label>
                             <input type="tel" id="phone" name="phone" placeholder="(00) 00000-0000">
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="interest">Interesse principal</label>
+                        <label for="interest">Primary Interest</label>
                         <select id="interest" name="interest">
-                            <option value="">Selecione...</option>
-                            <option value="demo">Solicitar Demonstração</option>
-                            <option value="pricing">Proposta Comercial</option>
-                            <option value="affiliate">Programa de Afiliados</option>
-                            <option value="support">Suporte Técnico</option>
-                            <option value="other">Outro</option>
+                            <option value="">Select...</option>
+                            <option value="demo">Request Demo</option>
+                            <option value="pricing">Commercial Proposal</option>
+                            <option value="affiliate">Affiliate Program</option>
+                            <option value="support">Technical Support</option>
+                            <option value="other">Other</option>
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="message">Mensagem</label>
-                        <textarea id="message" name="message" rows="4" placeholder="Como podemos ajudar sua operação?"></textarea>
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="4" placeholder="How can we help your operation?"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary btn-block">Enviar Solicitação</button>
-                    <p class="form-notice">Ao enviar, você concorda com nossa Política de Privacidade e LGPD.</p>
+                    <button type="submit" class="btn btn-primary btn-block">Send Request</button>
+                    <p class="form-notice">By submitting, you agree to our Privacy Policy and LGPD.</p>
                 </form>
             </div>
         </section>
@@ -482,8 +496,14 @@
     <footer class="site-footer">
         <div class="container footer-grid">
             <div class="footer-brand">
-                <img src="logo-vigorre.png" alt="Vigorre Logo" class="footer-logo">
-                <p>People Analytics • Inteligência Humana • Performance Corporativa</p>
+                <div class="footer-logo-wrapper">
+                    <img src="logo-vigorre.png" alt="Vigorre" class="footer-logo">
+                    <div class="footer-logo-text">
+                        <span class="footer-logo-name">Vigorre</span>
+                        <span class="footer-logo-tagline">Inteligência e Gestão Estratégica</span>
+                    </div>
+                </div>
+                <p>People Analytics • Human Intelligence • Corporate Performance</p>
                 <div class="footer-social">
                     <a href="https://instagram.com/vigorre.consultoria" target="_blank" aria-label="Instagram">IG</a>
                     <a href="https://linkedin.com/company/vigorreoficial" target="_blank" aria-label="LinkedIn">IN</a>
@@ -491,54 +511,55 @@
                 </div>
             </div>
             <div class="footer-links">
-                <h4>Plataforma</h4>
+                <h4>Platform</h4>
                 <ul>
-                    <li><a href="#servicos">Soluções</a></li>
-                    <li><a href="#planos">Planos</a></li>
-                    <li><a href="https://sistema.vigorre.com.br" target="_blank">Sistema Comportamental</a></li>
-                    <li><a href="https://app.vigorre.com.br" target="_blank">Aplicativo</a></li>
+                    <li><a href="#solucoes">Solutions</a></li>
+                    <li><a href="#planos">Pricing</a></li>
+                    <li><a href="https://vigorre.vercel.app/" target="_blank">System V.I.G.O.R.</a></li>
+                    <li><a href="#talent">Vigorre Talent</a></li>
                 </ul>
             </div>
             <div class="footer-links">
-                <h4>Empresa</h4>
+                <h4>Company</h4>
                 <ul>
-                    <li><a href="#sobre">Quem Somos</a></li>
-                    <li><a href="#setores">Setores</a></li>
-                    <li><a href="#">Carreiras</a></li>
+                    <li><a href="#sobre">About Us</a></li>
+                    <li><a href="#setores">Industries</a></li>
+                    <li><a href="#">Careers</a></li>
                     <li><a href="#">Blog</a></li>
                 </ul>
             </div>
             <div class="footer-links">
                 <h4>Legal</h4>
                 <ul>
-                    <li><a href="#">Termos de Uso</a></li>
-                    <li><a href="#">Política de Privacidade</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
                     <li><a href="#">LGPD & Cookies</a></li>
-                    <li><a href="#">SLA & Suporte</a></li>
+                    <li><a href="#">SLA & Support</a></li>
                 </ul>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 VIGORRE Consultoria e Tecnologia Ltda. Todos os direitos reservados. CNPJ: XX.XXX.XXX/0001-XX</p>
+            <p>&copy; 2026 VIGORRE Consultoria e Tecnologia Ltda. All rights reserved.</p>
         </div>
     </footer>
 
-    <!-- WhatsApp Flutuante -->
-    <a href="https://wa.me/5534991850735" target="_blank" class="whatsapp-float" aria-label="Falar no WhatsApp">
-        <svg viewBox="0 0 32 32" width="32" height="32" fill="white">
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/5534991850735" target="_blank" class="whatsapp-float" aria-label="WhatsApp">
+        <svg viewBox="0 0 32 32" width="28" height="28" fill="white">
             <path d="M16 2C8.268 2 2 8.268 2 16c0 2.58.704 5.002 1.936 7.104L2 29.5l6.58-1.92A13.94 13.94 0 0016 30c7.732 0 14-6.268 14-14S23.732 2 16 2zm0 25.5c-2.24 0-4.36-.62-6.2-1.72l-.44-.26-4.08 1.2 1.22-4.06-.26-.44A11.46 11.46 0 014.5 16c0-6.34 5.16-11.5 11.5-11.5s11.5 5.16 11.5 11.5-5.16 11.5-11.5 11.5z"/>
             <path d="M21.68 18.48c-.28-.14-1.66-.82-1.92-.92-.26-.1-.44-.14-.64.14-.2.28-.76.92-.94 1.12-.18.2-.34.22-.62.08-.28-.14-1.18-.44-2.24-1.38-.82-.74-1.38-1.64-1.54-1.92-.16-.28-.02-.44.12-.58.12-.12.28-.32.42-.48.14-.16.18-.28.28-.46.1-.18.06-.34-.02-.48-.08-.14-.72-1.72-1-2.34-.26-.56-.52-.48-.72-.48-.18 0-.38-.02-.58-.02-.2 0-.52.08-.78.36-.26.28-1.02 1.02-1.02 2.48s1.04 2.86 1.18 3.06c.14.2 2.04 3.12 4.96 4.38.68.3 1.22.48 1.64.62.68.22 1.3.18 1.78.12.54-.08 1.66-.68 1.9-1.34.24-.66.24-1.22.16-1.34-.06-.12-.24-.18-.52-.32z"/>
         </svg>
     </a>
 
-    <!-- Modal de Sucesso (Oculto) -->
+    <!-- Success Modal -->
     <div class="modal-overlay" id="successModal" aria-hidden="true">
         <div class="modal-content">
             <div class="modal-icon">✅</div>
-            <h3>Solicitação Enviada!</h3>
-            <p>Nossa equipe comercial entrará em contato em até 2 horas úteis.</p>
-            <button class="btn btn-primary" onclick="closeModal()">Entendido</button>
+            <h3>Request Sent!</h3>
+            <p>Our commercial team will contact you within 2 business hours.</p>
+            <button class="btn btn-primary" onclick="closeModal()">Understood</button>
         </div>
     </div>
+
 </body>
 </html>
