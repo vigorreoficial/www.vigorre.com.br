@@ -142,6 +142,7 @@
             display: flex;
             align-items: center;
             gap: 14px;
+            flex-shrink: 0;
         }
 
         .logo-img {
@@ -156,7 +157,7 @@
         .logo-text {
             display: flex;
             flex-direction: column;
-            line-height: 1.15;
+            line-height: 1.2;
         }
 
         .logo-name {
@@ -172,6 +173,7 @@
             font-weight: 500;
             letter-spacing: 0.04em;
             text-transform: uppercase;
+            white-space: nowrap;
         }
 
         .main-nav .nav-list {
@@ -186,6 +188,7 @@
             font-weight: 600;
             border-radius: 10px;
             transition: var(--transition);
+            white-space: nowrap;
         }
 
         .nav-list a:hover {
@@ -214,6 +217,62 @@
             display: flex;
             align-items: center;
             gap: 10px;
+            flex-shrink: 0;
+        }
+
+        /* BOTÕES DAS PLATAFORMAS */
+        .platform-links {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding-right: 12px;
+            margin-right: 4px;
+            border-right: 1px solid rgba(255, 255, 255, 0.15);
+        }
+
+        .btn-platform {
+            padding: 9px 16px;
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 10px;
+            color: var(--white);
+            font-size: 0.82rem;
+            font-weight: 700;
+            transition: var(--transition);
+            white-space: nowrap;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .btn-platform:hover {
+            background: rgba(255, 255, 255, 0.15);
+            border-color: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+        }
+
+        .btn-platform.one {
+            background: rgba(59, 130, 246, 0.18);
+            border-color: rgba(59, 130, 246, 0.4);
+        }
+
+        .btn-platform.one:hover {
+            background: rgba(59, 130, 246, 0.3);
+        }
+
+        .btn-platform.hire {
+            background: rgba(236, 72, 153, 0.18);
+            border-color: rgba(236, 72, 153, 0.4);
+        }
+
+        .btn-platform.hire:hover {
+            background: rgba(236, 72, 153, 0.3);
+        }
+
+        .btn-platform .tm {
+            font-size: 0.65em;
+            opacity: 0.7;
+            vertical-align: super;
         }
 
         .btn {
@@ -1235,21 +1294,20 @@
         }
 
         /* =========================================
-           SECTORS
+           SECTORS — CORRIGIDO
            ========================================= */
         .sectors-grid {
             display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            gap: 16px;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
         }
 
         .sector-card {
-            padding: 24px 20px;
+            padding: 30px 26px;
             background: rgba(255, 255, 255, 0.04);
             border: 1px solid rgba(255, 255, 255, 0.08);
-            border-radius: var(--radius-md);
+            border-radius: var(--radius-lg);
             transition: var(--transition);
-            text-align: left;
         }
 
         .sector-card:hover {
@@ -1259,21 +1317,23 @@
         }
 
         .sector-icon {
-            font-size: 1.8rem;
-            margin-bottom: 12px;
+            font-size: 2.2rem;
+            margin-bottom: 14px;
+            display: block;
         }
 
         .sector-card h4 {
-            font-size: 1rem;
+            font-size: 1.15rem;
             font-weight: 700;
             color: var(--white);
-            margin-bottom: 6px;
+            margin-bottom: 10px;
+            letter-spacing: -0.01em;
         }
 
         .sector-card p {
-            font-size: 0.82rem;
-            color: rgba(255, 255, 255, 0.6);
-            line-height: 1.5;
+            font-size: 0.92rem;
+            color: rgba(255, 255, 255, 0.7);
+            line-height: 1.65;
         }
 
         /* =========================================
@@ -1740,7 +1800,7 @@
         .footer-logo-text {
             display: flex;
             flex-direction: column;
-            line-height: 1.15;
+            line-height: 1.2;
         }
 
         .footer-logo-name {
@@ -1756,6 +1816,7 @@
             font-weight: 500;
             letter-spacing: 0.04em;
             text-transform: uppercase;
+            white-space: nowrap;
         }
 
         .footer-social {
@@ -1915,9 +1976,18 @@
         /* =========================================
            RESPONSIVE
            ========================================= */
+        @media (max-width: 1200px) {
+            .platform-links {
+                display: none;
+            }
+        }
+
         @media (max-width: 1040px) {
             .main-nav { display: none; }
             .mobile-toggle { display: flex; }
+            .platform-links {
+                display: flex;
+            }
             .hero-grid,
             .method-wrapper,
             .journey-wrapper,
@@ -1929,7 +1999,6 @@
             .solutions-grid { grid-template-columns: 1fr; }
             .beyond-grid { grid-template-columns: repeat(2, 1fr); }
             .platform-grid { grid-template-columns: repeat(3, 1fr); }
-            .sectors-grid { grid-template-columns: repeat(3, 1fr); }
             .why-grid { grid-template-columns: repeat(2, 1fr); }
             .about-pillars { grid-template-columns: 1fr; }
             .footer-grid { grid-template-columns: 1fr 1fr; gap: 36px; }
@@ -1940,19 +2009,36 @@
             .hero-stats { grid-template-columns: repeat(2, 1fr); }
             .beyond-grid,
             .platform-grid,
-            .sectors-grid,
             .why-grid { grid-template-columns: 1fr 1fr; }
             .form-row { grid-template-columns: 1fr; }
             .footer-grid { grid-template-columns: 1fr; }
             .header-actions .btn:not(.mobile-toggle) { display: none; }
             .header-actions .btn-primary { display: inline-flex; }
+            .platform-links {
+                display: flex;
+                flex-direction: column;
+                gap: 6px;
+                padding: 10px 0;
+                border-right: none;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+                margin-right: 0;
+                margin-bottom: 10px;
+                width: 100%;
+            }
+            .header-actions {
+                flex-direction: column;
+                align-items: stretch;
+                width: 100%;
+            }
+            .header-actions .btn-primary {
+                width: 100%;
+            }
         }
 
         @media (max-width: 420px) {
             .logo-text { display: none; }
             .beyond-grid,
             .platform-grid,
-            .sectors-grid,
             .why-grid { grid-template-columns: 1fr; }
         }
 
@@ -1973,7 +2059,7 @@
                 <img src="logo-vigorre.png" alt="Vigorre" class="logo-img">
                 <div class="logo-text">
                     <span class="logo-name">Vigorre</span>
-                    <span class="logo-tagline">Inteligência e Visão Estratégica</span>
+                    <span class="logo-tagline">Inteligência e Gestão Estratégica</span>
                 </div>
             </a>
             
@@ -1994,6 +2080,16 @@
             </nav>
 
             <div class="header-actions">
+                <!-- ACESSO ÀS PLATAFORMAS -->
+                <div class="platform-links">
+                    <a href="https://vigorre.vercel.app/" target="_blank" rel="noopener" class="btn-platform one" title="Acessar Vigorre One">
+                        ONE<span class="tm">™</span>
+                    </a>
+                    <a href="https://vigorre-hire.vercel.app/" target="_blank" rel="noopener" class="btn-platform hire" title="Acessar Vigorre Hire">
+                        HIRE<span class="tm">™</span>
+                    </a>
+                </div>
+                
                 <a href="#contato" class="btn btn-primary">Falar com Especialista</a>
                 <button class="mobile-toggle" aria-label="Abrir menu" aria-expanded="false">
                     <span></span><span></span><span></span>
@@ -2016,6 +2112,8 @@
                 </li>
                 <li><a href="#sobre">Quem Somos</a></li>
                 <li class="mobile-divider"></li>
+                <li><a href="https://vigorre.vercel.app/" target="_blank">Acessar ONE™</a></li>
+                <li><a href="https://vigorre-hire.vercel.app/" target="_blank">Acessar HIRE™</a></li>
                 <li><a href="#contato">Falar com Especialista</a></li>
             </ul>
         </div>
@@ -2480,7 +2578,7 @@
                 </div>
 
                 <div class="platform-cta reveal">
-                    <a href="#" class="btn btn-primary btn-lg">
+                    <a href="https://vigorre-hire.vercel.app/" target="_blank" rel="noopener" class="btn btn-primary btn-lg">
                         Conhecer o Vigorre HIRE™
                         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M7 17L17 7M7 7h10v10"/>
@@ -2501,54 +2599,54 @@
 
                 <div class="sectors-grid">
                     <div class="sector-card reveal">
-                        <div class="sector-icon">🌾</div>
+                        <span class="sector-icon">🌾</span>
                         <h4>Agro e Agronegócio</h4>
-                        <p>Operações de campo, gestão rural e logística agrícola.</p>
+                        <p>Operações de campo, gestão rural e logística agrícola com foco em segurança e produtividade.</p>
                     </div>
                     <div class="sector-card reveal">
-                        <div class="sector-icon">🏗️</div>
+                        <span class="sector-icon">🏗️</span>
                         <h4>Construção Civil</h4>
-                        <p>Engenharia, mestre de obras e equipes de execução.</p>
+                        <p>Engenharia, mestre de obras e equipes de execução com ênfase em compliance e NR's.</p>
                     </div>
                     <div class="sector-card reveal">
-                        <div class="sector-icon">🏭</div>
+                        <span class="sector-icon">🏭</span>
                         <h4>Indústria</h4>
-                        <p>Produção, qualidade, manutenção e operação.</p>
+                        <p>Produção, qualidade, manutenção e operação com foco em eficiência e segurança.</p>
                     </div>
                     <div class="sector-card reveal">
-                        <div class="sector-icon">💻</div>
+                        <span class="sector-icon">💻</span>
                         <h4>Tecnologia</h4>
-                        <p>Desenvolvimento, dados, produto e inovação.</p>
+                        <p>Desenvolvimento, dados, produto e inovação em ambientes ágeis e colaborativos.</p>
                     </div>
                     <div class="sector-card reveal">
-                        <div class="sector-icon">🏥</div>
+                        <span class="sector-icon">🏥</span>
                         <h4>Saúde</h4>
-                        <p>Hospitais, clínicas, farmácias e laboratórios.</p>
+                        <p>Hospitais, clínicas, farmácias e laboratórios com foco em humanização e excelência.</p>
                     </div>
                     <div class="sector-card reveal">
-                        <div class="sector-icon">🛒</div>
+                        <span class="sector-icon">🛒</span>
                         <h4>Varejo</h4>
-                        <p>Lojas, e-commerce, atendimento e operações.</p>
+                        <p>Lojas, e-commerce, atendimento e operações com orientação a resultados.</p>
                     </div>
                     <div class="sector-card reveal">
-                        <div class="sector-icon">🤝</div>
+                        <span class="sector-icon">🤝</span>
                         <h4>Serviços</h4>
-                        <p>Consultorias, BPO, atendimento e suporte.</p>
+                        <p>Consultorias, BPO, atendimento e suporte com foco em resolução de problemas.</p>
                     </div>
                     <div class="sector-card reveal">
-                        <div class="sector-icon">🚚</div>
+                        <span class="sector-icon">🚚</span>
                         <h4>Logística</h4>
-                        <p>Transporte, distribuição e supply chain.</p>
+                        <p>Transporte, distribuição e supply chain com eficiência operacional e pontualidade.</p>
                     </div>
                     <div class="sector-card reveal">
-                        <div class="sector-icon">🎓</div>
+                        <span class="sector-icon">🎓</span>
                         <h4>Educação</h4>
-                        <p>Escolas, universidades e edtechs.</p>
+                        <p>Escolas, universidades e edtechs com paixão por ensinar e desenvolver pessoas.</p>
                     </div>
                     <div class="sector-card reveal">
-                        <div class="sector-icon">🌱</div>
+                        <span class="sector-icon">🌱</span>
                         <h4>Cooperativas</h4>
-                        <p>Cooperativismo rural, crédito e trabalho.</p>
+                        <p>Cooperativismo rural, crédito e trabalho com cultura colaborativa e sustentável.</p>
                     </div>
                 </div>
             </div>
@@ -2897,7 +2995,7 @@
                         <img src="logo-vigorre.png" alt="Vigorre" class="footer-logo">
                         <div class="footer-logo-text">
                             <span class="footer-logo-name">Vigorre</span>
-                            <span class="footer-logo-tagline">Inteligência e Visão Estratégica</span>
+                            <span class="footer-logo-tagline">Inteligência e Gestão Estratégica</span>
                         </div>
                     </div>
                     <p>Ecossistema completo de Inteligência Humana. People Analytics, Recrutamento e Assessment Comportamental para empresas que querem ir além.</p>
@@ -2920,8 +3018,8 @@
                     <h4>Plataforma</h4>
                     <ul>
                         <li><a href="#solucoes">Soluções</a></li>
-                        <li><a href="#one">Vigorre ONE™</a></li>
-                        <li><a href="#hire">Vigorre HIRE™</a></li>
+                        <li><a href="https://vigorre.vercel.app/" target="_blank">Vigorre ONE™</a></li>
+                        <li><a href="https://vigorre-hire.vercel.app/" target="_blank">Vigorre HIRE™</a></li>
                         <li><a href="#setores">Setores</a></li>
                     </ul>
                 </div>
