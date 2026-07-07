@@ -481,34 +481,52 @@
             margin-bottom: 50px;
         }
 
-        .hero-stats {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 20px;
-            padding-top: 36px;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        /* =========================================
+           FRASE DE IMPACTO — NEUROLINGUÍSTICA
+           ========================================= */
+        .hero-closing {
+            margin-top: 12px;
+            padding: 20px 28px;
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: var(--radius-md);
+            backdrop-filter: blur(10px);
+            max-width: 620px;
         }
 
-        .hero-stat {
-            text-align: left;
+        .hero-closing p {
+            font-size: 1.1rem;
+            font-weight: 600;
+            line-height: 1.6;
+            color: rgba(255, 255, 255, 0.92);
+            letter-spacing: -0.01em;
         }
 
-        .hero-stat-value {
-            font-size: clamp(1.8rem, 3vw, 2.4rem);
-            font-weight: 800;
+        .hero-closing .highlight-gold {
+            color: #F59E0B;
+            font-weight: 700;
+        }
+
+        .hero-closing .highlight-pink {
+            color: #EC4899;
+            font-weight: 700;
+        }
+
+        .hero-closing .btn-inline {
+            display: inline-block;
+            padding: 4px 16px;
             background: var(--gradient-primary);
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-            letter-spacing: -0.03em;
-            line-height: 1;
-            margin-bottom: 6px;
+            color: var(--white);
+            border-radius: 100px;
+            font-weight: 700;
+            font-size: 0.9rem;
+            transition: var(--transition);
+            cursor: pointer;
         }
 
-        .hero-stat-label {
-            font-size: 0.82rem;
-            color: rgba(255, 255, 255, 0.6);
-            font-weight: 500;
+        .hero-closing .btn-inline:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 30px rgba(99, 102, 241, 0.4);
         }
 
         /* Dashboard Mockup */
@@ -640,25 +658,25 @@
         }
 
         .section-dark .section-tag,
-.section-setores .section-tag {
-    background: rgba(255, 255, 255, 0.08);
-    color: var(--white);
-    border-color: rgba(255, 255, 255, 0.15);
-}
+        .section-setores .section-tag {
+            background: rgba(255, 255, 255, 0.08);
+            color: var(--white);
+            border-color: rgba(255, 255, 255, 0.15);
+        }
 
         .section-header h2 {
-    font-size: clamp(2rem, 4vw, 3rem);
-    font-weight: 800;
-    line-height: 1.1;
-    letter-spacing: -0.03em;
-    margin-bottom: 16px;
-    color: var(--navy);
-}
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 800;
+            line-height: 1.1;
+            letter-spacing: -0.03em;
+            margin-bottom: 16px;
+            color: var(--navy);
+        }
 
-.section-dark .section-header h2,
-.section-setores .section-header h2 {
-    color: var(--white);
-}
+        .section-dark .section-header h2,
+        .section-setores .section-header h2 {
+            color: var(--white);
+        }
 
         .section-header h2 .gradient-text {
             background: var(--gradient-primary);
@@ -668,15 +686,15 @@
         }
 
         .section-header p {
-    font-size: 1.08rem;
-    color: var(--gray-600);
-    line-height: 1.7;
-}
+            font-size: 1.08rem;
+            color: var(--gray-600);
+            line-height: 1.7;
+        }
 
-.section-dark .section-header p,
-.section-setores .section-header p {
-    color: rgba(255, 255, 255, 0.7);
-}
+        .section-dark .section-header p,
+        .section-setores .section-header p {
+            color: rgba(255, 255, 255, 0.7);
+        }
 
         /* =========================================
            ECOSYSTEM
@@ -1297,7 +1315,7 @@
         }
 
         /* =========================================
-           SECTORS — CORRIGIDO
+           SECTORS
            ========================================= */
         .sectors-grid {
             display: grid;
@@ -2009,7 +2027,8 @@
 
         @media (max-width: 640px) {
             .container { width: min(100% - 32px, var(--container)); }
-            .hero-stats { grid-template-columns: repeat(2, 1fr); }
+            .hero-closing p { font-size: 1rem; }
+            .hero-closing { padding: 16px 20px; }
             .beyond-grid,
             .platform-grid,
             .why-grid { grid-template-columns: 1fr 1fr; }
@@ -2127,7 +2146,7 @@
         <section id="home" class="hero-section">
             <div class="container hero-grid">
                 <div class="hero-content">
-                    <span class="hero-badge">HR Tech • Inteligência Humana</span>
+                    <span class="hero-badge">Inteligência Humana</span>
                     <h1>Transformamos <span class="highlight">potencial</span> em resultados.</h1>
                     <p class="hero-lead">
                         A Vigorre une <strong>Inteligência Artificial</strong>, <strong>People Analytics</strong> 
@@ -2143,25 +2162,35 @@
                         </a>
                         <a href="#solucoes" class="btn btn-outline btn-lg">Conhecer Soluções</a>
                     </div>
-                    <div class="hero-stats">
-                        <div class="hero-stat">
-                            <div class="hero-stat-value" data-count="500">0</div>
-                            <div class="hero-stat-label">Empresas atendidas</div>
-                        </div>
-                        <div class="hero-stat">
-                            <div class="hero-stat-value" data-count="50000">0</div>
-                            <div class="hero-stat-label">Avaliações realizadas</div>
-                        </div>
-                        <div class="hero-stat">
-                            <div class="hero-stat-value" data-count="120000">0</div>
-                            <div class="hero-stat-label">Perfis analisados</div>
-                        </div>
-                        <div class="hero-stat">
-                            <div class="hero-stat-value" data-count="94" data-suffix="%">0</div>
-                            <div class="hero-stat-label">Compatibilidade</div>
-                        </div>
+
+                    <!-- ========================================= -->
+                    <!-- FRASE DE IMPACTO COM NEUROLINGUÍSTICA      -->
+                    <!-- ========================================= -->
+                    <div class="hero-closing">
+                        <p>
+                            Imagine reduzir o <span class="highlight-gold">turnover</span> em até 40% e 
+                            aumentar a <span class="highlight-pink">produtividade</span> das suas equipes 
+                            com decisões baseadas em dados reais, não em achismos.<br><br>
+                            <strong>Você já imaginou como seria contratar a pessoa certa, 
+                            na hora certa, todas as vezes?</strong><br><br>
+                            <span style="font-size: 0.95rem; color: rgba(255,255,255,0.7);">
+                                Pare de perder tempo e dinheiro com contratações equivocadas. 
+                                A Vigorre transforma a gestão de pessoas em uma 
+                                <span style="color: #FFFFFF; font-weight: 700;">vantagem competitiva real</span> 
+                                para sua empresa.
+                            </span><br><br>
+                            <span style="display: inline-block; background: rgba(255,255,255,0.06); padding: 10px 18px; border-radius: 12px; border-left: 3px solid #F59E0B;">
+                                💡 <strong>Seu próximo colaborador de alta performance está esperando 
+                                para ser descoberto. A pergunta é: 
+                                <span style="color: #F59E0B;">você está pronto para encontrá-lo?</span></strong>
+                            </span><br><br>
+                            <a href="#contato" class="btn-inline">
+                                Sim, quero transformar minha gestão de pessoas →
+                            </a>
+                        </p>
                     </div>
                 </div>
+
                 <div class="hero-visual">
                     <div class="dashboard-mockup">
                         <div class="mockup-header">
@@ -3097,31 +3126,6 @@
             });
         }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
         revealElements.forEach(el => revealObserver.observe(el));
-
-        // Counter animation
-        const counters = document.querySelectorAll('[data-count]');
-        const counterObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    const el = entry.target;
-                    const target = parseInt(el.dataset.count);
-                    const suffix = el.dataset.suffix || '+';
-                    const duration = 2000;
-                    const start = performance.now();
-                    
-                    const animate = (now) => {
-                        const progress = Math.min((now - start) / duration, 1);
-                        const eased = 1 - Math.pow(1 - progress, 3);
-                        const current = Math.floor(eased * target);
-                        el.textContent = current.toLocaleString('pt-BR') + (progress === 1 ? suffix : '');
-                        if (progress < 1) requestAnimationFrame(animate);
-                    };
-                    requestAnimationFrame(animate);
-                    counterObserver.unobserve(el);
-                }
-            });
-        }, { threshold: 0.5 });
-        counters.forEach(c => counterObserver.observe(c));
 
         // Form
         const form = document.getElementById('contactForm');
