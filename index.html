@@ -201,19 +201,27 @@
         <section id="contato" class="section">
             <div class="container">
                 <div class="contact-grid">
-                    <div class="contact-info"><span class="section-tag">Contato</span><h2>Vamos transformar <span class="gradient-text">pessoas em resultados?</span></h2><p>Em até 2 horas úteis, nossa equipe entra em contato.</p>
+                    <div class="contact-info">
+                        <span class="section-tag">Contato</span>
+                        <h2>Vamos transformar <span class="gradient-text">pessoas em resultados?</span></h2>
+                        <p>Fale com um especialista Vigorre. Em até 2 horas úteis, nossa equipe entra em contato para entender sua operação e apresentar a solução ideal.</p>
+                        <div class="contact-nlp">
+                            <p>💡 <strong>Empresas que usam dados para contratar</strong> reduzem turnover em até 40% e aumentam a produtividade. Sua próxima contratação de alta performance está a uma mensagem de distância.</p>
+                        </div>
                         <div class="contact-methods">
                             <a href="mailto:contato@vigorre.com.br" class="contact-item"><span class="contact-icon">✉️</span><div><strong>E-mail</strong><span>contato@vigorre.com.br</span></div></a>
-                            <a href="https://wa.me/5534991850735" class="contact-item"><span class="contact-icon">📱</span><div><strong>WhatsApp</strong><span>+55 34 99185-0735</span></div></a>
+                            <a href="https://wa.me/5534991850735" target="_blank" class="contact-item"><span class="contact-icon">📱</span><div><strong>WhatsApp</strong><span>+55 34 99185-0735</span></div></a>
+                            <a href="https://instagram.com/vigorre.consultoria" target="_blank" class="contact-item"><span class="contact-icon">📷</span><div><strong>Instagram</strong><span>@vigorre.consultoria</span></div></a>
+                            <a href="https://linkedin.com/company/vigorreoficial" target="_blank" class="contact-item"><span class="contact-icon">💼</span><div><strong>LinkedIn</strong><span>Vigorre Oficial</span></div></a>
                         </div>
                     </div>
                     <form class="contact-form" id="contactForm" novalidate>
-                        <div class="form-row"><div class="form-group"><label for="name">Nome *</label><input type="text" id="name" required placeholder="Seu nome"></div><div class="form-group"><label for="company">Empresa *</label><input type="text" id="company" required placeholder="Empresa"></div></div>
-                        <div class="form-row"><div class="form-group"><label for="email">E-mail *</label><input type="email" id="email" required placeholder="seu@empresa.com.br"></div><div class="form-group"><label for="phone">WhatsApp</label><input type="tel" id="phone" placeholder="(00) 00000-0000"></div></div>
-                        <div class="form-group"><label for="interest">Interesse</label><select id="interest"><option value="">Selecione...</option><option value="diagnostico">Diagnóstico Gratuito</option><option value="demo">Demonstração</option><option value="one">Vigorre ONE™</option><option value="hire">Vigorre HIRE™</option><option value="tech">Vigorre TECH™</option></select></div>
-                        <div class="form-group"><label for="message">Mensagem</label><textarea id="message" rows="3" placeholder="Como podemos ajudar?"></textarea></div>
-                        <button type="submit" class="btn btn-primary btn-block">Enviar</button>
-                        <p class="form-notice">LGPD • Política de Privacidade</p>
+                        <div class="form-row"><div class="form-group"><label for="name">Nome *</label><input type="text" id="name" name="name" required placeholder="Seu nome completo"></div><div class="form-group"><label for="company">Empresa *</label><input type="text" id="company" name="company" required placeholder="Nome da sua empresa"></div></div>
+                        <div class="form-row"><div class="form-group"><label for="email">E-mail corporativo *</label><input type="email" id="email" name="email" required placeholder="seu@empresa.com.br"></div><div class="form-group"><label for="phone">WhatsApp / Telefone</label><input type="tel" id="phone" name="phone" placeholder="(00) 00000-0000"></div></div>
+                        <div class="form-group"><label for="interest">Interesse principal</label><select id="interest" name="interest"><option value="">Selecione...</option><option value="diagnostico">Solicitar Diagnóstico Gratuito</option><option value="demo">Solicitar Demonstração</option><option value="one">Vigorre ONE™</option><option value="hire">Vigorre HIRE™</option><option value="tech">Vigorre TECH™</option><option value="pricing">Proposta Comercial</option><option value="other">Outro</option></select></div>
+                        <div class="form-group"><label for="message">Mensagem</label><textarea id="message" name="message" rows="4" placeholder="Conte-nos sobre sua empresa e como podemos ajudar"></textarea></div>
+                        <button type="submit" class="btn btn-primary btn-block">Enviar Solicitação</button>
+                        <p class="form-notice">Ao enviar, você concorda com nossa Política de Privacidade e LGPD.</p>
                     </form>
                 </div>
             </div>
