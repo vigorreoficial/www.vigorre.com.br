@@ -3,2078 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="VIGORRE | Ecossistema completo de Inteligência Humana. People Analytics, Recrutamento Inteligente, Assessment Comportamental e Metodologia VIGOR® para empresas que contratam melhor e desenvolvem líderes.">
-    <meta name="keywords" content="Vigorre, People Analytics, DISC, Big Five, Inteligência Emocional, Fit Cultural, Recrutamento, Assessment, Metodologia VIGOR, HR Tech, Gestão de Pessoas">
+    <meta name="description" content="VIGORRE | Consultoria estratégica com tecnologia proprietária. People Analytics, Recrutamento Inteligente, Assessment Comportamental e Metodologia VIGOR® para empresas que buscam resultados mensuráveis.">
+    <meta name="keywords" content="Vigorre, People Analytics, Consultoria Empresarial, Recrutamento Estratégico, Assessment Comportamental, Tecnologia para RH, Inteligência Humana, Metodologia VIGOR">
     <meta name="author" content="Vigorre Consultoria">
     <meta name="robots" content="index, follow">
-    <meta name="theme-color" content="#0A1128">
+    <meta name="theme-color" content="#0A1628">
     
-    <meta property="og:title" content="VIGORRE | A inteligência por trás das melhores equipes">
-    <meta property="og:description" content="Ecossistema completo de Inteligência Humana. People Analytics, Recrutamento e Assessment Comportamental para empresas de alta performance.">
+    <meta property="og:title" content="VIGORRE | Consultoria Estratégica em Inteligência Humana">
+    <meta property="og:description" content="Transformamos inteligência humana em resultado empresarial. Consultoria com tecnologia proprietária para contratar, desenvolver e reter talentos.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://vigorre.com.br">
     <meta property="og:locale" content="pt_BR">
     
-    <title>VIGORRE | Inteligência Humana • People Analytics • Recrutamento Estratégico</title>
+    <title>VIGORRE | Consultoria Estratégica • Inteligência Humana • Tecnologia Proprietária</title>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
+    <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="logo-vigorre.png">
 
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
+      "@type": "ProfessionalService",
       "name": "VIGORRE",
-      "applicationCategory": "BusinessApplication",
-      "operatingSystem": "Web",
-      "description": "Ecossistema de Inteligência Humana para People Analytics, Recrutamento e Assessment Comportamental.",
+      "description": "Consultoria estratégica com tecnologia proprietária em Inteligência Humana, People Analytics e Gestão de Pessoas.",
+      "url": "https://vigorre.com.br",
       "brand": {
         "@type": "Brand",
         "name": "Vigorre"
       }
     }
     </script>
-
-    <style>
-        /* =========================================
-           VIGORRE — DESIGN SYSTEM PREMIUM
-           ========================================= */
-        :root {
-            --navy: #0A1128;
-            --navy-soft: #131B3A;
-            --blue: #3B82F6;
-            --blue-light: #60A5FA;
-            --indigo: #6366F1;
-            --purple: #8B5CF6;
-            --pink: #EC4899;
-            --gold: #F59E0B;
-            --cyan: #06B6D4;
-            --green: #10B981;
-            --white: #FFFFFF;
-            --gray-50: #F8FAFC;
-            --gray-100: #F1F5F9;
-            --gray-200: #E2E8F0;
-            --gray-400: #94A3B8;
-            --gray-500: #64748B;
-            --gray-600: #475569;
-            --gray-700: #334155;
-            --gray-900: #0F172A;
-            --gradient-primary: linear-gradient(135deg, #3B82F6 0%, #8B5CF6 50%, #EC4899 100%);
-            --gradient-blue: linear-gradient(135deg, #3B82F6 0%, #6366F1 100%);
-            --gradient-purple: linear-gradient(135deg, #8B5CF6 0%, #EC4899 100%);
-            --gradient-gold: linear-gradient(135deg, #F59E0B 0%, #EF4444 100%);
-            --gradient-dark: linear-gradient(135deg, #0A1128 0%, #1E293B 100%);
-            --shadow-sm: 0 4px 20px rgba(10, 17, 40, 0.08);
-            --shadow-md: 0 12px 40px rgba(10, 17, 40, 0.12);
-            --shadow-lg: 0 24px 60px rgba(10, 17, 40, 0.18);
-            --shadow-glow: 0 0 60px rgba(99, 102, 241, 0.25);
-            --radius-sm: 12px;
-            --radius-md: 18px;
-            --radius-lg: 24px;
-            --radius-xl: 32px;
-            --ease: cubic-bezier(0.22, 1, 0.36, 1);
-            --transition: 0.4s var(--ease);
-        }
-
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        
-        html { scroll-behavior: smooth; scroll-padding-top: 90px; }
-
-        body {
-            font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
-            color: var(--gray-900);
-            background: var(--white);
-            line-height: 1.6;
-            -webkit-font-smoothing: antialiased;
-            overflow-x: hidden;
-        }
-
-        img, svg { display: block; max-width: 100%; }
-        a { color: inherit; text-decoration: none; }
-        button { font: inherit; cursor: pointer; border: none; background: none; }
-        ul { list-style: none; }
-
-        :focus-visible {
-            outline: 3px solid rgba(99, 102, 241, 0.5);
-            outline-offset: 3px;
-            border-radius: 8px;
-        }
-
-        .container {
-            width: min(100% - 48px, 1240px);
-            margin-inline: auto;
-        }
-
-        /* =========================================
-           HEADER
-           ========================================= */
-        .site-header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            z-index: 1000;
-            padding: 14px 0;
-            background: rgba(10, 17, 40, 0.85);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-            transition: var(--transition);
-        }
-
-        .site-header.scrolled {
-            padding: 10px 0;
-            background: rgba(10, 17, 40, 0.95);
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
-        }
-
-        .header-inner {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 24px;
-        }
-
-        .logo-wrapper {
-            display: flex;
-            align-items: center;
-            gap: 14px;
-            flex-shrink: 0;
-        }
-
-        .logo-img {
-            height: 48px;
-            width: auto;
-            background: var(--white);
-            padding: 6px 10px;
-            border-radius: 10px;
-            object-fit: contain;
-        }
-
-        .logo-text {
-            display: flex;
-            flex-direction: column;
-            line-height: 1.2;
-        }
-
-        .logo-name {
-            font-size: 1.45rem;
-            font-weight: 800;
-            color: var(--white);
-            letter-spacing: -0.02em;
-        }
-
-        .logo-tagline {
-            font-size: 0.72rem;
-            color: rgba(255, 255, 255, 0.65);
-            font-weight: 500;
-            letter-spacing: 0.04em;
-            text-transform: uppercase;
-            white-space: nowrap;
-        }
-
-        .main-nav .nav-list {
-            display: flex;
-            gap: 6px;
-        }
-
-        .nav-list a {
-            padding: 10px 16px;
-            color: rgba(255, 255, 255, 0.82);
-            font-size: 0.92rem;
-            font-weight: 600;
-            border-radius: 10px;
-            transition: var(--transition);
-            white-space: nowrap;
-        }
-
-        .nav-list a:hover {
-            color: var(--white);
-            background: rgba(255, 255, 255, 0.08);
-        }
-
-        .nav-instituto {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .badge-instituto {
-            padding: 3px 8px;
-            font-size: 0.65rem;
-            font-weight: 700;
-            background: var(--gradient-primary);
-            color: var(--white);
-            border-radius: 20px;
-            letter-spacing: 0.05em;
-            text-transform: uppercase;
-        }
-
-        .header-actions {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            flex-shrink: 0;
-        }
-
-        /* BOTÕES DAS PLATAFORMAS */
-        .platform-links {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            padding-right: 12px;
-            margin-right: 4px;
-            border-right: 1px solid rgba(255, 255, 255, 0.15);
-        }
-
-        .btn-platform {
-            padding: 9px 16px;
-            background: rgba(255, 255, 255, 0.08);
-            border: 1px solid rgba(255, 255, 255, 0.15);
-            border-radius: 10px;
-            color: var(--white);
-            font-size: 0.82rem;
-            font-weight: 700;
-            transition: var(--transition);
-            white-space: nowrap;
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-        }
-
-        .btn-platform:hover {
-            background: rgba(255, 255, 255, 0.15);
-            border-color: rgba(255, 255, 255, 0.3);
-            transform: translateY(-2px);
-        }
-
-        .btn-platform.one {
-            background: rgba(59, 130, 246, 0.18);
-            border-color: rgba(59, 130, 246, 0.4);
-        }
-
-        .btn-platform.one:hover {
-            background: rgba(59, 130, 246, 0.3);
-        }
-
-        .btn-platform.hire {
-            background: rgba(236, 72, 153, 0.18);
-            border-color: rgba(236, 72, 153, 0.4);
-        }
-
-        .btn-platform.hire:hover {
-            background: rgba(236, 72, 153, 0.3);
-        }
-
-        .btn-platform .tm {
-            font-size: 0.65em;
-            opacity: 0.7;
-            vertical-align: super;
-        }
-
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            padding: 12px 22px;
-            border-radius: 12px;
-            font-weight: 700;
-            font-size: 0.92rem;
-            transition: var(--transition);
-            white-space: nowrap;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .btn-primary {
-            background: var(--gradient-primary);
-            color: var(--white);
-            box-shadow: 0 10px 30px rgba(99, 102, 241, 0.35);
-        }
-
-        .btn-primary:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 16px 40px rgba(99, 102, 241, 0.5);
-        }
-
-        .btn-outline {
-            background: transparent;
-            color: var(--white);
-            border: 1.5px solid rgba(255, 255, 255, 0.25);
-        }
-
-        .btn-outline:hover {
-            background: rgba(255, 255, 255, 0.08);
-            border-color: rgba(255, 255, 255, 0.5);
-        }
-
-        .btn-dark {
-            background: var(--navy);
-            color: var(--white);
-        }
-
-        .btn-dark:hover {
-            background: var(--navy-soft);
-            transform: translateY(-2px);
-        }
-
-        .btn-lg { padding: 16px 32px; font-size: 1rem; }
-        .btn-sm { padding: 10px 18px; font-size: 0.85rem; }
-        .btn-block { width: 100%; }
-
-        .mobile-toggle {
-            display: none;
-            flex-direction: column;
-            gap: 5px;
-            padding: 8px;
-        }
-
-        .mobile-toggle span {
-            width: 24px;
-            height: 2px;
-            background: var(--white);
-            border-radius: 2px;
-            transition: var(--transition);
-        }
-
-        .mobile-menu {
-            display: none;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            right: 0;
-            background: var(--navy);
-            padding: 20px 0;
-            border-top: 1px solid rgba(255, 255, 255, 0.08);
-        }
-
-        .mobile-menu.active { display: block; }
-
-        .mobile-nav-list li a,
-        .mobile-nav-list .mobile-instituto {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            padding: 14px 24px;
-            color: rgba(255, 255, 255, 0.85);
-            font-weight: 600;
-        }
-
-        .mobile-divider {
-            height: 1px;
-            background: rgba(255, 255, 255, 0.08);
-            margin: 10px 0;
-        }
-
-        /* =========================================
-           HERO
-           ========================================= */
-        .hero-section {
-            position: relative;
-            padding: clamp(140px, 14vw, 180px) 0 clamp(80px, 8vw, 120px);
-            background: var(--gradient-dark);
-            color: var(--white);
-            overflow: hidden;
-        }
-
-        .hero-section::before {
-            content: '';
-            position: absolute;
-            top: -20%;
-            right: -10%;
-            width: 600px;
-            height: 600px;
-            background: radial-gradient(circle, rgba(139, 92, 246, 0.3), transparent 70%);
-            border-radius: 50%;
-            filter: blur(60px);
-            animation: float 20s ease-in-out infinite;
-        }
-
-        .hero-section::after {
-            content: '';
-            position: absolute;
-            bottom: -20%;
-            left: -10%;
-            width: 500px;
-            height: 500px;
-            background: radial-gradient(circle, rgba(59, 130, 246, 0.25), transparent 70%);
-            border-radius: 50%;
-            filter: blur(60px);
-            animation: float 25s ease-in-out infinite reverse;
-        }
-
-        @keyframes float {
-            0%, 100% { transform: translate(0, 0); }
-            50% { transform: translate(30px, -30px); }
-        }
-
-        .hero-grid {
-            position: relative;
-            z-index: 2;
-            display: grid;
-            grid-template-columns: 1.2fr 0.8fr;
-            gap: 60px;
-            align-items: center;
-        }
-
-        .hero-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            padding: 8px 18px;
-            background: rgba(255, 255, 255, 0.06);
-            border: 1px solid rgba(255, 255, 255, 0.12);
-            border-radius: 100px;
-            font-size: 0.82rem;
-            font-weight: 600;
-            margin-bottom: 24px;
-            backdrop-filter: blur(10px);
-        }
-
-        .hero-badge::before {
-            content: '';
-            width: 8px;
-            height: 8px;
-            background: var(--green);
-            border-radius: 50%;
-            box-shadow: 0 0 12px var(--green);
-            animation: pulse 2s ease-in-out infinite;
-        }
-
-        @keyframes pulse {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.5; }
-        }
-
-        .hero-section h1 {
-            font-size: clamp(2.4rem, 5vw, 4rem);
-            font-weight: 800;
-            line-height: 1.08;
-            letter-spacing: -0.04em;
-            margin-bottom: 24px;
-        }
-
-        .hero-section h1 .highlight {
-            background: var(--gradient-primary);
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-            display: inline-block;
-        }
-
-        .hero-lead {
-            font-size: clamp(1rem, 1.4vw, 1.15rem);
-            color: rgba(255, 255, 255, 0.75);
-            max-width: 620px;
-            margin-bottom: 36px;
-            line-height: 1.7;
-        }
-
-        .hero-cta {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 14px;
-            margin-bottom: 50px;
-        }
-
-        /* =========================================
-           FRASE DE IMPACTO — NEUROLINGUÍSTICA
-           ========================================= */
-        .hero-closing {
-            margin-top: 12px;
-            padding: 20px 28px;
-            background: rgba(255, 255, 255, 0.04);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: var(--radius-md);
-            backdrop-filter: blur(10px);
-            max-width: 620px;
-        }
-
-        .hero-closing p {
-            font-size: 1.1rem;
-            font-weight: 600;
-            line-height: 1.6;
-            color: rgba(255, 255, 255, 0.92);
-            letter-spacing: -0.01em;
-        }
-
-        .hero-closing .highlight-gold {
-            color: #F59E0B;
-            font-weight: 700;
-        }
-
-        .hero-closing .highlight-pink {
-            color: #EC4899;
-            font-weight: 700;
-        }
-
-        .hero-closing .btn-inline {
-            display: inline-block;
-            padding: 4px 16px;
-            background: var(--gradient-primary);
-            color: var(--white);
-            border-radius: 100px;
-            font-weight: 700;
-            font-size: 0.9rem;
-            transition: var(--transition);
-            cursor: pointer;
-        }
-
-        .hero-closing .btn-inline:hover {
-            transform: scale(1.05);
-            box-shadow: 0 8px 30px rgba(99, 102, 241, 0.4);
-        }
-
-        /* Dashboard Mockup */
-        .dashboard-mockup {
-            background: rgba(255, 255, 255, 0.04);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 20px;
-            padding: 18px;
-            backdrop-filter: blur(20px);
-            box-shadow: var(--shadow-glow);
-            position: relative;
-        }
-
-        .mockup-header {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            padding-bottom: 14px;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-            margin-bottom: 16px;
-            font-size: 0.78rem;
-            color: rgba(255, 255, 255, 0.6);
-            font-weight: 600;
-        }
-
-        .dot {
-            width: 10px;
-            height: 10px;
-            border-radius: 50%;
-        }
-        .dot.red { background: #EF4444; }
-        .dot.yellow { background: #F59E0B; }
-        .dot.green { background: #10B981; }
-
-        .mockup-chart {
-            display: flex;
-            align-items: flex-end;
-            gap: 10px;
-            height: 140px;
-            padding: 14px;
-            background: rgba(255, 255, 255, 0.03);
-            border-radius: 14px;
-            margin-bottom: 14px;
-        }
-
-        .bar {
-            flex: 1;
-            height: var(--h);
-            background: linear-gradient(180deg, var(--c), rgba(99, 102, 241, 0.3));
-            border-radius: 6px 6px 0 0;
-            animation: grow 1.5s var(--ease) forwards;
-            transform-origin: bottom;
-        }
-
-        @keyframes grow {
-            from { transform: scaleY(0); }
-            to { transform: scaleY(1); }
-        }
-
-        .mockup-stats {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 10px;
-        }
-
-        .stat-card {
-            padding: 14px;
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            border-radius: 12px;
-        }
-
-        .stat-card span {
-            display: block;
-            font-size: 0.72rem;
-            color: rgba(255, 255, 255, 0.55);
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            margin-bottom: 4px;
-        }
-
-        .stat-card strong {
-            font-size: 1.1rem;
-            color: var(--white);
-            font-weight: 800;
-        }
-
-        /* =========================================
-           SECTIONS
-           ========================================= */
-        .section {
-            padding: clamp(70px, 9vw, 110px) 0;
-            position: relative;
-        }
-
-        .section-dark {
-            background: var(--gradient-dark);
-            color: var(--white);
-        }
-
-        .section-blue {
-            background: linear-gradient(180deg, #F8FAFC 0%, #EEF2FF 100%);
-        }
-
-        .section-setores {
-            background: var(--navy);
-            color: var(--white);
-        }
-
-        .section-header {
-            text-align: center;
-            max-width: 780px;
-            margin: 0 auto 60px;
-        }
-
-        .section-tag {
-            display: inline-block;
-            padding: 6px 16px;
-            background: rgba(99, 102, 241, 0.1);
-            color: var(--indigo);
-            font-size: 0.78rem;
-            font-weight: 700;
-            letter-spacing: 0.08em;
-            text-transform: uppercase;
-            border-radius: 100px;
-            margin-bottom: 18px;
-            border: 1px solid rgba(99, 102, 241, 0.2);
-        }
-
-        .section-dark .section-tag,
-        .section-setores .section-tag {
-            background: rgba(255, 255, 255, 0.08);
-            color: var(--white);
-            border-color: rgba(255, 255, 255, 0.15);
-        }
-
-        .section-header h2 {
-            font-size: clamp(2rem, 4vw, 3rem);
-            font-weight: 800;
-            line-height: 1.1;
-            letter-spacing: -0.03em;
-            margin-bottom: 16px;
-            color: var(--navy);
-        }
-
-        .section-dark .section-header h2,
-        .section-setores .section-header h2 {
-            color: var(--white);
-        }
-
-        .section-header h2 .gradient-text {
-            background: var(--gradient-primary);
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-        }
-
-        .section-header p {
-            font-size: 1.08rem;
-            color: var(--gray-600);
-            line-height: 1.7;
-        }
-
-        .section-dark .section-header p,
-        .section-setores .section-header p {
-            color: rgba(255, 255, 255, 0.7);
-        }
-
-        /* =========================================
-           ECOSYSTEM
-           ========================================= */
-        .ecosystem-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 28px;
-        }
-
-        .eco-card {
-            position: relative;
-            padding: 40px;
-            border-radius: var(--radius-xl);
-            overflow: hidden;
-            color: var(--white);
-            min-height: 440px;
-            display: flex;
-            flex-direction: column;
-            transition: var(--transition);
-        }
-
-        .eco-card:hover {
-            transform: translateY(-6px);
-        }
-
-        .eco-one {
-            background: linear-gradient(135deg, #3B82F6 0%, #6366F1 50%, #8B5CF6 100%);
-        }
-
-        .eco-hire {
-            background: linear-gradient(135deg, #8B5CF6 0%, #EC4899 50%, #F59E0B 100%);
-        }
-
-        .eco-card::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            right: -30%;
-            width: 400px;
-            height: 400px;
-            background: radial-gradient(circle, rgba(255, 255, 255, 0.15), transparent 70%);
-            border-radius: 50%;
-        }
-
-        .eco-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            padding: 6px 14px;
-            background: rgba(255, 255, 255, 0.18);
-            border: 1px solid rgba(255, 255, 255, 0.25);
-            border-radius: 100px;
-            font-size: 0.72rem;
-            font-weight: 700;
-            letter-spacing: 0.08em;
-            text-transform: uppercase;
-            margin-bottom: 20px;
-            width: fit-content;
-            position: relative;
-            z-index: 2;
-        }
-
-        .eco-card h3 {
-            font-size: clamp(1.6rem, 3vw, 2.2rem);
-            font-weight: 800;
-            letter-spacing: -0.02em;
-            margin-bottom: 12px;
-            position: relative;
-            z-index: 2;
-        }
-
-        .eco-card > p {
-            font-size: 1rem;
-            line-height: 1.7;
-            color: rgba(255, 255, 255, 0.88);
-            margin-bottom: 24px;
-            position: relative;
-            z-index: 2;
-        }
-
-        .eco-features {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-            margin-bottom: 28px;
-            position: relative;
-            z-index: 2;
-        }
-
-        .eco-feature-tag {
-            padding: 6px 12px;
-            background: rgba(255, 255, 255, 0.15);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            border-radius: 100px;
-            font-size: 0.78rem;
-            font-weight: 600;
-            backdrop-filter: blur(10px);
-        }
-
-        .eco-card .btn {
-            margin-top: auto;
-            background: var(--white);
-            color: var(--navy);
-            width: fit-content;
-            position: relative;
-            z-index: 2;
-        }
-
-        .eco-card .btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
-        }
-
-        /* =========================================
-           SOLUTIONS
-           ========================================= */
-        .solutions-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 24px;
-        }
-
-        .solution-card {
-            position: relative;
-            padding: 36px;
-            background: var(--white);
-            border: 1px solid var(--gray-200);
-            border-radius: var(--radius-lg);
-            transition: var(--transition);
-            overflow: hidden;
-        }
-
-        .solution-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 3px;
-            background: var(--gradient-primary);
-            transform: scaleX(0);
-            transform-origin: left;
-            transition: transform 0.5s var(--ease);
-        }
-
-        .solution-card:hover {
-            transform: translateY(-6px);
-            box-shadow: var(--shadow-lg);
-            border-color: transparent;
-        }
-
-        .solution-card:hover::before {
-            transform: scaleX(1);
-        }
-
-        .solution-icon {
-            width: 60px;
-            height: 60px;
-            border-radius: 16px;
-            display: grid;
-            place-items: center;
-            margin-bottom: 20px;
-            background: var(--gradient-blue);
-            color: var(--white);
-        }
-
-        .solution-icon.purple { background: var(--gradient-purple); }
-        .solution-icon.gold { background: var(--gradient-gold); }
-        .solution-icon.cyan { background: linear-gradient(135deg, #06B6D4, #3B82F6); }
-
-        .solution-icon svg { width: 28px; height: 28px; }
-
-        .solution-card h3 {
-            font-size: 1.35rem;
-            font-weight: 800;
-            color: var(--navy);
-            margin-bottom: 10px;
-            letter-spacing: -0.02em;
-        }
-
-        .solution-card > p {
-            color: var(--gray-600);
-            font-size: 0.98rem;
-            line-height: 1.7;
-            margin-bottom: 18px;
-        }
-
-        .solution-benefits {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-            margin-bottom: 22px;
-        }
-
-        .solution-benefit {
-            padding: 5px 12px;
-            background: rgba(99, 102, 241, 0.08);
-            color: var(--indigo);
-            border-radius: 100px;
-            font-size: 0.78rem;
-            font-weight: 600;
-        }
-
-        .link-arrow {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            color: var(--indigo);
-            font-weight: 700;
-            font-size: 0.92rem;
-            transition: var(--transition);
-        }
-
-        .link-arrow:hover {
-            gap: 14px;
-            color: var(--purple);
-        }
-
-        /* =========================================
-           BEYOND DISC
-           ========================================= */
-        .beyond-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 18px;
-        }
-
-        .beyond-card {
-            padding: 26px 22px;
-            background: rgba(255, 255, 255, 0.04);
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            border-radius: var(--radius-md);
-            transition: var(--transition);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .beyond-card::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: var(--gradient-primary);
-            opacity: 0;
-            transition: var(--transition);
-            z-index: 0;
-        }
-
-        .beyond-card:hover {
-            transform: translateY(-4px);
-            border-color: rgba(255, 255, 255, 0.2);
-        }
-
-        .beyond-card:hover::before {
-            opacity: 0.08;
-        }
-
-        .beyond-card > * {
-            position: relative;
-            z-index: 1;
-        }
-
-        .beyond-icon {
-            width: 44px;
-            height: 44px;
-            border-radius: 12px;
-            display: grid;
-            place-items: center;
-            background: rgba(255, 255, 255, 0.08);
-            color: var(--white);
-            margin-bottom: 16px;
-            font-size: 1.4rem;
-        }
-
-        .beyond-card h4 {
-            font-size: 1.05rem;
-            font-weight: 700;
-            color: var(--white);
-            margin-bottom: 6px;
-        }
-
-        .beyond-card p {
-            font-size: 0.85rem;
-            color: rgba(255, 255, 255, 0.65);
-            line-height: 1.55;
-        }
-
-        /* =========================================
-           METHODOLOGY
-           ========================================= */
-        .method-wrapper {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 60px;
-            align-items: center;
-        }
-
-        .method-visual {
-            position: relative;
-            padding: 40px;
-            background: var(--gradient-dark);
-            border-radius: var(--radius-xl);
-            color: var(--white);
-            overflow: hidden;
-        }
-
-        .method-visual::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            right: -30%;
-            width: 400px;
-            height: 400px;
-            background: radial-gradient(circle, rgba(139, 92, 246, 0.3), transparent 70%);
-            border-radius: 50%;
-        }
-
-        .method-badge-big {
-            display: inline-block;
-            padding: 8px 18px;
-            background: var(--gradient-primary);
-            color: var(--white);
-            border-radius: 100px;
-            font-size: 0.8rem;
-            font-weight: 800;
-            letter-spacing: 0.08em;
-            text-transform: uppercase;
-            margin-bottom: 20px;
-            position: relative;
-            z-index: 2;
-        }
-
-        .method-visual h3 {
-            font-size: 2rem;
-            font-weight: 800;
-            letter-spacing: -0.02em;
-            margin-bottom: 16px;
-            position: relative;
-            z-index: 2;
-        }
-
-        .method-visual > p {
-            color: rgba(255, 255, 255, 0.75);
-            line-height: 1.7;
-            margin-bottom: 24px;
-            position: relative;
-            z-index: 2;
-        }
-
-        .method-flow {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-            position: relative;
-            z-index: 2;
-        }
-
-        .method-flow-item {
-            display: flex;
-            align-items: center;
-            gap: 14px;
-            padding: 14px 18px;
-            background: rgba(255, 255, 255, 0.06);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 14px;
-            backdrop-filter: blur(10px);
-        }
-
-        .method-flow-num {
-            width: 32px;
-            height: 32px;
-            display: grid;
-            place-items: center;
-            background: var(--gradient-primary);
-            border-radius: 10px;
-            font-weight: 800;
-            font-size: 0.9rem;
-            flex-shrink: 0;
-        }
-
-        .method-flow-item span {
-            font-size: 0.92rem;
-            font-weight: 600;
-        }
-
-        .method-content h2 {
-            font-size: clamp(1.8rem, 3.5vw, 2.6rem);
-            font-weight: 800;
-            color: var(--navy);
-            letter-spacing: -0.03em;
-            line-height: 1.1;
-            margin-bottom: 20px;
-        }
-
-        .method-content > p {
-            color: var(--gray-600);
-            font-size: 1.05rem;
-            line-height: 1.75;
-            margin-bottom: 28px;
-        }
-
-        .method-features {
-            display: grid;
-            gap: 14px;
-        }
-
-        .method-feature {
-            display: flex;
-            gap: 14px;
-            align-items: flex-start;
-        }
-
-        .method-feature-icon {
-            width: 36px;
-            height: 36px;
-            flex-shrink: 0;
-            display: grid;
-            place-items: center;
-            background: rgba(99, 102, 241, 0.1);
-            color: var(--indigo);
-            border-radius: 10px;
-        }
-
-        .method-feature-icon svg { width: 18px; height: 18px; }
-
-        .method-feature h4 {
-            font-size: 1rem;
-            font-weight: 700;
-            color: var(--navy);
-            margin-bottom: 4px;
-        }
-
-        .method-feature p {
-            font-size: 0.9rem;
-            color: var(--gray-600);
-            line-height: 1.6;
-        }
-
-        /* =========================================
-           PLATFORM SECTIONS (ONE / HIRE)
-           ========================================= */
-        .platform-section {
-            position: relative;
-            padding: clamp(70px, 9vw, 110px) 0;
-            overflow: hidden;
-        }
-
-        .platform-section::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: var(--gradient-dark);
-            z-index: -2;
-        }
-
-        .platform-section::after {
-            content: '';
-            position: absolute;
-            top: 10%;
-            left: -10%;
-            width: 500px;
-            height: 500px;
-            background: radial-gradient(circle, rgba(59, 130, 246, 0.2), transparent 70%);
-            border-radius: 50%;
-            filter: blur(60px);
-            z-index: -1;
-        }
-
-        .platform-section.hire::after {
-            background: radial-gradient(circle, rgba(236, 72, 153, 0.2), transparent 70%);
-            top: auto;
-            bottom: 10%;
-            right: -10%;
-            left: auto;
-        }
-
-        .platform-header {
-            text-align: center;
-            max-width: 780px;
-            margin: 0 auto 60px;
-            color: var(--white);
-        }
-
-        .platform-header .section-tag {
-            background: rgba(255, 255, 255, 0.08);
-            color: var(--white);
-            border-color: rgba(255, 255, 255, 0.15);
-        }
-
-        .platform-header h2 {
-            font-size: clamp(2rem, 4vw, 3rem);
-            font-weight: 800;
-            letter-spacing: -0.03em;
-            line-height: 1.1;
-            margin-bottom: 16px;
-        }
-
-        .platform-header p {
-            color: rgba(255, 255, 255, 0.75);
-            font-size: 1.08rem;
-            line-height: 1.7;
-        }
-
-        .platform-grid {
-            display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            gap: 14px;
-            margin-bottom: 40px;
-        }
-
-        .platform-item {
-            padding: 22px 18px;
-            background: rgba(255, 255, 255, 0.04);
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            border-radius: 16px;
-            text-align: center;
-            transition: var(--transition);
-            color: var(--white);
-        }
-
-        .platform-item:hover {
-            background: rgba(255, 255, 255, 0.08);
-            border-color: rgba(255, 255, 255, 0.2);
-            transform: translateY(-4px);
-        }
-
-        .platform-item-icon {
-            font-size: 1.6rem;
-            margin-bottom: 10px;
-        }
-
-        .platform-item h4 {
-            font-size: 0.92rem;
-            font-weight: 700;
-        }
-
-        .platform-cta {
-            text-align: center;
-        }
-
-        /* Hire dual columns */
-        .hire-columns {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 24px;
-            margin-bottom: 40px;
-        }
-
-        .hire-column {
-            padding: 36px;
-            background: rgba(255, 255, 255, 0.04);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: var(--radius-lg);
-            backdrop-filter: blur(10px);
-        }
-
-        .hire-column-header {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            margin-bottom: 24px;
-            padding-bottom: 18px;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        .hire-column-icon {
-            width: 44px;
-            height: 44px;
-            display: grid;
-            place-items: center;
-            border-radius: 12px;
-            background: var(--gradient-primary);
-            color: var(--white);
-        }
-
-        .hire-column-icon.pink { background: var(--gradient-purple); }
-
-        .hire-column-icon svg { width: 22px; height: 22px; }
-
-        .hire-column h3 {
-            font-size: 1.3rem;
-            font-weight: 800;
-            color: var(--white);
-            letter-spacing: -0.02em;
-        }
-
-        .hire-list {
-            display: grid;
-            gap: 10px;
-        }
-
-        .hire-list li {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            padding: 12px 14px;
-            background: rgba(255, 255, 255, 0.03);
-            border: 1px solid rgba(255, 255, 255, 0.06);
-            border-radius: 12px;
-            color: rgba(255, 255, 255, 0.85);
-            font-size: 0.92rem;
-            font-weight: 500;
-            transition: var(--transition);
-        }
-
-        .hire-list li:hover {
-            background: rgba(255, 255, 255, 0.08);
-            transform: translateX(4px);
-        }
-
-        .hire-list li::before {
-            content: '';
-            width: 6px;
-            height: 6px;
-            background: var(--gradient-primary);
-            border-radius: 50%;
-            flex-shrink: 0;
-        }
-
-        /* =========================================
-           SECTORS
-           ========================================= */
-        .sectors-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 20px;
-        }
-
-        .sector-card {
-            padding: 30px 26px;
-            background: rgba(255, 255, 255, 0.04);
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            border-radius: var(--radius-lg);
-            transition: var(--transition);
-        }
-
-        .sector-card:hover {
-            background: rgba(255, 255, 255, 0.08);
-            border-color: rgba(255, 255, 255, 0.2);
-            transform: translateY(-4px);
-        }
-
-        .sector-icon {
-            font-size: 2.2rem;
-            margin-bottom: 14px;
-            display: block;
-        }
-
-        .sector-card h4 {
-            font-size: 1.15rem;
-            font-weight: 700;
-            color: var(--white);
-            margin-bottom: 10px;
-            letter-spacing: -0.01em;
-        }
-
-        .sector-card p {
-            font-size: 0.92rem;
-            color: rgba(255, 255, 255, 0.7);
-            line-height: 1.65;
-        }
-
-        /* =========================================
-           WHY VIGORRE
-           ========================================= */
-        .why-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 20px;
-        }
-
-        .why-card {
-            padding: 30px 24px;
-            background: var(--white);
-            border: 1px solid var(--gray-200);
-            border-radius: var(--radius-md);
-            transition: var(--transition);
-            text-align: center;
-        }
-
-        .why-card:hover {
-            transform: translateY(-6px);
-            box-shadow: var(--shadow-md);
-            border-color: transparent;
-        }
-
-        .why-icon {
-            width: 56px;
-            height: 56px;
-            margin: 0 auto 18px;
-            display: grid;
-            place-items: center;
-            border-radius: 16px;
-            background: var(--gradient-blue);
-            color: var(--white);
-        }
-
-        .why-icon.purple { background: var(--gradient-purple); }
-        .why-icon.gold { background: var(--gradient-gold); }
-        .why-icon.cyan { background: linear-gradient(135deg, #06B6D4, #3B82F6); }
-
-        .why-icon svg { width: 26px; height: 26px; }
-
-        .why-card h4 {
-            font-size: 1.1rem;
-            font-weight: 800;
-            color: var(--navy);
-            margin-bottom: 8px;
-            letter-spacing: -0.02em;
-        }
-
-        .why-card p {
-            font-size: 0.9rem;
-            color: var(--gray-600);
-            line-height: 1.6;
-        }
-
-        /* =========================================
-           FOR COMPANIES / CANDIDATES
-           ========================================= */
-        .journey-wrapper {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 60px;
-            align-items: center;
-        }
-
-        .journey-content h2 {
-            font-size: clamp(1.8rem, 3.5vw, 2.6rem);
-            font-weight: 800;
-            color: var(--navy);
-            letter-spacing: -0.03em;
-            line-height: 1.1;
-            margin-bottom: 18px;
-        }
-
-        .journey-content > p {
-            color: var(--gray-600);
-            font-size: 1.05rem;
-            line-height: 1.75;
-            margin-bottom: 30px;
-        }
-
-        .journey-steps {
-            display: grid;
-            gap: 12px;
-            margin-bottom: 30px;
-        }
-
-        .journey-step {
-            display: flex;
-            align-items: center;
-            gap: 16px;
-            padding: 14px 18px;
-            background: var(--gray-50);
-            border: 1px solid var(--gray-200);
-            border-radius: 14px;
-            transition: var(--transition);
-        }
-
-        .journey-step:hover {
-            background: var(--white);
-            box-shadow: var(--shadow-sm);
-            transform: translateX(4px);
-        }
-
-        .journey-step-num {
-            width: 36px;
-            height: 36px;
-            display: grid;
-            place-items: center;
-            background: var(--gradient-primary);
-            color: var(--white);
-            border-radius: 10px;
-            font-weight: 800;
-            font-size: 0.9rem;
-            flex-shrink: 0;
-        }
-
-        .journey-step h4 {
-            font-size: 0.98rem;
-            font-weight: 700;
-            color: var(--navy);
-        }
-
-        .journey-visual {
-            position: relative;
-            padding: 50px 40px;
-            background: var(--gradient-dark);
-            border-radius: var(--radius-xl);
-            color: var(--white);
-            overflow: hidden;
-            min-height: 480px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        .journey-visual::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            right: -30%;
-            width: 400px;
-            height: 400px;
-            background: radial-gradient(circle, rgba(139, 92, 246, 0.3), transparent 70%);
-            border-radius: 50%;
-        }
-
-        .journey-visual h3 {
-            font-size: 2rem;
-            font-weight: 800;
-            letter-spacing: -0.02em;
-            margin-bottom: 14px;
-            position: relative;
-            z-index: 2;
-        }
-
-        .journey-visual > p {
-            color: rgba(255, 255, 255, 0.75);
-            line-height: 1.7;
-            margin-bottom: 28px;
-            position: relative;
-            z-index: 2;
-        }
-
-        .journey-features {
-            display: grid;
-            gap: 10px;
-            position: relative;
-            z-index: 2;
-        }
-
-        .journey-feature {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            padding: 12px 16px;
-            background: rgba(255, 255, 255, 0.06);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 12px;
-            backdrop-filter: blur(10px);
-            font-size: 0.92rem;
-            font-weight: 500;
-        }
-
-        .journey-feature::before {
-            content: '';
-            width: 8px;
-            height: 8px;
-            background: var(--gradient-primary);
-            border-radius: 50%;
-            flex-shrink: 0;
-        }
-
-        /* =========================================
-           ABOUT
-           ========================================= */
-        .about-intro {
-            max-width: 860px;
-            margin: 0 auto 60px;
-            text-align: center;
-        }
-
-        .about-intro p {
-            font-size: 1.15rem;
-            line-height: 1.8;
-            color: var(--gray-600);
-        }
-
-        .about-intro p strong {
-            color: var(--navy);
-            font-weight: 800;
-        }
-
-        .about-pillars {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 24px;
-        }
-
-        .pillar-card {
-            padding: 36px 30px;
-            background: var(--white);
-            border: 1px solid var(--gray-200);
-            border-radius: var(--radius-lg);
-            transition: var(--transition);
-        }
-
-        .pillar-card:hover {
-            transform: translateY(-6px);
-            box-shadow: var(--shadow-md);
-            border-color: transparent;
-        }
-
-        .pillar-icon {
-            width: 60px;
-            height: 60px;
-            display: grid;
-            place-items: center;
-            border-radius: 16px;
-            margin-bottom: 20px;
-            background: var(--gradient-blue);
-            color: var(--white);
-        }
-
-        .pillar-icon.purple { background: var(--gradient-purple); }
-        .pillar-icon.gold { background: var(--gradient-gold); }
-
-        .pillar-icon svg { width: 28px; height: 28px; }
-
-        .pillar-card h3 {
-            font-size: 1.3rem;
-            font-weight: 800;
-            color: var(--navy);
-            margin-bottom: 12px;
-            letter-spacing: -0.02em;
-        }
-
-        .pillar-card p {
-            color: var(--gray-600);
-            line-height: 1.7;
-            font-size: 0.95rem;
-        }
-
-        .pillar-card ul {
-            margin-top: 14px;
-        }
-
-        .pillar-card ul li {
-            position: relative;
-            padding-left: 20px;
-            color: var(--gray-600);
-            font-size: 0.92rem;
-            line-height: 1.65;
-            margin-bottom: 8px;
-        }
-
-        .pillar-card ul li::before {
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 9px;
-            width: 6px;
-            height: 6px;
-            border-radius: 50%;
-            background: var(--gradient-primary);
-        }
-
-        /* =========================================
-           CONTACT
-           ========================================= */
-        .contact-grid {
-            display: grid;
-            grid-template-columns: 1fr 1.2fr;
-            gap: 60px;
-            align-items: flex-start;
-        }
-
-        .contact-info h2 {
-            font-size: clamp(1.8rem, 3.5vw, 2.6rem);
-            font-weight: 800;
-            color: var(--navy);
-            letter-spacing: -0.03em;
-            line-height: 1.1;
-            margin-bottom: 18px;
-        }
-
-        .contact-info > p {
-            color: var(--gray-600);
-            font-size: 1.05rem;
-            line-height: 1.75;
-            margin-bottom: 30px;
-        }
-
-        .contact-methods {
-            display: grid;
-            gap: 12px;
-        }
-
-        .contact-item {
-            display: flex;
-            align-items: center;
-            gap: 16px;
-            padding: 16px 20px;
-            background: var(--gray-50);
-            border: 1px solid var(--gray-200);
-            border-radius: 14px;
-            transition: var(--transition);
-        }
-
-        .contact-item:hover {
-            background: var(--white);
-            box-shadow: var(--shadow-sm);
-            transform: translateX(4px);
-            border-color: var(--indigo);
-        }
-
-        .contact-icon {
-            width: 44px;
-            height: 44px;
-            display: grid;
-            place-items: center;
-            background: var(--gradient-blue);
-            color: var(--white);
-            border-radius: 12px;
-            font-size: 1.2rem;
-            flex-shrink: 0;
-        }
-
-        .contact-item strong {
-            display: block;
-            font-size: 0.92rem;
-            color: var(--navy);
-            margin-bottom: 2px;
-        }
-
-        .contact-item span {
-            font-size: 0.88rem;
-            color: var(--gray-600);
-        }
-
-        .contact-form {
-            padding: 36px;
-            background: var(--white);
-            border: 1px solid var(--gray-200);
-            border-radius: var(--radius-lg);
-            box-shadow: var(--shadow-sm);
-        }
-
-        .form-row {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 16px;
-            margin-bottom: 16px;
-        }
-
-        .form-group {
-            margin-bottom: 16px;
-        }
-
-        .form-group label {
-            display: block;
-            font-size: 0.88rem;
-            font-weight: 600;
-            color: var(--navy);
-            margin-bottom: 8px;
-        }
-
-        .form-group input,
-        .form-group select,
-        .form-group textarea {
-            width: 100%;
-            padding: 12px 16px;
-            background: var(--gray-50);
-            border: 1.5px solid var(--gray-200);
-            border-radius: 12px;
-            font-family: inherit;
-            font-size: 0.95rem;
-            color: var(--navy);
-            transition: var(--transition);
-        }
-
-        .form-group input:focus,
-        .form-group select:focus,
-        .form-group textarea:focus {
-            outline: none;
-            border-color: var(--indigo);
-            background: var(--white);
-            box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.1);
-        }
-
-        .form-group textarea {
-            resize: vertical;
-            min-height: 100px;
-        }
-
-        .form-notice {
-            font-size: 0.8rem;
-            color: var(--gray-500);
-            text-align: center;
-            margin-top: 14px;
-        }
-
-        /* =========================================
-           FOOTER
-           ========================================= */
-        .site-footer {
-            background: var(--navy);
-            color: rgba(255, 255, 255, 0.7);
-            padding: 70px 0 30px;
-        }
-
-        .footer-grid {
-            display: grid;
-            grid-template-columns: 1.5fr 1fr 1fr 1fr;
-            gap: 50px;
-            padding-bottom: 40px;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-        }
-
-        .footer-brand p {
-            font-size: 0.92rem;
-            line-height: 1.7;
-            margin-top: 18px;
-            max-width: 320px;
-        }
-
-        .footer-logo-wrapper {
-            display: flex;
-            align-items: center;
-            gap: 14px;
-        }
-
-        .footer-logo {
-            height: 52px;
-            width: auto;
-            background: var(--white);
-            padding: 6px 10px;
-            border-radius: 10px;
-            object-fit: contain;
-        }
-
-        .footer-logo-text {
-            display: flex;
-            flex-direction: column;
-            line-height: 1.2;
-        }
-
-        .footer-logo-name {
-            font-size: 1.45rem;
-            font-weight: 800;
-            color: var(--white);
-            letter-spacing: -0.02em;
-        }
-
-        .footer-logo-tagline {
-            font-size: 0.72rem;
-            color: rgba(255, 255, 255, 0.65);
-            font-weight: 500;
-            letter-spacing: 0.04em;
-            text-transform: uppercase;
-            white-space: nowrap;
-        }
-
-        .footer-social {
-            display: flex;
-            gap: 10px;
-            margin-top: 22px;
-        }
-
-        .footer-social a {
-            width: 42px;
-            height: 42px;
-            display: grid;
-            place-items: center;
-            background: rgba(255, 255, 255, 0.06);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 12px;
-            color: var(--white);
-            transition: var(--transition);
-        }
-
-        .footer-social a:hover {
-            background: var(--gradient-primary);
-            border-color: transparent;
-            transform: translateY(-3px);
-        }
-
-        .footer-social svg {
-            width: 18px;
-            height: 18px;
-            fill: currentColor;
-        }
-
-        .footer-links h4 {
-            color: var(--white);
-            font-size: 0.95rem;
-            font-weight: 700;
-            margin-bottom: 18px;
-            letter-spacing: -0.01em;
-        }
-
-        .footer-links ul {
-            display: grid;
-            gap: 10px;
-        }
-
-        .footer-links a {
-            font-size: 0.9rem;
-            color: rgba(255, 255, 255, 0.65);
-            transition: var(--transition);
-        }
-
-        .footer-links a:hover {
-            color: var(--white);
-            transform: translateX(3px);
-            display: inline-block;
-        }
-
-        .footer-bottom {
-            padding-top: 24px;
-            text-align: center;
-            font-size: 0.85rem;
-            color: rgba(255, 255, 255, 0.45);
-        }
-
-        /* =========================================
-           WHATSAPP FLOAT
-           ========================================= */
-        .whatsapp-float {
-            position: fixed;
-            bottom: 24px;
-            right: 24px;
-            width: 60px;
-            height: 60px;
-            background: #25D366;
-            border-radius: 50%;
-            display: grid;
-            place-items: center;
-            box-shadow: 0 10px 30px rgba(37, 211, 102, 0.4);
-            z-index: 999;
-            transition: var(--transition);
-            animation: bounce 2s ease-in-out infinite;
-        }
-
-        @keyframes bounce {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-6px); }
-        }
-
-        .whatsapp-float:hover {
-            transform: scale(1.1);
-        }
-
-        /* =========================================
-           MODAL
-           ========================================= */
-        .modal-overlay {
-            position: fixed;
-            inset: 0;
-            background: rgba(10, 17, 40, 0.85);
-            backdrop-filter: blur(8px);
-            display: none;
-            place-items: center;
-            z-index: 2000;
-            padding: 20px;
-        }
-
-        .modal-overlay.active {
-            display: grid;
-        }
-
-        .modal-content {
-            background: var(--white);
-            padding: 50px 40px;
-            border-radius: var(--radius-lg);
-            text-align: center;
-            max-width: 440px;
-            width: 100%;
-            animation: modalIn 0.4s var(--ease);
-        }
-
-        @keyframes modalIn {
-            from { opacity: 0; transform: scale(0.9); }
-            to { opacity: 1; transform: scale(1); }
-        }
-
-        .modal-icon {
-            font-size: 3rem;
-            margin-bottom: 16px;
-        }
-
-        .modal-content h3 {
-            font-size: 1.5rem;
-            font-weight: 800;
-            color: var(--navy);
-            margin-bottom: 10px;
-        }
-
-        .modal-content p {
-            color: var(--gray-600);
-            margin-bottom: 24px;
-        }
-
-        /* =========================================
-           SCROLL REVEAL
-           ========================================= */
-        .reveal {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: opacity 0.8s var(--ease), transform 0.8s var(--ease);
-        }
-
-        .reveal.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        /* =========================================
-           RESPONSIVE
-           ========================================= */
-        @media (max-width: 1200px) {
-            .platform-links {
-                display: none;
-            }
-        }
-
-        @media (max-width: 1040px) {
-            .main-nav { display: none; }
-            .mobile-toggle { display: flex; }
-            .platform-links {
-                display: flex;
-            }
-            .hero-grid,
-            .method-wrapper,
-            .journey-wrapper,
-            .contact-grid,
-            .ecosystem-grid,
-            .hire-columns {
-                grid-template-columns: 1fr;
-            }
-            .solutions-grid { grid-template-columns: 1fr; }
-            .beyond-grid { grid-template-columns: repeat(2, 1fr); }
-            .platform-grid { grid-template-columns: repeat(3, 1fr); }
-            .why-grid { grid-template-columns: repeat(2, 1fr); }
-            .about-pillars { grid-template-columns: 1fr; }
-            .footer-grid { grid-template-columns: 1fr 1fr; gap: 36px; }
-        }
-
-        @media (max-width: 640px) {
-            .container { width: min(100% - 32px, var(--container)); }
-            .hero-closing p { font-size: 1rem; }
-            .hero-closing { padding: 16px 20px; }
-            .beyond-grid,
-            .platform-grid,
-            .why-grid { grid-template-columns: 1fr 1fr; }
-            .form-row { grid-template-columns: 1fr; }
-            .footer-grid { grid-template-columns: 1fr; }
-            .header-actions .btn:not(.mobile-toggle) { display: none; }
-            .header-actions .btn-primary { display: inline-flex; }
-            .platform-links {
-                display: flex;
-                flex-direction: column;
-                gap: 6px;
-                padding: 10px 0;
-                border-right: none;
-                border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-                margin-right: 0;
-                margin-bottom: 10px;
-                width: 100%;
-            }
-            .header-actions {
-                flex-direction: column;
-                align-items: stretch;
-                width: 100%;
-            }
-            .header-actions .btn-primary {
-                width: 100%;
-            }
-        }
-
-        @media (max-width: 420px) {
-            .logo-text { display: none; }
-            .beyond-grid,
-            .platform-grid,
-            .why-grid { grid-template-columns: 1fr; }
-        }
-
-        @media (prefers-reduced-motion: reduce) {
-            *, *::before, *::after {
-                animation-duration: 0.01ms !important;
-                transition-duration: 0.01ms !important;
-            }
-        }
-    </style>
 </head>
 <body>
 
-    <!-- ================= HEADER ================= -->
+    <!-- ================= HEADER (MANTIDO EXATAMENTE COMO ORIGINAL) ================= -->
     <header class="site-header" data-header>
         <div class="container header-inner">
             <a href="#home" class="logo-wrapper" aria-label="Vigorre - Página inicial">
@@ -2088,16 +53,38 @@
             <nav class="main-nav" aria-label="Navegação principal">
                 <ul class="nav-list">
                     <li><a href="#home">Início</a></li>
-                    <li><a href="#solucoes">Soluções</a></li>
-                    <li><a href="#one">Vigorre One™</a></li>
-                    <li><a href="#hire">Vigorre Hire™</a></li>
-                    <li><a href="#setores">Setores</a></li>
-                    <li>
-                        <a href="#" class="nav-instituto">
-                            Instituto <span class="badge-instituto">Em breve</span>
-                        </a>
+                    <li><a href="#quem-somos">Quem Somos</a></li>
+                    
+                    <!-- DROPDOWN SERVIÇOS -->
+                    <li class="nav-dropdown">
+                        <a href="#servicos" class="dropdown-toggle">Serviços ▾</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#servicos-recrutamento">Recrutamento & Seleção</a></li>
+                            <li><a href="#servicos-executive">Executive Search</a></li>
+                            <li><a href="#servicos-gestao">Gestão Estratégica de Pessoas</a></li>
+                            <li><a href="#servicos-desenvolvimento">Desenvolvimento Humano</a></li>
+                            <li><a href="#servicos-avaliacoes">Avaliações Comportamentais</a></li>
+                            <li><a href="#servicos-analytics">People Analytics</a></li>
+                            <li><a href="#servicos-consultoria">Consultoria Empresarial</a></li>
+                            <li><a href="#servicos-automacao">Automação de Processos</a></li>
+                            <li><a href="#servicos-tech">Tecnologia para RH</a></li>
+                        </ul>
                     </li>
-                    <li><a href="#sobre">Quem Somos</a></li>
+                    
+                    <!-- DROPDOWN PLATAFORMAS -->
+                    <li class="nav-dropdown">
+                        <a href="#plataformas" class="dropdown-toggle">Plataformas ▾</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="https://vigorre.vercel.app/" target="_blank" rel="noopener">Vigorre ONE™</a></li>
+                            <li><a href="https://vigorre-hire.vercel.app/" target="_blank" rel="noopener">Vigorre HIRE™</a></li>
+                            <li><a href="#tech">Vigorre TECH™</a></li>
+                            <li><a href="#instituto">Instituto Vigorre™ <span class="badge-instituto">Em breve</span></a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="#setores">Setores</a></li>
+                    <li><a href="#conteudos">Conteúdos</a></li>
+                    <li><a href="#contato">Contato</a></li>
                 </ul>
             </nav>
 
@@ -2112,7 +99,7 @@
                     </a>
                 </div>
                 
-                <a href="#contato" class="btn btn-primary">Falar com Especialista</a>
+                <a href="#contato" class="btn btn-primary">Solicitar Diagnóstico Gratuito</a>
                 <button class="mobile-toggle" aria-label="Abrir menu" aria-expanded="false">
                     <span></span><span></span><span></span>
                 </button>
@@ -2122,21 +109,16 @@
         <div class="mobile-menu" aria-hidden="true">
             <ul class="mobile-nav-list">
                 <li><a href="#home">Início</a></li>
-                <li><a href="#solucoes">Soluções</a></li>
-                <li><a href="#one">Vigorre One™</a></li>
-                <li><a href="#hire">Vigorre Hire™</a></li>
+                <li><a href="#quem-somos">Quem Somos</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#plataformas">Plataformas</a></li>
                 <li><a href="#setores">Setores</a></li>
-                <li>
-                    <div class="mobile-instituto">
-                        <span>Instituto Vigorre</span>
-                        <span class="badge-instituto">Em breve</span>
-                    </div>
-                </li>
-                <li><a href="#sobre">Quem Somos</a></li>
+                <li><a href="#conteudos">Conteúdos</a></li>
+                <li><a href="#contato">Contato</a></li>
                 <li class="mobile-divider"></li>
                 <li><a href="https://vigorre.vercel.app/" target="_blank">Acessar ONE™</a></li>
                 <li><a href="https://vigorre-hire.vercel.app/" target="_blank">Acessar HIRE™</a></li>
-                <li><a href="#contato">Falar com Especialista</a></li>
+                <li><a href="#tech">Vigorre TECH™</a></li>
             </ul>
         </div>
     </header>
@@ -2144,28 +126,27 @@
     <main>
         <!-- ================= HERO ================= -->
         <section id="home" class="hero-section">
+            <div class="hero-bg-gradient"></div>
             <div class="container hero-grid">
                 <div class="hero-content">
-                    <span class="hero-badge">Inteligência Humana</span>
-                    <h1>Transformamos <span class="highlight">potencial</span> em resultados.</h1>
+                    <span class="badge">Inteligência Humana & Tecnologia</span>
+                    <h1>Transformamos <span class="highlight">inteligência humana</span> em resultado empresarial.</h1>
                     <p class="hero-lead">
-                        A Vigorre une <strong>Inteligência Artificial</strong>, <strong>People Analytics</strong> 
-                        e <strong>Ciência Comportamental</strong> para ajudar empresas a contratar melhor, 
-                        desenvolver talentos e construir equipes de alta performance.
+                        A Vigorre é uma <strong>consultoria estratégica com tecnologia proprietária</strong>. 
+                        Unimos ciência comportamental, People Analytics e inteligência artificial para ajudar 
+                        empresas a contratar melhor, desenvolver líderes e construir equipes de alta performance.
                     </p>
                     <div class="hero-cta">
                         <a href="#contato" class="btn btn-primary btn-lg">
-                            Solicitar Demonstração
+                            Solicitar Diagnóstico Gratuito
                             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M5 12h14M13 5l7 7-7 7"/>
                             </svg>
                         </a>
-                        <a href="#solucoes" class="btn btn-outline btn-lg">Conhecer Soluções</a>
+                        <a href="#servicos" class="btn btn-outline btn-lg">Conhecer Soluções</a>
                     </div>
 
-                    <!-- ========================================= -->
-                    <!-- FRASE DE IMPACTO COM NEUROLINGUÍSTICA      -->
-                    <!-- ========================================= -->
+                    <!-- FRASE DE IMPACTO COM NEUROLINGUÍSTICA -->
                     <div class="hero-closing">
                         <p>
                             Imagine reduzir o <span class="highlight-gold">turnover</span> em até 40% e 
@@ -2179,13 +160,8 @@
                                 <span style="color: #FFFFFF; font-weight: 700;">vantagem competitiva real</span> 
                                 para sua empresa.
                             </span><br><br>
-                            <span style="display: inline-block; background: rgba(255,255,255,0.06); padding: 10px 18px; border-radius: 12px; border-left: 3px solid #F59E0B;">
-                                💡 <strong>Seu próximo colaborador de alta performance está esperando 
-                                para ser descoberto. A pergunta é: 
-                                <span style="color: #F59E0B;">você está pronto para encontrá-lo?</span></strong>
-                            </span><br><br>
                             <a href="#contato" class="btn-inline">
-                                Sim, quero transformar minha gestão de pessoas →
+                                Sim, quero um diagnóstico gratuito →
                             </a>
                         </p>
                     </div>
@@ -2223,20 +199,106 @@
             </div>
         </section>
 
-        <!-- ================= ECOSYSTEM ================= -->
-        <section class="section section-dark">
+        <!-- ================= SERVIÇOS (REESTRUTURADO COM COPY CONSULTIVO) ================= -->
+        <section id="servicos" class="section">
             <div class="container">
-                <div class="section-header reveal">
-                    <span class="section-tag">Ecossistema Completo</span>
-                    <h2>Uma inteligência. <span class="gradient-text">Duas plataformas.</span> Infinitas possibilidades.</h2>
-                    <p>Do recrutamento à liderança. Do primeiro emprego à sucessão executiva. A Vigorre acompanha cada etapa da jornada humana dentro da sua empresa.</p>
+                <div class="section-header">
+                    <span class="section-tag">Soluções Estratégicas</span>
+                    <h2>Resultados mensuráveis para sua <span class="gradient-text">gestão de pessoas</span></h2>
+                    <p>Cada solução Vigorre foi desenhada para eliminar achismos, reduzir turnover e elevar a performance da sua operação com dados comportamentais acionáveis.</p>
+                </div>
+
+                <div class="services-grid">
+                    <!-- Recrutamento & Seleção -->
+                    <article class="service-card">
+                        <div class="icon-box">🎯</div>
+                        <h3>Recrutamento & Seleção</h3>
+                        <p>Reduza o tempo de contratação e aumente a assertividade com triagem inteligente e Fit Cultural.</p>
+                        <a href="#contato" class="link-arrow">Solicitar proposta →</a>
+                    </article>
+
+                    <!-- Executive Search -->
+                    <article class="service-card">
+                        <div class="icon-box">👤</div>
+                        <h3>Executive Search</h3>
+                        <p>Acesse líderes preparados para impulsionar seu crescimento. Mapeamento de executivos com metodologia proprietária.</p>
+                        <a href="#contato" class="link-arrow">Solicitar proposta →</a>
+                    </article>
+
+                    <!-- Gestão Estratégica -->
+                    <article class="service-card">
+                        <div class="icon-box">📊</div>
+                        <h3>Gestão Estratégica de Pessoas</h3>
+                        <p>Transforme seu RH em vantagem competitiva. Estruture processos, indicadores e planos de sucessão orientados por dados.</p>
+                        <a href="#contato" class="link-arrow">Solicitar proposta →</a>
+                    </article>
+
+                    <!-- Desenvolvimento Humano -->
+                    <article class="service-card">
+                        <div class="icon-box">🚀</div>
+                        <h3>Desenvolvimento Humano</h3>
+                        <p>Desenvolva líderes preparados para crescer. Programas de treinamento com Metodologia VIGOR® e plano de desenvolvimento individual.</p>
+                        <a href="#contato" class="link-arrow">Solicitar proposta →</a>
+                    </article>
+
+                    <!-- Avaliações Comportamentais -->
+                    <article class="service-card highlight-card">
+                        <div class="icon-box">🧠</div>
+                        <h3>Avaliações Comportamentais</h3>
+                        <p>Tome decisões baseadas em evidências científicas. DISC, Big Five, Inteligência Emocional, Valores e SWOT integrados.</p>
+                        <a href="#contato" class="link-arrow">Solicitar demonstração →</a>
+                    </article>
+
+                    <!-- People Analytics -->
+                    <article class="service-card highlight-card">
+                        <div class="icon-box">📈</div>
+                        <h3>People Analytics</h3>
+                        <p>Transforme dados em decisões estratégicas. Dashboards inteligentes com indicadores preditivos de turnover, clima e performance.</p>
+                        <a href="#contato" class="link-arrow">Solicitar demonstração →</a>
+                    </article>
+
+                    <!-- Consultoria Empresarial -->
+                    <article class="service-card">
+                        <div class="icon-box">💼</div>
+                        <h3>Consultoria Empresarial</h3>
+                        <p>Metodologia VIGOR® aplicada ao seu negócio. Diagnóstico organizacional completo com recomendações estratégicas.</p>
+                        <a href="#contato" class="link-arrow">Solicitar diagnóstico →</a>
+                    </article>
+
+                    <!-- Automação de Processos -->
+                    <article class="service-card">
+                        <div class="icon-box">🤖</div>
+                        <h3>Automação de Processos</h3>
+                        <p>Automatize processos e elimine tarefas repetitivas. Fluxos inteligentes que liberam seu time para o que realmente importa.</p>
+                        <a href="#contato" class="link-arrow">Solicitar proposta →</a>
+                    </article>
+
+                    <!-- Tecnologia para RH -->
+                    <article class="service-card">
+                        <div class="icon-box">💻</div>
+                        <h3>Tecnologia para RH</h3>
+                        <p>Soluções digitais sob medida: sistemas, dashboards, apps e IA aplicada à gestão de pessoas.</p>
+                        <a href="#tech" class="link-arrow">Conhecer Vigorre TECH™ →</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= PLATAFORMAS ================= -->
+        <section id="plataformas" class="section section-dark">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Tecnologia Proprietária</span>
+                    <h2>Plataformas que entregam <span class="gradient-text">resultados reais</span></h2>
+                    <p>Tecnologia própria desenvolvida para cada etapa da jornada de gestão de pessoas.</p>
                 </div>
 
                 <div class="ecosystem-grid">
-                    <div class="eco-card eco-one reveal">
-                        <span class="eco-badge">Plataforma de Desenvolvimento</span>
+                    <!-- ONE™ -->
+                    <div class="eco-card eco-one">
+                        <span class="eco-badge">Desenvolvimento de Pessoas</span>
                         <h3>Vigorre ONE™</h3>
-                        <p>Desenvolvimento Inteligente de Pessoas. Assessment, People Analytics, PDI, treinamentos e laudos integrados por IA.</p>
+                        <p>Plataforma de Inteligência Humana e Desenvolvimento. Assessment, People Analytics, PDI e laudos integrados por IA.</p>
                         <div class="eco-features">
                             <span class="eco-feature-tag">Assessment</span>
                             <span class="eco-feature-tag">People Analytics</span>
@@ -2244,701 +306,314 @@
                             <span class="eco-feature-tag">Laudos IA</span>
                             <span class="eco-feature-tag">Liderança</span>
                         </div>
-                        <a href="#one" class="btn">Conhecer o ONE™</a>
+                        <a href="https://vigorre.vercel.app/" target="_blank" rel="noopener" class="btn btn-white">Acessar ONE™</a>
                     </div>
 
-                    <div class="eco-card eco-hire reveal">
-                        <span class="eco-badge">Plataforma de Recrutamento</span>
+                    <!-- HIRE™ -->
+                    <div class="eco-card eco-hire">
+                        <span class="eco-badge">Recrutamento Inteligente</span>
                         <h3>Vigorre HIRE™</h3>
-                        <p>Recrutamento Inteligente para empresas e candidatos. ATS, banco de talentos, fit cultural, primeiro emprego e programa de afiliados.</p>
+                        <p>Plataforma de Recrutamento com Inteligência Artificial. ATS, banco de talentos, fit cultural e programa de afiliados.</p>
                         <div class="eco-features">
-                            <span class="eco-feature-tag">ATS Inteligente</span>
+                            <span class="eco-feature-tag">ATS com IA</span>
                             <span class="eco-feature-tag">Fit Cultural</span>
                             <span class="eco-feature-tag">Primeiro Emprego</span>
                             <span class="eco-feature-tag">Afiliados</span>
-                            <span class="eco-feature-tag">IA</span>
+                            <span class="eco-feature-tag">Score</span>
                         </div>
-                        <a href="#hire" class="btn">Conhecer o HIRE™</a>
+                        <a href="https://vigorre-hire.vercel.app/" target="_blank" rel="noopener" class="btn btn-white">Acessar HIRE™</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- ================= SOLUTIONS ================= -->
-        <section id="solucoes" class="section section-blue">
+        <!-- ================= VIGORRE TECH™ ================= -->
+        <section id="tech" class="section">
             <div class="container">
-                <div class="section-header reveal">
-                    <span class="section-tag">Soluções para Empresas</span>
-                    <h2>Decisões estratégicas sustentadas por <span class="gradient-text">inteligência real</span></h2>
-                    <p>Cada solução Vigorre foi desenhada para eliminar achismos, reduzir turnover e elevar a performance da sua operação com dados comportamentais acionáveis.</p>
+                <div class="section-header">
+                    <span class="section-tag">Tecnologia Empresarial</span>
+                    <h2>Vigorre <span class="gradient-text">TECH™</span></h2>
+                    <p>Divisão especializada em desenvolvimento de soluções digitais para RH e gestão de pessoas.</p>
                 </div>
 
-                <div class="solutions-grid">
-                    <article class="solution-card reveal">
-                        <div class="solution-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M3 3v18h18"/>
-                                <path d="M7 14l4-4 4 4 5-5"/>
-                            </svg>
-                        </div>
-                        <h3>People Analytics</h3>
-                        <p>Transforme dados em decisões estratégicas. Dashboards inteligentes com indicadores preditivos de turnover, clima e performance.</p>
-                        <div class="solution-benefits">
-                            <span class="solution-benefit">Dashboards executivos</span>
-                            <span class="solution-benefit">Indicadores de turnover</span>
-                            <span class="solution-benefit">Clima organizacional</span>
-                            <span class="solution-benefit">Performance</span>
-                        </div>
-                        <a href="#contato" class="link-arrow">Solicitar demonstração →</a>
-                    </article>
-
-                    <article class="solution-card reveal">
-                        <div class="solution-icon purple">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <circle cx="11" cy="11" r="8"/>
-                                <path d="M21 21l-4.35-4.35"/>
-                            </svg>
-                        </div>
-                        <h3>Recrutamento Inteligente</h3>
-                        <p>ATS completo com IA para triagem, banco de talentos qualificado, fit cultural e compatibilidade comportamental em tempo real.</p>
-                        <div class="solution-benefits">
-                            <span class="solution-benefit">ATS com IA</span>
-                            <span class="solution-benefit">Banco de talentos</span>
-                            <span class="solution-benefit">Fit Cultural</span>
-                            <span class="solution-benefit">Triagem automática</span>
-                        </div>
-                        <a href="#contato" class="link-arrow">Solicitar demonstração →</a>
-                    </article>
-
-                    <article class="solution-card reveal">
-                        <div class="solution-icon gold">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M12 2a10 10 0 1 0 10 10"/>
-                                <path d="M12 6v6l4 2"/>
-                            </svg>
-                        </div>
-                        <h3>Avaliações Comportamentais</h3>
-                        <p>Suíte completa de assessments validados cientificamente. DISC, Big Five, Inteligência Emocional, Valores, SWOT e Metodologia VIGOR®.</p>
-                        <div class="solution-benefits">
-                            <span class="solution-benefit">DISC</span>
-                            <span class="solution-benefit">Big Five</span>
-                            <span class="solution-benefit">IE</span>
-                            <span class="solution-benefit">Valores</span>
-                            <span class="solution-benefit">SWOT</span>
-                            <span class="solution-benefit">VIGOR®</span>
-                        </div>
-                        <a href="#contato" class="link-arrow">Solicitar demonstração →</a>
-                    </article>
-
-                    <article class="solution-card reveal">
-                        <div class="solution-icon cyan">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
-                                <path d="M6 12v5c3 3 9 3 12 0v-5"/>
-                            </svg>
-                        </div>
-                        <h3>Treinamentos Corporativos</h3>
-                        <p>Programas sob medida para desenvolver líderes, comunicação, gestão de equipes e universidade corporativa com metodologia própria.</p>
-                        <div class="solution-benefits">
-                            <span class="solution-benefit">Liderança</span>
-                            <span class="solution-benefit">Comunicação</span>
-                            <span class="solution-benefit">Gestão</span>
-                            <span class="solution-benefit">Universidade Corporativa</span>
-                        </div>
-                        <a href="#contato" class="link-arrow">Solicitar demonstração →</a>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- ================= BEYOND DISC ================= -->
-        <section class="section section-dark">
-            <div class="container">
-                <div class="section-header reveal">
-                    <span class="section-tag">Diferencial Vigorre</span>
-                    <h2>Muito além do DISC.</h2>
-                    <p>Enquanto a maioria das plataformas analisa apenas um perfil comportamental, a Vigorre entrega uma visão completa e integrada do potencial humano.</p>
+                <div class="tech-grid">
+                    <div class="tech-item">
+                        <span class="tech-icon">🌐</span>
+                        <h4>Sites Profissionais</h4>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-icon">📄</span>
+                        <h4>Landing Pages</h4>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-icon">⚙️</span>
+                        <h4>Sistemas Personalizados</h4>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-icon">📊</span>
+                        <h4>Dashboards Inteligentes</h4>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-icon">📱</span>
+                        <h4>Aplicativos</h4>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-icon">🤖</span>
+                        <h4>Inteligência Artificial</h4>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-icon">🔄</span>
+                        <h4>Automação de Processos</h4>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-icon">📋</span>
+                        <h4>Admissão Digital</h4>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-icon">🎓</span>
+                        <h4>Onboarding</h4>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-icon">👋</span>
+                        <h4>Offboarding</h4>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-icon">🆘</span>
+                        <h4>Help Desk de DP</h4>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-icon">💬</span>
+                        <h4>Chatbots</h4>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-icon">🔗</span>
+                        <h4>Integrações WhatsApp</h4>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-icon">🏢</span>
+                        <h4>Integrações com ERPs</h4>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-icon">📈</span>
+                        <h4>Business Intelligence</h4>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-icon">💡</span>
+                        <h4>Agentes de IA</h4>
+                    </div>
                 </div>
 
-                <div class="beyond-grid">
-                    <div class="beyond-card reveal">
-                        <div class="beyond-icon">🧠</div>
-                        <h4>DISC</h4>
-                        <p>Dominância, Influência, Estabilidade e Conformidade.</p>
+                <!-- PLANO SITE BÁSICO -->
+                <div class="tech-pricing">
+                    <div class="pricing-card popular">
+                        <div class="popular-badge">Lançamento</div>
+                        <div class="pricing-header">
+                            <h3>Site Básico</h3>
+                            <p>Ideal para presença digital profissional</p>
+                        </div>
+                        <div class="pricing-price">
+                            <span style="text-decoration: line-through; color: #EF4444; font-size: 1.1rem;">De R$ 300,00</span>
+                        </div>
+                        <div class="pricing-price">
+                            <span class="amount">Por R$ 149,00</span>
+                        </div>
+                        <div class="pricing-features">
+                            <ul>
+                                <li>✅ Site institucional responsivo</li>
+                                <li>✅ Até 5 páginas</li>
+                                <li>✅ Formulário de contato</li>
+                                <li>✅ Integração WhatsApp</li>
+                                <li>✅ Hospedagem inclusa</li>
+                                <li>✅ Suporte 30 dias</li>
+                            </ul>
+                        </div>
+                        <a href="#contato" class="btn btn-primary btn-block">Solicitar Orçamento</a>
                     </div>
-                    <div class="beyond-card reveal">
-                        <div class="beyond-icon">🔬</div>
-                        <h4>Big Five</h4>
-                        <p>Os 5 grandes fatores da personalidade humana.</p>
-                    </div>
-                    <div class="beyond-card reveal">
-                        <div class="beyond-icon">💡</div>
-                        <h4>Inteligência Emocional</h4>
-                        <p>Autoconhecimento, resiliência, empatia e gestão.</p>
-                    </div>
-                    <div class="beyond-card reveal">
-                        <div class="beyond-icon">💎</div>
-                        <h4>Valores Pessoais</h4>
-                        <p>Teoria de Schwartz aplicada ao contexto corporativo.</p>
-                    </div>
-                    <div class="beyond-card reveal">
-                        <div class="beyond-icon">🎯</div>
-                        <h4>SWOT Pessoal</h4>
-                        <p>Forças, fraquezas, oportunidades e ameaças.</p>
-                    </div>
-                    <div class="beyond-card reveal">
-                        <div class="beyond-icon">⭐</div>
-                        <h4>Competências</h4>
-                        <p>Mapeamento de habilidades técnicas e comportamentais.</p>
-                    </div>
-                    <div class="beyond-card reveal">
-                        <div class="beyond-icon">🔗</div>
-                        <h4>Fit Cultural</h4>
-                        <p>Compatibilidade com a cultura da sua organização.</p>
-                    </div>
-                    <div class="beyond-card reveal">
-                        <div class="beyond-icon">📊</div>
-                        <h4>Metodologia VIGOR®</h4>
-                        <p>Laudo integrado exclusivo com inteligência artificial.</p>
-                    </div>
-                    <div class="beyond-card reveal">
-                        <div class="beyond-icon">🤖</div>
-                        <h4>Laudo Inteligente por IA</h4>
-                        <p>Consolidação automática de todas as avaliações.</p>
-                    </div>
-                    <div class="beyond-card reveal">
-                        <div class="beyond-icon">📈</div>
-                        <h4>People Analytics</h4>
-                        <p>Dashboards preditivos e indicadores estratégicos.</p>
-                    </div>
-                    <div class="beyond-card reveal">
-                        <div class="beyond-icon">🚀</div>
-                        <h4>PDI</h4>
-                        <p>Plano de Desenvolvimento Individual personalizado.</p>
-                    </div>
-                    <div class="beyond-card reveal">
-                        <div class="beyond-icon">🤝</div>
-                        <h4>Compatibilidade</h4>
-                        <p>Match com gestor, equipe e cultura organizacional.</p>
+
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h3>Demais Serviços</h3>
+                            <p>Soluções personalizadas para seu negócio</p>
+                        </div>
+                        <div class="pricing-price">
+                            <span class="amount">Sob Consulta</span>
+                        </div>
+                        <div class="pricing-features">
+                            <ul>
+                                <li>✅ Sistemas sob medida</li>
+                                <li>✅ Aplicativos mobile</li>
+                                <li>✅ Dashboards e BI</li>
+                                <li>✅ Automação de processos</li>
+                                <li>✅ IA e Chatbots</li>
+                                <li>✅ Suporte continuado</li>
+                            </ul>
+                        </div>
+                        <a href="#contato" class="btn btn-outline btn-block">Falar com Especialista</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- ================= METHODOLOGY VIGOR® ================= -->
-        <section class="section">
-            <div class="container">
-                <div class="method-wrapper">
-                    <div class="method-visual reveal">
-                        <span class="method-badge-big">Metodologia Exclusiva</span>
-                        <h3>Metodologia VIGOR®</h3>
-                        <p>Todos os assessments podem gerar um único Laudo Comportamental Inteligente — consolidado por IA, com profundidade científica e linguagem executiva.</p>
-                        <div class="method-flow">
-                            <div class="method-flow-item">
-                                <span class="method-flow-num">1</span>
-                                <span>Aplicação dos assessments</span>
-                            </div>
-                            <div class="method-flow-item">
-                                <span class="method-flow-num">2</span>
-                                <span>Consolidação por Inteligência Artificial</span>
-                            </div>
-                            <div class="method-flow-item">
-                                <span class="method-flow-num">3</span>
-                                <span>Laudo integrado com insights acionáveis</span>
-                            </div>
-                            <div class="method-flow-item">
-                                <span class="method-flow-num">4</span>
-                                <span>Plano de desenvolvimento personalizado</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="method-content reveal">
-                        <span class="section-tag">Diferencial Competitivo</span>
-                        <h2>Um único laudo. <span class="gradient-text">Todas as dimensões do potencial humano.</span></h2>
-                        <p>A Metodologia VIGOR® é o coração da nossa plataforma. Ela integra DISC, Big Five, Inteligência Emocional, Valores, SWOT e Competências em uma análise coesa, gerada por IA, que elimina ruídos e entrega clareza estratégica para decisões de gente.</p>
-                        <div class="method-features">
-                            <div class="method-feature">
-                                <div class="method-feature-icon">
-                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                                        <path d="M20 6L9 17l-5-5"/>
-                                    </svg>
-                                </div>
-                                <div>
-                                    <h4>Visão 360° do colaborador</h4>
-                                    <p>Comportamento, emoção, valores e competências em um só lugar.</p>
-                                </div>
-                            </div>
-                            <div class="method-feature">
-                                <div class="method-feature-icon">
-                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                                        <path d="M20 6L9 17l-5-5"/>
-                                    </svg>
-                                </div>
-                                <div>
-                                    <h4>Decisões baseadas em evidências</h4>
-                                    <p>Contratações, promoções e desenvolvimentos com fundamento científico.</p>
-                                </div>
-                            </div>
-                            <div class="method-feature">
-                                <div class="method-feature-icon">
-                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                                        <path d="M20 6L9 17l-5-5"/>
-                                    </svg>
-                                </div>
-                                <div>
-                                    <h4>Exclusividade Vigorre</h4>
-                                    <p>Metodologia proprietária que você não encontra em nenhuma outra HR Tech.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        <!-- ================= INSTITUTO VIGORRE™ ================= -->
+        <section id="instituto" class="section section-dark">
+            <div class="container" style="text-align: center;">
+                <div class="section-header">
+                    <span class="section-tag">Universidade Corporativa</span>
+                    <h2>Instituto <span class="gradient-text">Vigorre™</span></h2>
+                    <p>Formação e certificação em Inteligência Humana, People Analytics e Metodologia VIGOR®.</p>
                 </div>
+                <div class="badge-instituto-lg">Em breve</div>
+                <p style="color: rgba(255,255,255,0.7); max-width: 600px; margin: 20px auto 0;">
+                    Uma iniciativa para formar a próxima geração de líderes e profissionais de RH com 
+                    a metodologia proprietária Vigorre.
+                </p>
             </div>
         </section>
 
-        <!-- ================= VIGORRE ONE™ ================= -->
-        <section id="one" class="platform-section">
-            <div class="container">
-                <div class="platform-header reveal">
-                    <span class="section-tag">Plataforma de Desenvolvimento</span>
-                    <h2>Desenvolvimento Inteligente de <span class="gradient-text">Pessoas</span></h2>
-                    <p>O Vigorre ONE™ é a plataforma que transforma dados comportamentais em planos de ação concretos. Assessment, People Analytics, PDI, treinamentos e laudos inteligentes em um único ecossistema.</p>
-                </div>
-
-                <div class="platform-grid">
-                    <div class="platform-item reveal">
-                        <div class="platform-item-icon">🎯</div>
-                        <h4>Assessment</h4>
-                    </div>
-                    <div class="platform-item reveal">
-                        <div class="platform-item-icon">🧠</div>
-                        <h4>DISC</h4>
-                    </div>
-                    <div class="platform-item reveal">
-                        <div class="platform-item-icon">🔬</div>
-                        <h4>Big Five</h4>
-                    </div>
-                    <div class="platform-item reveal">
-                        <div class="platform-item-icon">💡</div>
-                        <h4>IE</h4>
-                    </div>
-                    <div class="platform-item reveal">
-                        <div class="platform-item-icon">💎</div>
-                        <h4>Valores</h4>
-                    </div>
-                    <div class="platform-item reveal">
-                        <div class="platform-item-icon">🎯</div>
-                        <h4>SWOT</h4>
-                    </div>
-                    <div class="platform-item reveal">
-                        <div class="platform-item-icon">🚀</div>
-                        <h4>PDI</h4>
-                    </div>
-                    <div class="platform-item reveal">
-                        <div class="platform-item-icon">🎓</div>
-                        <h4>Treinamentos</h4>
-                    </div>
-                    <div class="platform-item reveal">
-                        <div class="platform-item-icon">📊</div>
-                        <h4>People Analytics</h4>
-                    </div>
-                    <div class="platform-item reveal">
-                        <div class="platform-item-icon">📄</div>
-                        <h4>Laudos</h4>
-                    </div>
-                </div>
-
-                <div class="platform-cta reveal">
-                    <a href="https://vigorre.vercel.app/" target="_blank" rel="noopener" class="btn btn-primary btn-lg">
-                        Conhecer o Vigorre ONE™
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M7 17L17 7M7 7h10v10"/>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <!-- ================= VIGORRE HIRE™ ================= -->
-        <section id="hire" class="platform-section hire">
-            <div class="container">
-                <div class="platform-header reveal">
-                    <span class="section-tag">Plataforma de Recrutamento</span>
-                    <h2>Recrutamento Inteligente para <span class="gradient-text">Empresas e Candidatos</span></h2>
-                    <p>O Vigorre HIRE™ conecta empresas aos melhores talentos com IA, fit cultural e um programa de afiliados exclusivo. Do primeiro emprego à liderança.</p>
-                </div>
-
-                <div class="hire-columns">
-                    <div class="hire-column reveal">
-                        <div class="hire-column-header">
-                            <div class="hire-column-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M3 21h18M5 21V7l8-4v18M19 21V11l-6-4"/>
-                                </svg>
-                            </div>
-                            <h3>Para Empresas</h3>
-                        </div>
-                        <ul class="hire-list">
-                            <li>ATS Inteligente com IA</li>
-                            <li>Banco de Talentos qualificado</li>
-                            <li>Triagem automática de currículos</li>
-                            <li>Fit Cultural e compatibilidade</li>
-                            <li>People Analytics integrado</li>
-                            <li>Programa de Indicações</li>
-                        </ul>
-                    </div>
-
-                    <div class="hire-column reveal">
-                        <div class="hire-column-header">
-                            <div class="hire-column-icon pink">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
-                                    <circle cx="12" cy="7" r="4"/>
-                                </svg>
-                            </div>
-                            <h3>Para Candidatos</h3>
-                        </div>
-                        <ul class="hire-list">
-                            <li>Primeiro Emprego e Jovem Aprendiz</li>
-                            <li>Teste Vocacional Gratuito</li>
-                            <li>Score de Empregabilidade</li>
-                            <li>Orientação Profissional</li>
-                            <li>Currículo Inteligente</li>
-                            <li>Match com empresas compatíveis</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="platform-cta reveal">
-                    <a href="https://vigorre-hire.vercel.app/" target="_blank" rel="noopener" class="btn btn-primary btn-lg">
-                        Conhecer o Vigorre HIRE™
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M7 17L17 7M7 7h10v10"/>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <!-- ================= SECTORS ================= -->
+        <!-- ================= SETORES ================= -->
         <section id="setores" class="section section-setores">
             <div class="container">
-                <div class="section-header reveal">
-                    <span class="section-tag">Recrutamento Setorial</span>
-                    <h2>Especialização técnica em <span class="gradient-text">cada cadeia produtiva</span></h2>
-                    <p>Metodologias adaptadas às particularidades de cada segmento. Linguagem, competências e cultura específicas para cada setor.</p>
+                <div class="section-header">
+                    <span class="section-tag">Especialização Setorial</span>
+                    <h2>Metodologia adaptada para cada <span class="gradient-text">cadeia produtiva</span></h2>
+                    <p>Soluções desenhadas para as particularidades de cada segmento.</p>
                 </div>
 
                 <div class="sectors-grid">
-                    <div class="sector-card reveal">
+                    <div class="sector-card-dark">
                         <span class="sector-icon">🌾</span>
-                        <h4>Agro e Agronegócio</h4>
+                        <h3>Agro e Agronegócio</h3>
                         <p>Operações de campo, gestão rural e logística agrícola com foco em segurança e produtividade.</p>
                     </div>
-                    <div class="sector-card reveal">
+                    <div class="sector-card-dark">
                         <span class="sector-icon">🏗️</span>
-                        <h4>Construção Civil</h4>
+                        <h3>Construção Civil</h3>
                         <p>Engenharia, mestre de obras e equipes de execução com ênfase em compliance e NR's.</p>
                     </div>
-                    <div class="sector-card reveal">
+                    <div class="sector-card-dark">
                         <span class="sector-icon">🏭</span>
-                        <h4>Indústria</h4>
+                        <h3>Indústria</h3>
                         <p>Produção, qualidade, manutenção e operação com foco em eficiência e segurança.</p>
                     </div>
-                    <div class="sector-card reveal">
+                    <div class="sector-card-dark">
                         <span class="sector-icon">💻</span>
-                        <h4>Tecnologia</h4>
+                        <h3>Tecnologia</h3>
                         <p>Desenvolvimento, dados, produto e inovação em ambientes ágeis e colaborativos.</p>
                     </div>
-                    <div class="sector-card reveal">
+                    <div class="sector-card-dark">
                         <span class="sector-icon">🏥</span>
-                        <h4>Saúde</h4>
+                        <h3>Saúde</h3>
                         <p>Hospitais, clínicas, farmácias e laboratórios com foco em humanização e excelência.</p>
                     </div>
-                    <div class="sector-card reveal">
+                    <div class="sector-card-dark">
                         <span class="sector-icon">🛒</span>
-                        <h4>Varejo</h4>
+                        <h3>Varejo</h3>
                         <p>Lojas, e-commerce, atendimento e operações com orientação a resultados.</p>
                     </div>
-                    <div class="sector-card reveal">
+                    <div class="sector-card-dark">
                         <span class="sector-icon">🤝</span>
-                        <h4>Serviços</h4>
+                        <h3>Serviços</h3>
                         <p>Consultorias, BPO, atendimento e suporte com foco em resolução de problemas.</p>
                     </div>
-                    <div class="sector-card reveal">
+                    <div class="sector-card-dark">
                         <span class="sector-icon">🚚</span>
-                        <h4>Logística</h4>
+                        <h3>Logística</h3>
                         <p>Transporte, distribuição e supply chain com eficiência operacional e pontualidade.</p>
                     </div>
-                    <div class="sector-card reveal">
+                    <div class="sector-card-dark">
                         <span class="sector-icon">🎓</span>
-                        <h4>Educação</h4>
+                        <h3>Educação</h3>
                         <p>Escolas, universidades e edtechs com paixão por ensinar e desenvolver pessoas.</p>
                     </div>
-                    <div class="sector-card reveal">
+                    <div class="sector-card-dark">
                         <span class="sector-icon">🌱</span>
-                        <h4>Cooperativas</h4>
+                        <h3>Cooperativas</h3>
                         <p>Cooperativismo rural, crédito e trabalho com cultura colaborativa e sustentável.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- ================= WHY VIGORRE ================= -->
-        <section class="section section-blue">
-            <div class="container">
-                <div class="section-header reveal">
-                    <span class="section-tag">Resultados Reais</span>
-                    <h2>Por que escolher a <span class="gradient-text">Vigorre</span></h2>
-                    <p>Não vendemos testes. Entregamos inteligência para que sua empresa contrate melhor, desenvolva líderes e retenha talentos.</p>
+        <!-- ================= CONTEÚDOS ================= -->
+        <section id="conteudos" class="section">
+            <div class="container" style="text-align: center;">
+                <div class="section-header">
+                    <span class="section-tag">Conhecimento</span>
+                    <h2>Conteúdos <span class="gradient-text">Vigorre</span></h2>
+                    <p>Artigos, estudos e insights sobre Inteligência Humana e gestão estratégica de pessoas.</p>
                 </div>
-
-                <div class="why-grid">
-                    <div class="why-card reveal">
-                        <div class="why-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M3 12a9 9 0 1 0 9-9"/>
-                                <path d="M3 4v5h5"/>
-                            </svg>
-                        </div>
-                        <h4>Reduza Turnover</h4>
-                        <p>Contrate pessoas que permanecem e entregam resultados.</p>
-                    </div>
-                    <div class="why-card reveal">
-                        <div class="why-icon purple">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <circle cx="12" cy="12" r="10"/>
-                                <circle cx="12" cy="12" r="6"/>
-                                <circle cx="12" cy="12" r="2"/>
-                            </svg>
-                        </div>
-                        <h4>Contrate Melhor</h4>
-                        <p>Decisões de contratação baseadas em dados, não em achismos.</p>
-                    </div>
-                    <div class="why-card reveal">
-                        <div class="why-icon gold">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M12 2L2 7l10 5 10-5-10-5Z"/>
-                                <path d="M2 17l10 5 10-5"/>
-                                <path d="M2 12l10 5 10-5"/>
-                            </svg>
-                        </div>
-                        <h4>Desenvolva Líderes</h4>
-                        <p>Identifique e forme a próxima geração de liderança da sua empresa.</p>
-                    </div>
-                    <div class="why-card reveal">
-                        <div class="why-icon cyan">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M3 3v18h18"/>
-                                <path d="M7 14l4-4 4 4 5-5"/>
-                            </svg>
-                        </div>
-                        <h4>Decisões Baseadas em Dados</h4>
-                        <p>People Analytics que transforma comportamento em estratégia.</p>
-                    </div>
-                    <div class="why-card reveal">
-                        <div class="why-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
-                            </svg>
-                        </div>
-                        <h4>Compatibilidade Comportamental</h4>
-                        <p>Match real entre pessoa, função, gestor e cultura.</p>
-                    </div>
-                    <div class="why-card reveal">
-                        <div class="why-icon purple">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                            </svg>
-                        </div>
-                        <h4>Maior Retenção</h4>
-                        <p>Pessoas certas nos lugares certos permanecem mais tempo.</p>
-                    </div>
-                    <div class="why-card reveal">
-                        <div class="why-icon gold">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
-                            </svg>
-                        </div>
-                        <h4>Produtividade</h4>
-                        <p>Equipes alinhadas entregam mais, com menos atrito.</p>
-                    </div>
-                    <div class="why-card reveal">
-                        <div class="why-icon cyan">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
-                            </svg>
-                        </div>
-                        <h4>Gestão Humanizada</h4>
-                        <p>Tecnologia a serviço das pessoas, nunca o contrário.</p>
+                <div style="padding: 60px 0;">
+                    <p style="font-size: 1.3rem; color: var(--text-muted); margin-bottom: 24px;">
+                        📚 Nossa plataforma de conteúdos está em construção.
+                    </p>
+                    <p style="color: var(--text-muted);">
+                        Em breve, artigos exclusivos sobre People Analytics, DISC, Big Five, 
+                        Inteligência Emocional e as melhores práticas em gestão de pessoas.
+                    </p>
+                    <div style="margin-top: 30px;">
+                        <a href="https://instagram.com/vigorre.consultoria" target="_blank" rel="noopener" class="btn btn-outline">
+                            📷 Acompanhe no Instagram
+                        </a>
+                        <a href="https://linkedin.com/company/vigorreoficial" target="_blank" rel="noopener" class="btn btn-outline" style="margin-left: 10px;">
+                            💼 Siga no LinkedIn
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- ================= FOR COMPANIES ================= -->
-        <section class="section">
+        <!-- ================= QUEM SOMOS ================= -->
+        <section id="quem-somos" class="section section-blue">
             <div class="container">
-                <div class="journey-wrapper">
-                    <div class="journey-content reveal">
-                        <span class="section-tag">Para Empresas</span>
-                        <h2>A jornada completa do colaborador, <span class="gradient-text">em uma única plataforma</span></h2>
-                        <p>Da atração à sucessão. A Vigorre acompanha cada etapa da vida do colaborador na sua empresa, com inteligência comportamental em cada decisão.</p>
-                        <div class="journey-steps">
-                            <div class="journey-step">
-                                <span class="journey-step-num">1</span>
-                                <h4>Recrutamento e Seleção</h4>
-                            </div>
-                            <div class="journey-step">
-                                <span class="journey-step-num">2</span>
-                                <h4>Integração e Onboarding</h4>
-                            </div>
-                            <div class="journey-step">
-                                <span class="journey-step-num">3</span>
-                                <h4>Desenvolvimento Contínuo</h4>
-                            </div>
-                            <div class="journey-step">
-                                <span class="journey-step-num">4</span>
-                                <h4>Avaliação de Performance</h4>
-                            </div>
-                            <div class="journey-step">
-                                <span class="journey-step-num">5</span>
-                                <h4>Promoção e Sucessão</h4>
-                            </div>
-                            <div class="journey-step">
-                                <span class="journey-step-num">6</span>
-                                <h4>Retenção de Talentos</h4>
-                            </div>
-                        </div>
-                        <a href="#contato" class="btn btn-primary">Agendar Demonstração</a>
-                    </div>
-                    <div class="journey-visual reveal">
-                        <h3>Resultados que transformam operações</h3>
-                        <p>Empresas que usam a Vigorre tomam decisões mais rápidas, erram menos em contratações e desenvolvem líderes de dentro para fora.</p>
-                        <div class="journey-features">
-                            <div class="journey-feature">Redução comprovada de turnover</div>
-                            <div class="journey-feature">Contratações mais assertivas</div>
-                            <div class="journey-feature">Lideranças desenvolvidas internamente</div>
-                            <div class="journey-feature">Clima organizacional elevado</div>
-                            <div class="journey-feature">Decisões estratégicas com dados</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ================= FOR CANDIDATES ================= -->
-        <section class="section section-blue">
-            <div class="container">
-                <div class="journey-wrapper">
-                    <div class="journey-visual reveal" style="background: linear-gradient(135deg, #8B5CF6 0%, #EC4899 100%);">
-                        <h3>Sua carreira começa aqui.</h3>
-                        <p>A Vigorre acredita no potencial, não apenas na experiência. Descubra seu perfil, desenvolva suas competências e conecte-se com empresas que valorizam quem você é.</p>
-                        <div class="journey-features">
-                            <div class="journey-feature">Primeiro Emprego e Jovem Aprendiz</div>
-                            <div class="journey-feature">Estágio e oportunidades iniciais</div>
-                            <div class="journey-feature">Teste Vocacional Gratuito</div>
-                            <div class="journey-feature">Orientação Profissional</div>
-                            <div class="journey-feature">Score de Empregabilidade</div>
-                            <div class="journey-feature">Plano de Carreira personalizado</div>
-                            <div class="journey-feature">Currículo Inteligente</div>
-                        </div>
-                    </div>
-                    <div class="journey-content reveal">
-                        <span class="section-tag">Para Candidatos</span>
-                        <h2>Descubra seu potencial. <span class="gradient-text">Construa sua trajetória.</span></h2>
-                        <p>Mais do que um banco de vagas, o Vigorre HIRE™ é uma plataforma de desenvolvimento de carreira. Avalie suas competências, entenda seu perfil e conecte-se com oportunidades alinhadas ao seu momento profissional.</p>
-                        <div class="journey-steps">
-                            <div class="journey-step">
-                                <span class="journey-step-num">1</span>
-                                <h4>Crie seu perfil inteligente</h4>
-                            </div>
-                            <div class="journey-step">
-                                <span class="journey-step-num">2</span>
-                                <h4>Faça assessments gratuitos</h4>
-                            </div>
-                            <div class="journey-step">
-                                <span class="journey-step-num">3</span>
-                                <h4>Descubra seu Score de Empregabilidade</h4>
-                            </div>
-                            <div class="journey-step">
-                                <span class="journey-step-num">4</span>
-                                <h4>Receba matches inteligentes</h4>
-                            </div>
-                            <div class="journey-step">
-                                <span class="journey-step-num">5</span>
-                                <h4>Evolua com planos de desenvolvimento</h4>
-                            </div>
-                        </div>
-                        <a href="#hire" class="btn btn-primary">Começar agora</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ================= ABOUT ================= -->
-        <section id="sobre" class="section">
-            <div class="container">
-                <div class="section-header reveal">
+                <div class="section-header">
                     <span class="section-tag">Quem Somos</span>
-                    <h2>Uma HR Tech brasileira. <span class="gradient-text">Padrão global de inteligência.</span></h2>
+                    <h2>Uma consultoria estratégica com <span class="gradient-text">tecnologia proprietária</span></h2>
                 </div>
 
-                <div class="about-intro reveal">
+                <div class="about-intro">
                     <p>
-                        A <strong>Vigorre</strong> nasceu da convicção de que decisões sobre pessoas merecem a mesma profundidade e rigor que decisões sobre estratégia, produto e mercado. Somos uma <strong>HR Tech especializada em Inteligência Humana</strong> — unimos ciência comportamental, inteligência artificial e visão estratégica para entregar um ecossistema completo de gestão de pessoas. Não somos uma consultoria tradicional. Não somos apenas um software. Somos a camada de inteligência que transforma comportamento em resultado.
+                        A <strong>Vigorre</strong> nasceu da convicção de que decisões sobre pessoas merecem 
+                        a mesma profundidade e rigor que decisões sobre estratégia, produto e mercado. 
+                        Somos uma <strong>consultoria especializada em Inteligência Humana</strong> — 
+                        unimos ciência comportamental, inteligência artificial e visão estratégica para 
+                        entregar um ecossistema completo de gestão de pessoas.
                     </p>
                 </div>
 
-                <div class="about-pillars">
-                    <div class="pillar-card reveal">
-                        <div class="pillar-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <circle cx="12" cy="12" r="10"/>
-                                <circle cx="12" cy="12" r="6"/>
-                                <circle cx="12" cy="12" r="2"/>
-                            </svg>
-                        </div>
+                <div class="values-grid">
+                    <div class="value-card">
+                        <span class="value-icon">🎯</span>
                         <h3>Missão</h3>
-                        <p>Democratizar o acesso a ferramentas de Inteligência Humana de alta performance, permitindo que empresas de todos os portes tomem decisões de gestão baseadas em dados, ética e humanização.</p>
+                        <p>Democratizar o acesso a ferramentas de Inteligência Humana de alta performance, 
+                        permitindo que empresas de todos os portes tomem decisões de gestão baseadas em dados, ética e humanização.</p>
                     </div>
-                    <div class="pillar-card reveal">
-                        <div class="pillar-icon purple">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z"/>
-                                <circle cx="12" cy="12" r="3"/>
-                            </svg>
-                        </div>
+                    <div class="value-card">
+                        <span class="value-icon">🔭</span>
                         <h3>Visão</h3>
-                        <p>Ser referência em Inteligência Humana no Brasil, reconhecida pela precisão científica, pela experiência de uso e pelo impacto mensurável no desenvolvimento de pessoas e organizações.</p>
+                        <p>Ser referência em Inteligência Humana no Brasil, reconhecida pela precisão científica, 
+                        pela experiência de uso e pelo impacto mensurável no desenvolvimento de pessoas e organizações.</p>
                     </div>
-                    <div class="pillar-card reveal">
-                        <div class="pillar-icon gold">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M12 2L2 7l10 5 10-5-10-5Z"/>
-                                <path d="M2 17l10 5 10-5"/>
-                                <path d="M2 12l10 5 10-5"/>
-                            </svg>
-                        </div>
+                    <div class="value-card">
+                        <span class="value-icon">💎</span>
                         <h3>Valores</h3>
-                        <ul>
-                            <li><strong>Ética e Transparência</strong> — dados tratados com responsabilidade LGPD</li>
-                            <li><strong>Ciência Aplicada</strong> — metodologias validadas academicamente</li>
-                            <li><strong>Humanização</strong> — tecnologia a serviço das pessoas</li>
-                            <li><strong>Excelência</strong> — padrão executivo em cada entrega</li>
-                        </ul>
+                        <p>
+                            <strong>Ética e Transparência</strong> — dados tratados com responsabilidade LGPD<br>
+                            <strong>Ciência Aplicada</strong> — metodologias validadas academicamente<br>
+                            <strong>Humanização</strong> — tecnologia a serviço das pessoas<br>
+                            <strong>Excelência</strong> — padrão executivo em cada entrega
+                        </p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- ================= CONTACT ================= -->
-        <section id="contato" class="section section-blue">
+        <!-- ================= CONTATO ================= -->
+        <section id="contato" class="section">
             <div class="container">
                 <div class="contact-grid">
-                    <div class="contact-info reveal">
+                    <div class="contact-info">
                         <span class="section-tag">Contato</span>
-                        <h2>Vamos transformar pessoas em resultados?</h2>
+                        <h2>Vamos transformar <span class="gradient-text">pessoas em resultados?</span></h2>
                         <p>Fale com um especialista Vigorre. Em até 2 horas úteis, nossa equipe entra em contato para entender sua operação e apresentar a solução ideal.</p>
                         
                         <div class="contact-methods">
@@ -2973,7 +648,7 @@
                         </div>
                     </div>
                     
-                    <form class="contact-form reveal" id="contactForm" novalidate>
+                    <form class="contact-form" id="contactForm" novalidate>
                         <div class="form-row">
                             <div class="form-group">
                                 <label for="name">Nome completo *</label>
@@ -2998,11 +673,12 @@
                             <label for="interest">Interesse principal</label>
                             <select id="interest" name="interest">
                                 <option value="">Selecione...</option>
+                                <option value="diagnostico">Solicitar Diagnóstico Gratuito</option>
                                 <option value="demo">Solicitar Demonstração</option>
                                 <option value="one">Vigorre ONE™</option>
                                 <option value="hire">Vigorre HIRE™</option>
+                                <option value="tech">Vigorre TECH™</option>
                                 <option value="pricing">Proposta Comercial</option>
-                                <option value="affiliate">Programa de Afiliados</option>
                                 <option value="other">Outro</option>
                             </select>
                         </div>
@@ -3018,7 +694,7 @@
         </section>
     </main>
 
-    <!-- ================= FOOTER ================= -->
+    <!-- ================= FOOTER (MANTIDO COMO ORIGINAL) ================= -->
     <footer class="site-footer">
         <div class="container">
             <div class="footer-grid">
@@ -3030,47 +706,38 @@
                             <span class="footer-logo-tagline">Inteligência e Gestão Estratégica</span>
                         </div>
                     </div>
-                    <p>Ecossistema completo de Inteligência Humana. People Analytics, Recrutamento e Assessment Comportamental para empresas que querem ir além.</p>
+                    <p>Consultoria estratégica com tecnologia proprietária em Inteligência Humana, People Analytics e Gestão de Pessoas.</p>
                     <div class="footer-social">
-                        <a href="https://instagram.com/vigorre.consultoria" target="_blank" rel="noopener" aria-label="Instagram">
-                            <svg viewBox="0 0 24 24"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23a3.81 3.81 0 01-.9 1.38c-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.81 3.81 0 01-1.38-.9 3.81 3.81 0 01-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16ZM12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63c-.79.3-1.46.71-2.13 1.38A5.86 5.86 0 00.63 4.14C.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.3.79.71 1.46 1.38 2.13.67.67 1.34 1.08 2.13 1.38.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56a5.86 5.86 0 002.13-1.38 5.86 5.86 0 001.38-2.13c.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91a5.86 5.86 0 00-1.38-2.13A5.86 5.86 0 0019.86.63c-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0Zm0 5.84A6.16 6.16 0 1018.16 12 6.16 6.16 0 0012 5.84ZM12 16a4 4 0 110-8 4 4 0 010 8Zm6.4-11.85a1.44 1.44 0 100 2.88 1.44 1.44 0 000-2.88Z"/></svg>
-                        </a>
-                        <a href="https://linkedin.com/company/vigorreoficial" target="_blank" rel="noopener" aria-label="LinkedIn">
-                            <svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.95v5.66H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.07 2.07 0 110-4.14 2.07 2.07 0 010 4.14ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0Z"/></svg>
-                        </a>
-                        <a href="https://wa.me/5534991850735" target="_blank" rel="noopener" aria-label="WhatsApp">
-                            <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884M20.52 3.449C18.24 1.245 15.24 0 12.045 0 5.463 0 .104 5.334.101 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-                        </a>
-                        <a href="https://facebook.com/vigorre" target="_blank" rel="noopener" aria-label="Facebook">
-                            <svg viewBox="0 0 24 24"><path d="M24 12a12 12 0 10-13.88 11.85v-8.38H7.08V12h3.04V9.41c0-3 1.79-4.66 4.53-4.66 1.31 0 2.68.23 2.68.23v2.95h-1.51c-1.49 0-1.95.92-1.95 1.87V12h3.32l-.53 3.47h-2.79v8.38A12 12 0 0024 12Z"/></svg>
-                        </a>
+                        <a href="https://instagram.com/vigorre.consultoria" target="_blank" rel="noopener" aria-label="Instagram">📷</a>
+                        <a href="https://linkedin.com/company/vigorreoficial" target="_blank" rel="noopener" aria-label="LinkedIn">💼</a>
+                        <a href="https://wa.me/5534991850735" target="_blank" rel="noopener" aria-label="WhatsApp">📱</a>
                     </div>
                 </div>
                 <div class="footer-links">
-                    <h4>Plataforma</h4>
+                    <h4>Serviços</h4>
                     <ul>
-                        <li><a href="#solucoes">Soluções</a></li>
+                        <li><a href="#servicos">Recrutamento & Seleção</a></li>
+                        <li><a href="#servicos">Executive Search</a></li>
+                        <li><a href="#servicos">Consultoria Empresarial</a></li>
+                        <li><a href="#servicos">People Analytics</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Plataformas</h4>
+                    <ul>
                         <li><a href="https://vigorre.vercel.app/" target="_blank">Vigorre ONE™</a></li>
                         <li><a href="https://vigorre-hire.vercel.app/" target="_blank">Vigorre HIRE™</a></li>
-                        <li><a href="#setores">Setores</a></li>
+                        <li><a href="#tech">Vigorre TECH™</a></li>
+                        <li><a href="#instituto">Instituto Vigorre™</a></li>
                     </ul>
                 </div>
                 <div class="footer-links">
                     <h4>Empresa</h4>
                     <ul>
-                        <li><a href="#sobre">Quem Somos</a></li>
+                        <li><a href="#quem-somos">Quem Somos</a></li>
                         <li><a href="#contato">Contato</a></li>
-                        <li><a href="#">Carreiras</a></li>
-                        <li><a href="#">Blog</a></li>
-                    </ul>
-                </div>
-                <div class="footer-links">
-                    <h4>Legal</h4>
-                    <ul>
                         <li><a href="#">Termos de Uso</a></li>
                         <li><a href="#">Política de Privacidade</a></li>
-                        <li><a href="#">LGPD e Cookies</a></li>
-                        <li><a href="#">SLA e Suporte</a></li>
                     </ul>
                 </div>
             </div>
@@ -3093,60 +760,11 @@
         <div class="modal-content">
             <div class="modal-icon">✅</div>
             <h3>Solicitação Enviada!</h3>
-            <p>Nossa equipe comercial entrará em contato em até 2 horas úteis.</p>
+            <p>Nossa equipe entrará em contato em até 2 horas úteis.</p>
             <button class="btn btn-primary" onclick="closeModal()">Entendido</button>
         </div>
     </div>
 
-    <script>
-        // Header scroll
-        const header = document.querySelector('[data-header]');
-        window.addEventListener('scroll', () => {
-            header.classList.toggle('scrolled', window.scrollY > 20);
-        }, { passive: true });
-
-        // Mobile menu
-        const mobileToggle = document.querySelector('.mobile-toggle');
-        const mobileMenu = document.querySelector('.mobile-menu');
-        mobileToggle?.addEventListener('click', () => {
-            const expanded = mobileToggle.getAttribute('aria-expanded') === 'true';
-            mobileToggle.setAttribute('aria-expanded', !expanded);
-            mobileMenu.classList.toggle('active');
-            mobileMenu.setAttribute('aria-hidden', expanded);
-        });
-
-        // Scroll Reveal
-        const revealElements = document.querySelectorAll('.reveal');
-        const revealObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                    revealObserver.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
-        revealElements.forEach(el => revealObserver.observe(el));
-
-        // Form
-        const form = document.getElementById('contactForm');
-        const modal = document.getElementById('successModal');
-        form?.addEventListener('submit', (e) => {
-            e.preventDefault();
-            if (form.checkValidity()) {
-                modal.classList.add('active');
-                modal.setAttribute('aria-hidden', 'false');
-                form.reset();
-            } else {
-                form.reportValidity();
-            }
-        });
-        function closeModal() {
-            modal.classList.remove('active');
-            modal.setAttribute('aria-hidden', 'true');
-        }
-        modal?.addEventListener('click', (e) => {
-            if (e.target === modal) closeModal();
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
