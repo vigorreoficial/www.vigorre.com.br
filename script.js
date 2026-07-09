@@ -1,7 +1,7 @@
 /**
- * VIGORRE - JavaScript Principal
- * Funcionalidades: Menu Mobile, Scroll Suave, Animações, Formulário e Interações
- * Versão: 3.0 - Final Production Ready
+ * VIGORRE - JavaScript Principal v4.0
+ * Consultoria Estratégica com Tecnologia Proprietária
+ * Funcionalidades: Menu Mobile, Dropdown, Scroll Suave, Formulário, Modal
  */
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -21,8 +21,8 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
     
-    window.addEventListener('scroll', updateHeader);
-    updateHeader(); // Executa ao carregar
+    window.addEventListener('scroll', updateHeader, { passive: true });
+    updateHeader();
     
     // ========================================
     // 2. MENU MOBILE
@@ -76,30 +76,34 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     // ========================================
-    // 3. SCROLL SUAVE & INSTITUTO VIGORRE
+    // 3. DROPDOWN MENU (MOBILE)
+    // ========================================
+    const dropdownToggles = document.querySelectorAll('.nav-dropdown .dropdown-toggle');
+    
+    dropdownToggles.forEach(toggle => {
+        toggle.addEventListener('click', function(e) {
+            if (window.innerWidth <= 768) {
+                e.preventDefault();
+                const dropdown = this.nextElementSibling;
+                if (dropdown) {
+                    dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+                }
+            }
+        });
+    });
+    
+    // ========================================
+    // 4. SCROLL SUAVE
     // ========================================
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             const href = this.getAttribute('href');
-            if (href === '#') return;
+            if (href === '#' || href === '#!') return;
             
-            // Tratamento especial para Instituto Vigorre (Em breve)
-            const isInstituto = this.classList.contains('nav-instituto') || 
-                                this.closest('.nav-instituto') || 
-                                this.closest('.mobile-instituto');
-            
-            if (isInstituto) {
-                e.preventDefault();
-                alert('🏛️ Instituto Vigorre\n\nLançamento em breve! Fique atento às nossas redes sociais.');
-                if (mobileMenu && mobileMenu.classList.contains('active')) toggleMobileMenu();
-                return;
-            }
-            
-            // Scroll suave padrão
             e.preventDefault();
             const target = document.querySelector(href);
             if (target) {
-                const headerHeight = 80; // Altura atual do header no CSS
+                const headerHeight = 80;
                 const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - headerHeight;
                 
                 window.scrollTo({
@@ -109,42 +113,6 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
-    
-    // ========================================
-    // 4. ANIMAÇÕES AO SCROLL (Intersection Observer)
-    // ========================================
-    const animatedElements = document.querySelectorAll(
-        '.service-card, .sector-card-dark, .pricing-card, .value-card, .app-feature, .contact-item'
-    );
-    
-    const observerOptions = {
-        root: null,
-        rootMargin: '0px',
-        threshold: 0.15
-    };
-    
-    const animationObserver = new IntersectionObserver((entries, observer) => {
-        entries.forEach((entry, index) => {
-            if (entry.isIntersecting) {
-                // Delay em cascata para efeito profissional
-                const delay = index * 0.08;
-                
-                entry.target.style.opacity = '0';
-                entry.target.style.transform = 'translateY(25px)';
-                entry.target.style.transition = `opacity 0.6s ease ${delay}s, transform 0.6s ease ${delay}s`;
-                
-                // Força reflow para garantir animação
-                void entry.target.offsetWidth;
-                
-                entry.target.style.opacity = '1';
-                entry.target.style.transform = 'translateY(0)';
-                
-                observer.unobserve(entry.target);
-            }
-        });
-    }, observerOptions);
-    
-    animatedElements.forEach(el => animationObserver.observe(el));
     
     // ========================================
     // 5. FORMULÁRIO DE CONTATO & MODAL
@@ -165,38 +133,32 @@ document.addEventListener('DOMContentLoaded', function() {
             submitBtn.style.opacity = '0.7';
             submitBtn.style.cursor = 'not-allowed';
             
-            // Coleta dados (preparado para integração futura)
+            // Coleta dados
             const formData = {
-                name: document.getElementById('name').value,
-                company: document.getElementById('company').value,
-                email: document.getElementById('email').value,
-                phone: document.getElementById('phone').value,
-                interest: document.getElementById('interest').value,
-                message: document.getElementById('message').value,
+                name: document.getElementById('name')?.value,
+                company: document.getElementById('company')?.value,
+                email: document.getElementById('email')?.value,
+                phone: document.getElementById('phone')?.value,
+                interest: document.getElementById('interest')?.value,
+                message: document.getElementById('message')?.value,
                 timestamp: new Date().toISOString()
             };
             
-            console.log('📤 Dados do formulário capturados:', formData);
+            console.log('📤 Dados do formulário:', formData);
             
             // Simula envio
             setTimeout(() => {
-                // Sucesso
                 submitBtn.innerHTML = '✅ Enviado com sucesso!';
                 submitBtn.style.backgroundColor = '#10B981';
-                submitBtn.style.borderColor = '#10B981';
-                submitBtn.style.color = '#FFFFFF';
                 
-                // Mostra modal
                 if (successModal) {
                     successModal.classList.add('active');
                     successModal.setAttribute('aria-hidden', 'false');
-                    document.body.style.overflow = 'hidden'; // Trava scroll
+                    document.body.style.overflow = 'hidden';
                 }
                 
-                // Limpa formulário
                 contactForm.reset();
                 
-                // Reseta botão após 3s
                 setTimeout(() => {
                     submitBtn.innerHTML = originalContent;
                     submitBtn.disabled = false;
@@ -212,17 +174,15 @@ document.addEventListener('DOMContentLoaded', function() {
         if (successModal) {
             successModal.classList.remove('active');
             successModal.setAttribute('aria-hidden', 'true');
-            document.body.style.overflow = ''; // Libera scroll
+            document.body.style.overflow = '';
         }
     };
     
-    // Fechar modal clicando no overlay
     if (successModal) {
         successModal.addEventListener('click', (e) => {
             if (e.target === successModal) closeModal();
         });
         
-        // Fechar com ESC
         document.addEventListener('keydown', (e) => {
             if (e.key === 'Escape' && successModal.classList.contains('active')) {
                 closeModal();
@@ -231,7 +191,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     // ========================================
-    // 6. VALIDAÇÃO VISUAL RÁPIDA (Opcional)
+    // 6. VALIDAÇÃO VISUAL DO FORMULÁRIO
     // ========================================
     if (contactForm) {
         const inputs = contactForm.querySelectorAll('input[required], select[required]');
@@ -252,6 +212,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // ========================================
     // 7. INICIALIZAÇÃO FINAL
     // ========================================
-    console.log('✅ Todas as funcionalidades ativas. Site pronto para produção.');
+    console.log('✅ Vigorre • Todas as funcionalidades ativas.');
     
 });
