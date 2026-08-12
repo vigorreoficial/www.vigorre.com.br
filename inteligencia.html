@@ -12,11 +12,10 @@
 </head>
 <body>
 
-<!-- HEADER -->
 <header class="site-header" data-header>
     <div class="container header-inner">
-        <a href="/" class="logo-wrapper">
-            <img src="logo-vigorre.png" alt="VIGORRE" class="logo-img" width="120" height="40">
+        <a href="index.html" class="logo-wrapper">
+            <img src="logo-vigorre.png" alt="VIGORRE" class="logo-img">
             <div class="logo-text">
                 <span class="logo-name">Vigorre</span>
                 <span class="logo-tagline">Inteligência, Tecnologia e Gestão Estratégica</span>
@@ -24,7 +23,7 @@
         </a>
         <nav class="main-nav">
             <ul class="nav-list">
-                <li><a href="/">Início</a></li>
+                <li><a href="index.html">Início</a></li>
                 <li><a href="quem-somos.html">Quem Somos</a></li>
                 <li><a href="solucoes.html">Soluções</a></li>
                 <li><a href="portfolio.html">Portfólio</a></li>
@@ -38,14 +37,14 @@
                 Solicitar Diagnóstico
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
             </a>
-            <button class="mobile-toggle" aria-label="Abrir menu" aria-expanded="false">
+            <button class="mobile-toggle" aria-label="Abrir menu">
                 <span></span><span></span><span></span>
             </button>
         </div>
     </div>
-    <div class="mobile-menu" aria-hidden="true">
+    <div class="mobile-menu">
         <ul class="mobile-nav-list">
-            <li><a href="/">Início</a></li>
+            <li><a href="index.html">Início</a></li>
             <li><a href="quem-somos.html">Quem Somos</a></li>
             <li><a href="solucoes.html">Soluções</a></li>
             <li><a href="portfolio.html">Portfólio</a></li>
@@ -59,7 +58,6 @@
 </header>
 
 <main>
-    <!-- HERO -->
     <section class="hero-interna">
         <div class="container hero-interna-grid">
             <div class="hero-interna-content">
@@ -68,187 +66,194 @@
                 <p class="hero-lead">Uma rede de especialistas aplicada aos desafios reais das organizações. Neurociência, psicologia, dados e estratégia em um único ecossistema.</p>
             </div>
             <div class="hero-interna-visual">
-                <img src="assets/images/hero-inteligencia.jpg" alt="Central de Inteligência VIGORRE" onerror="this.src='https://images.pexels.com/photos/5990030/pexels-photo-5990030.jpeg?auto=compress&cs=tinysrgb&h=600&w=800'">
+                <img src="https://images.pexels.com/photos/5990030/pexels-photo-5990030.jpeg?auto=compress&cs=tinysrgb&h=600&w=800" alt="Central de Inteligência VIGORRE" style="width:100%;height:400px;object-fit:cover;border-radius:12px;box-shadow:0 20px 60px rgba(0,0,0,0.1);">
             </div>
         </div>
     </section>
 
-    <!-- INTRODUÇÃO -->
-    <section class="section section-intro-inteligencia section-blue">
+    <style>
+        .hero-interna { padding: 8rem 0 4rem; background: var(--color-white); }
+        .hero-interna-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; }
+        .hero-interna-content .badge { display: inline-block; padding: 0.3rem 1rem; background: rgba(201,168,76,0.08); border: 1px solid rgba(201,168,76,0.15); border-radius: 50px; font-size: 0.7rem; font-weight: 600; color: var(--color-gold); text-transform: uppercase; margin-bottom: 1.5rem; }
+        .hero-interna-content h1 { font-size: 3rem; font-weight: 700; line-height: 1.1; color: var(--color-gray-900); margin-bottom: 1.5rem; }
+        .hero-interna-content .hero-lead { font-size: 1.15rem; line-height: 1.7; color: var(--color-gray-600); max-width: 560px; }
+        @media (max-width: 1024px) { .hero-interna-grid { grid-template-columns: 1fr; gap: 2rem; } .hero-interna-content h1 { font-size: 2.5rem; } .hero-interna-visual img { height: 280px; } }
+        @media (max-width: 640px) { .hero-interna { padding: 6rem 0 2rem; } .hero-interna-content h1 { font-size: 2rem; } .hero-interna-content .hero-lead { font-size: 1rem; } .hero-interna-visual img { height: 200px; } }
+    </style>
+
+    <section class="section section-blue" style="background:var(--color-primary);color:var(--color-white);padding:5rem 0;">
         <div class="container">
-            <div class="intro-inteligencia-content">
+            <div style="max-width:800px;margin:0 auto;text-align:center;">
                 <span class="section-tag">O que é</span>
-                <h2>A ciência aplicada à <span class="gradient-text">gestão empresarial</span></h2>
-                <p class="intro-inteligencia-text">A Central de Inteligência VIGORRE é um ecossistema multidisciplinar que reúne especialistas de diversas áreas para aplicar ciência, dados e tecnologia aos desafios reais das organizações.</p>
-                <p class="intro-inteligencia-text">Não se trata apenas de uma lista de profissionais. É uma <strong>rede de inteligência especializada</strong> que atua de forma integrada para transformar a gestão de pessoas e negócios.</p>
+                <h2 style="font-size:2.8rem;margin-top:0.5rem;">A ciência aplicada à <span class="gradient-text">gestão empresarial</span></h2>
+                <p style="font-size:1.15rem;color:rgba(255,255,255,0.8);line-height:1.7;margin-top:1rem;">A Central de Inteligência VIGORRE é um ecossistema multidisciplinar que reúne especialistas de diversas áreas para aplicar ciência, dados e tecnologia aos desafios reais das organizações.</p>
+                <p style="font-size:1.05rem;color:rgba(255,255,255,0.6);line-height:1.7;margin-top:1rem;">Não se trata apenas de uma lista de profissionais. É uma <strong style="color:var(--color-white);">rede de inteligência especializada</strong> que atua de forma integrada para transformar a gestão de pessoas e negócios.</p>
             </div>
         </div>
     </section>
 
-    <!-- ÁREAS DE ESPECIALIDADE -->
-    <section class="section section-especialidades">
+    <section class="section" style="padding:5rem 0;">
         <div class="container">
             <div class="section-header">
                 <span class="section-tag">Áreas de Especialidade</span>
-                <h2>Expertise integrada para <span class="gradient-text">resultados superiores</span></h2>
+                <h2 style="font-size:2.8rem;margin-top:0.5rem;">Expertise integrada para <span class="gradient-text">resultados superiores</span></h2>
             </div>
 
-            <div class="especialidades-grid">
-                <div class="especialidade-card">
-                    <div class="especialidade-icon">🧠</div>
-                    <h3>Neurociência</h3>
-                    <p>Compreensão de comportamento, tomada de decisão, liderança e performance organizacional.</p>
-                    <span class="especialidade-tag">Aplicação: Liderança, Performance, Decisão</span>
+            <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;">
+                <div style="background:var(--color-white);border:1px solid var(--color-gray-100);border-radius:12px;padding:1.5rem;text-align:center;transition:all 0.3s ease;">
+                    <div style="font-size:2rem;display:block;margin-bottom:0.5rem;">🧠</div>
+                    <h3 style="font-family:var(--font-primary);font-size:0.95rem;font-weight:700;color:var(--color-gray-900);margin-bottom:0.25rem;">Neurociência</h3>
+                    <p style="font-size:0.8rem;color:var(--color-gray-500);line-height:1.5;">Compreensão de comportamento, tomada de decisão, liderança e performance organizacional.</p>
+                    <span style="display:inline-block;margin-top:0.5rem;font-size:0.6rem;font-weight:600;color:var(--color-gold);background:rgba(201,168,76,0.08);padding:0.2rem 0.6rem;border-radius:50px;border:1px solid rgba(201,168,76,0.15);">Liderança • Performance</span>
                 </div>
-
-                <div class="especialidade-card">
-                    <div class="especialidade-icon">🧬</div>
-                    <h3>Psicologia Organizacional</h3>
-                    <p>Análise de comportamento individual e organizacional, dinâmicas de equipe, cultura e engajamento.</p>
-                    <span class="especialidade-tag">Aplicação: Cultura, Engajamento, Equipes</span>
+                <div style="background:var(--color-white);border:1px solid var(--color-gray-100);border-radius:12px;padding:1.5rem;text-align:center;transition:all 0.3s ease;">
+                    <div style="font-size:2rem;display:block;margin-bottom:0.5rem;">🧬</div>
+                    <h3 style="font-family:var(--font-primary);font-size:0.95rem;font-weight:700;color:var(--color-gray-900);margin-bottom:0.25rem;">Psicologia Organizacional</h3>
+                    <p style="font-size:0.8rem;color:var(--color-gray-500);line-height:1.5;">Análise de comportamento individual e organizacional, dinâmicas de equipe, cultura e engajamento.</p>
+                    <span style="display:inline-block;margin-top:0.5rem;font-size:0.6rem;font-weight:600;color:var(--color-gold);background:rgba(201,168,76,0.08);padding:0.2rem 0.6rem;border-radius:50px;border:1px solid rgba(201,168,76,0.15);">Cultura • Engajamento</span>
                 </div>
-
-                <div class="especialidade-card">
-                    <div class="especialidade-icon">🔮</div>
-                    <h3>Psicanálise</h3>
-                    <p>Compreensão de fatores subjetivos, processos inconscientes e dinâmicas que influenciam decisões corporativas.</p>
-                    <span class="especialidade-tag">Aplicação: Decisão, Comportamento, Subjetividade</span>
+                <div style="background:var(--color-white);border:1px solid var(--color-gray-100);border-radius:12px;padding:1.5rem;text-align:center;transition:all 0.3s ease;">
+                    <div style="font-size:2rem;display:block;margin-bottom:0.5rem;">🔮</div>
+                    <h3 style="font-family:var(--font-primary);font-size:0.95rem;font-weight:700;color:var(--color-gray-900);margin-bottom:0.25rem;">Psicanálise</h3>
+                    <p style="font-size:0.8rem;color:var(--color-gray-500);line-height:1.5;">Compreensão de fatores subjetivos, processos inconscientes e dinâmicas que influenciam decisões corporativas.</p>
+                    <span style="display:inline-block;margin-top:0.5rem;font-size:0.6rem;font-weight:600;color:var(--color-gold);background:rgba(201,168,76,0.08);padding:0.2rem 0.6rem;border-radius:50px;border:1px solid rgba(201,168,76,0.15);">Decisão • Comportamento</span>
                 </div>
-
-                <div class="especialidade-card">
-                    <div class="especialidade-icon">🎯</div>
-                    <h3>Neuropsicologia</h3>
-                    <p>Avaliação de competências cognitivas, emocionais e funcionais para desenvolvimento de lideranças.</p>
-                    <span class="especialidade-tag">Aplicação: Liderança, Cognição, Competências</span>
+                <div style="background:var(--color-white);border:1px solid var(--color-gray-100);border-radius:12px;padding:1.5rem;text-align:center;transition:all 0.3s ease;">
+                    <div style="font-size:2rem;display:block;margin-bottom:0.5rem;">🎯</div>
+                    <h3 style="font-family:var(--font-primary);font-size:0.95rem;font-weight:700;color:var(--color-gray-900);margin-bottom:0.25rem;">Neuropsicologia</h3>
+                    <p style="font-size:0.8rem;color:var(--color-gray-500);line-height:1.5;">Avaliação de competências cognitivas, emocionais e funcionais para desenvolvimento de lideranças.</p>
+                    <span style="display:inline-block;margin-top:0.5rem;font-size:0.6rem;font-weight:600;color:var(--color-gold);background:rgba(201,168,76,0.08);padding:0.2rem 0.6rem;border-radius:50px;border:1px solid rgba(201,168,76,0.15);">Liderança • Cognição</span>
                 </div>
-
-                <div class="especialidade-card">
-                    <div class="especialidade-icon">📊</div>
-                    <h3>People Analytics</h3>
-                    <p>Dados aplicados à gestão de pessoas com dashboards, indicadores e insights preditivos.</p>
-                    <span class="especialidade-tag">Aplicação: Dados, Indicadores, Preditivo</span>
+                <div style="background:var(--color-white);border:1px solid var(--color-gray-100);border-radius:12px;padding:1.5rem;text-align:center;transition:all 0.3s ease;">
+                    <div style="font-size:2rem;display:block;margin-bottom:0.5rem;">📊</div>
+                    <h3 style="font-family:var(--font-primary);font-size:0.95rem;font-weight:700;color:var(--color-gray-900);margin-bottom:0.25rem;">People Analytics</h3>
+                    <p style="font-size:0.8rem;color:var(--color-gray-500);line-height:1.5;">Dados aplicados à gestão de pessoas com dashboards, indicadores e insights preditivos.</p>
+                    <span style="display:inline-block;margin-top:0.5rem;font-size:0.6rem;font-weight:600;color:var(--color-gold);background:rgba(201,168,76,0.08);padding:0.2rem 0.6rem;border-radius:50px;border:1px solid rgba(201,168,76,0.15);">Dados • Preditivo</span>
                 </div>
-
-                <div class="especialidade-card">
-                    <div class="especialidade-icon">🚀</div>
-                    <h3>Coaching & Desenvolvimento</h3>
-                    <p>Acompanhamento personalizado para alta performance, desenvolvimento de lideranças e equipes.</p>
-                    <span class="especialidade-tag">Aplicação: Performance, Liderança, Desenvolvimento</span>
-                </div>
-
-                <div class="especialidade-card">
-                    <div class="especialidade-icon">💼</div>
-                    <h3>Estratégia & Execução</h3>
-                    <p>Visão de negócios, transformação organizacional e execução de estratégias com indicadores claros.</p>
-                    <span class="especialidade-tag">Aplicação: Estratégia, Resultados, Crescimento</span>
-                </div>
-
-                <div class="especialidade-card">
-                    <div class="especialidade-icon">💻</div>
-                    <h3>Tecnologia & IA</h3>
-                    <p>Produtos digitais, automação, inteligência artificial e transformação digital aplicados à gestão.</p>
-                    <span class="especialidade-tag">Aplicação: Automação, IA, Transformação Digital</span>
+                <div style="background:var(--color-white);border:1px solid var(--color-gray-100);border-radius:12px;padding:1.5rem;text-align:center;transition:all 0.3s ease;">
+                    <div style="font-size:2rem;display:block;margin-bottom:0.5rem;">🚀</div>
+                    <h3 style="font-family:var(--font-primary);font-size:0.95rem;font-weight:700;color:var(--color-gray-900);margin-bottom:0.25rem;">Coaching & Desenvolvimento</h3>
+                    <p style="font-size:0.8rem;color:var(--color-gray-500);line-height:1.5;">Acompanhamento personalizado para alta performance, desenvolvimento de lideranças e equipes.</p>
+                    <span style="display:inline-block;margin-top:0.5rem;font-size:0.6rem;font-weight:600;color:var(--color-gold);background:rgba(201,168,76,0.08);padding:0.2rem 0.6rem;border-radius:50px;border:1px solid rgba(201,168,76,0.15);">Performance • Desenvolvimento</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- COMO FUNCIONA -->
-    <section class="section section-como-funciona section-dark">
+    <style>
+        @media (max-width:1024px){ .section .container > div { grid-template-columns:1fr 1fr !important; } }
+        @media (max-width:640px){ .section .container > div { grid-template-columns:1fr !important; } .section .section-header h2 { font-size:2rem !important; } }
+    </style>
+
+    <section class="section section-dark" style="background:var(--color-primary);color:var(--color-white);padding:5rem 0;">
         <div class="container">
             <div class="section-header">
                 <span class="section-tag">Como Funciona</span>
-                <h2>Inteligência aplicada <span class="gradient-text">em 4 passos</span></h2>
+                <h2 style="font-size:2.8rem;margin-top:0.5rem;">Inteligência aplicada <span class="gradient-text">em 4 passos</span></h2>
             </div>
 
-            <div class="como-funciona-grid">
-                <div class="como-step">
-                    <span class="como-number">01</span>
-                    <div class="como-icon">🔍</div>
-                    <h3>Diagnóstico</h3>
-                    <p>Entendemos a realidade da sua empresa, seus desafios e oportunidades.</p>
+            <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;max-width:900px;margin:0 auto;">
+                <div style="text-align:center;">
+                    <span style="font-family:var(--font-serif);font-size:2rem;font-weight:700;color:var(--color-gold);display:block;">01</span>
+                    <div style="font-size:2rem;display:block;margin-bottom:0.5rem;">🔍</div>
+                    <h3 style="font-family:var(--font-primary);font-size:1rem;font-weight:700;color:var(--color-white);margin-bottom:0.25rem;">Diagnóstico</h3>
+                    <p style="font-size:0.85rem;color:rgba(255,255,255,0.5);line-height:1.5;">Entendemos a realidade da sua empresa, seus desafios e oportunidades.</p>
                 </div>
-                <div class="como-arrow">→</div>
-                <div class="como-step">
-                    <span class="como-number">02</span>
-                    <div class="como-icon">🧠</div>
-                    <h3>Análise</h3>
-                    <p>Aplicamos ciência e dados para interpretar padrões, comportamentos e indicadores.</p>
+                <div style="display:flex;align-items:center;justify-content:center;font-size:1.5rem;color:var(--color-gold);opacity:0.4;">→</div>
+                <div style="text-align:center;">
+                    <span style="font-family:var(--font-serif);font-size:2rem;font-weight:700;color:var(--color-gold);display:block;">02</span>
+                    <div style="font-size:2rem;display:block;margin-bottom:0.5rem;">🧠</div>
+                    <h3 style="font-family:var(--font-primary);font-size:1rem;font-weight:700;color:var(--color-white);margin-bottom:0.25rem;">Análise</h3>
+                    <p style="font-size:0.85rem;color:rgba(255,255,255,0.5);line-height:1.5;">Aplicamos ciência e dados para interpretar padrões, comportamentos e indicadores.</p>
                 </div>
-                <div class="como-arrow">→</div>
-                <div class="como-step">
-                    <span class="como-number">03</span>
-                    <div class="como-icon">📋</div>
-                    <h3>Planejamento</h3>
-                    <p>Construímos um plano estratégico personalizado com ações claras e mensuráveis.</p>
+                <div style="display:flex;align-items:center;justify-content:center;font-size:1.5rem;color:var(--color-gold);opacity:0.4;">→</div>
+                <div style="text-align:center;">
+                    <span style="font-family:var(--font-serif);font-size:2rem;font-weight:700;color:var(--color-gold);display:block;">03</span>
+                    <div style="font-size:2rem;display:block;margin-bottom:0.5rem;">📋</div>
+                    <h3 style="font-family:var(--font-primary);font-size:1rem;font-weight:700;color:var(--color-white);margin-bottom:0.25rem;">Planejamento</h3>
+                    <p style="font-size:0.85rem;color:rgba(255,255,255,0.5);line-height:1.5;">Construímos um plano estratégico personalizado com ações claras e mensuráveis.</p>
                 </div>
-                <div class="como-arrow">→</div>
-                <div class="como-step">
-                    <span class="como-number">04</span>
-                    <div class="como-icon">🚀</div>
-                    <h3>Transformação</h3>
-                    <p>Implementamos, acompanhamos e evoluímos para garantir resultados sustentáveis.</p>
+                <div style="display:flex;align-items:center;justify-content:center;font-size:1.5rem;color:var(--color-gold);opacity:0.4;">→</div>
+                <div style="text-align:center;">
+                    <span style="font-family:var(--font-serif);font-size:2rem;font-weight:700;color:var(--color-gold);display:block;">04</span>
+                    <div style="font-size:2rem;display:block;margin-bottom:0.5rem;">🚀</div>
+                    <h3 style="font-family:var(--font-primary);font-size:1rem;font-weight:700;color:var(--color-white);margin-bottom:0.25rem;">Transformação</h3>
+                    <p style="font-size:0.85rem;color:rgba(255,255,255,0.5);line-height:1.5;">Implementamos, acompanhamos e evoluímos para garantir resultados sustentáveis.</p>
                 </div>
             </div>
 
-            <div class="como-cta">
-                <a href="contato.html" class="btn btn-primary">Aplicar na minha empresa</a>
+            <div style="text-align:center;margin-top:2rem;">
+                <a href="contato.html" class="btn btn-primary" style="display:inline-flex;align-items:center;justify-content:center;gap:0.5rem;padding:0.9rem 2.2rem;font-size:0.95rem;font-weight:600;border-radius:8px;border:2px solid transparent;transition:all 0.3s ease;cursor:pointer;background:var(--color-gold);color:var(--color-primary);border-color:var(--color-gold);font-family:var(--font-primary);">Aplicar na minha empresa</a>
             </div>
         </div>
     </section>
 
-    <!-- POR QUE A CENTRAL DE INTELIGÊNCIA -->
-    <section class="section section-porque">
+    <style>
+        @media (max-width:1024px){ .section-dark .container > div { grid-template-columns:repeat(2,1fr) !important; gap:1.5rem !important; } .section-dark .container > div .fa-arrow { display:none; } }
+        @media (max-width:640px){ .section-dark .container > div { grid-template-columns:1fr !important; } .section-dark .section-header h2 { font-size:2rem !important; } }
+    </style>
+
+    <section class="section" style="padding:5rem 0;">
         <div class="container">
             <div class="section-header">
                 <span class="section-tag">Por que a Central de Inteligência</span>
-                <h2>O que torna a VIGORRE <span class="gradient-text">diferente</span></h2>
+                <h2 style="font-size:2.8rem;margin-top:0.5rem;">O que torna a VIGORRE <span class="gradient-text">diferente</span></h2>
             </div>
 
-            <div class="porque-grid">
-                <div class="porque-item">
-                    <span class="porque-icon">🔬</span>
-                    <h3>Ciência Aplicada</h3>
-                    <p>Todas as soluções são baseadas em evidências científicas, não em achismos ou modas.</p>
+            <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;">
+                <div style="padding:2rem;background:var(--color-white);border:1px solid var(--color-gray-100);border-radius:12px;text-align:center;transition:all 0.3s ease;">
+                    <div style="font-size:2.2rem;display:block;margin-bottom:0.75rem;">🔬</div>
+                    <h3 style="font-family:var(--font-primary);font-size:1.05rem;font-weight:700;color:var(--color-gray-900);margin-bottom:0.5rem;">Ciência Aplicada</h3>
+                    <p style="font-size:0.9rem;color:var(--color-gray-500);line-height:1.6;">Todas as soluções são baseadas em evidências científicas, não em achismos ou modas.</p>
                 </div>
-                <div class="porque-item">
-                    <span class="porque-icon">🤝</span>
-                    <h3>Time Multidisciplinar</h3>
-                    <p>Especialistas de diferentes áreas atuando de forma integrada para resultados superiores.</p>
+                <div style="padding:2rem;background:var(--color-white);border:1px solid var(--color-gray-100);border-radius:12px;text-align:center;transition:all 0.3s ease;">
+                    <div style="font-size:2.2rem;display:block;margin-bottom:0.75rem;">🤝</div>
+                    <h3 style="font-family:var(--font-primary);font-size:1.05rem;font-weight:700;color:var(--color-gray-900);margin-bottom:0.5rem;">Time Multidisciplinar</h3>
+                    <p style="font-size:0.9rem;color:var(--color-gray-500);line-height:1.6;">Especialistas de diferentes áreas atuando de forma integrada para resultados superiores.</p>
                 </div>
-                <div class="porque-item">
-                    <span class="porque-icon">📊</span>
-                    <h3>Dados e Tecnologia</h3>
-                    <p>People Analytics, dashboards e IA para decisões mais inteligentes e ágeis.</p>
+                <div style="padding:2rem;background:var(--color-white);border:1px solid var(--color-gray-100);border-radius:12px;text-align:center;transition:all 0.3s ease;">
+                    <div style="font-size:2.2rem;display:block;margin-bottom:0.75rem;">📊</div>
+                    <h3 style="font-family:var(--font-primary);font-size:1.05rem;font-weight:700;color:var(--color-gray-900);margin-bottom:0.5rem;">Dados e Tecnologia</h3>
+                    <p style="font-size:0.9rem;color:var(--color-gray-500);line-height:1.6;">People Analytics, dashboards e IA para decisões mais inteligentes e ágeis.</p>
                 </div>
-                <div class="porque-item">
-                    <span class="porque-icon">🎯</span>
-                    <h3>Foco em Resultados</h3>
-                    <p>Tudo o que fazemos é orientado a gerar impacto mensurável para o seu negócio.</p>
+                <div style="padding:2rem;background:var(--color-white);border:1px solid var(--color-gray-100);border-radius:12px;text-align:center;transition:all 0.3s ease;">
+                    <div style="font-size:2.2rem;display:block;margin-bottom:0.75rem;">🎯</div>
+                    <h3 style="font-family:var(--font-primary);font-size:1.05rem;font-weight:700;color:var(--color-gray-900);margin-bottom:0.5rem;">Foco em Resultados</h3>
+                    <p style="font-size:0.9rem;color:var(--color-gray-500);line-height:1.6;">Tudo o que fazemos é orientado a gerar impacto mensurável para o seu negócio.</p>
                 </div>
             </div>
         </div>
     </section>
+
+    <style>
+        @media (max-width:1024px){ .section .container > div { grid-template-columns:1fr 1fr !important; } }
+        @media (max-width:640px){ .section .container > div { grid-template-columns:1fr !important; } .section .section-header h2 { font-size:2rem !important; } }
+    </style>
+
 </main>
 
-<!-- FOOTER -->
 <footer class="site-footer">
     <div class="container">
         <div class="footer-grid">
             <div class="footer-brand">
                 <div class="footer-logo-wrapper">
-                    <img src="logo-vigorre.png" alt="VIGORRE" class="footer-logo" width="100" height="33">
+                    <img src="logo-vigorre.png" alt="VIGORRE" class="footer-logo">
                     <div class="footer-logo-text">
                         <span class="footer-logo-name">Vigorre</span>
                         <span class="footer-logo-tagline">Inteligência, Tecnologia e Gestão Estratégica</span>
                     </div>
                 </div>
                 <p>Transformamos desafios empresariais em soluções estratégicas com inteligência humana, tecnologia e dados.</p>
+                <div class="footer-social">
+                    <a href="https://instagram.com/vigorre.oficial" aria-label="Instagram">📷</a>
+                    <a href="https://linkedin.com/company/vigorreoficial" aria-label="LinkedIn">💼</a>
+                    <a href="https://wa.me/5534991850735" aria-label="WhatsApp">📱</a>
+                </div>
             </div>
             <div class="footer-links">
                 <h4>Navegação</h4>
                 <ul>
-                    <li><a href="/">Início</a></li>
+                    <li><a href="index.html">Início</a></li>
                     <li><a href="quem-somos.html">Quem Somos</a></li>
                     <li><a href="solucoes.html">Soluções</a></li>
                     <li><a href="portfolio.html">Portfólio</a></li>
@@ -278,6 +283,7 @@
 
 <a href="https://wa.me/5534991850735" class="whatsapp-float" aria-label="Fale com a VIGORRE">
     <svg viewBox="0 0 32 32" width="28" height="28" fill="white"><path d="M16 2C8.268 2 2 8.268 2 16c0 2.58.704 5.002 1.936 7.104L2 29.5l6.58-1.92A13.94 13.94 0 0016 30c7.732 0 14-6.268 14-14S23.732 2 16 2zm0 25.5c-2.24 0-4.36-.62-6.2-1.72l-.44-.26-4.08 1.2 1.22-4.06-.26-.44A11.46 11.46 0 014.5 16c0-6.34 5.16-11.5 11.5-11.5s11.5 5.16 11.5 11.5-5.16 11.5-11.5 11.5z"/></svg>
+    <span class="whatsapp-tooltip">Fale com a VIGORRE</span>
 </a>
 
 <script src="script.js"></script>
