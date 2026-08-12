@@ -13,9 +13,12 @@
 </head>
 <body>
 
+<!-- ============================================================
+   HEADER (IGUAL AO INDEX)
+   ============================================================ -->
 <header class="site-header" data-header>
     <div class="container header-inner">
-        <a href="/" class="logo-wrapper">
+        <a href="index.html" class="logo-wrapper">
             <img src="logo-vigorre.png" alt="VIGORRE" class="logo-img">
             <div class="logo-text">
                 <span class="logo-name">Vigorre</span>
@@ -24,15 +27,15 @@
         </a>
         <nav class="main-nav">
             <ul class="nav-list">
-                <li><a href="/">Início</a></li>
+                <li><a href="index.html">Início</a></li>
                 <li><a href="quem-somos.html">Quem Somos</a></li>
                 <li><a href="portfolio.html" class="active">Portfólio</a></li>
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#contato">Contato</a></li>
+                <li><a href="index.html#servicos">Serviços</a></li>
+                <li><a href="index.html#contato">Contato</a></li>
             </ul>
         </nav>
         <div class="header-actions">
-            <a href="#contato" class="btn btn-primary">Solicitar Proposta</a>
+            <a href="index.html#contato" class="btn btn-primary">Solicitar Proposta</a>
             <button class="mobile-toggle" aria-label="Abrir menu">
                 <span></span><span></span><span></span>
             </button>
@@ -40,46 +43,59 @@
     </div>
     <div class="mobile-menu">
         <ul class="mobile-nav-list">
-            <li><a href="/">Início</a></li>
+            <li><a href="index.html">Início</a></li>
             <li><a href="quem-somos.html">Quem Somos</a></li>
             <li><a href="portfolio.html">Portfólio</a></li>
-            <li><a href="#servicos">Serviços</a></li>
-            <li><a href="#contato">Contato</a></li>
+            <li><a href="index.html#servicos">Serviços</a></li>
+            <li><a href="index.html#contato">Contato</a></li>
             <li class="mobile-divider"></li>
-            <li><a href="#contato" class="btn btn-primary btn-block">Solicitar Proposta</a></li>
+            <li><a href="index.html#contato" class="btn btn-primary btn-block">Solicitar Proposta</a></li>
         </ul>
     </div>
 </header>
 
 <main>
-    <!-- HERO PORTFOLIO -->
+    <!-- ============================================================
+       HERO PORTFOLIO
+       ============================================================ -->
     <section class="hero-portfolio">
-        <div class="container hero-portfolio-grid">
+        <div class="container">
             <div class="hero-portfolio-content">
-                <span class="badge">Portfólio de Serviços</span>
+                <span class="hero-badge">Portfólio de Serviços</span>
                 <h1>Conheça o ecossistema <span class="highlight">VIGORRE</span></h1>
                 <p class="hero-lead">Estratégia, pessoas, tecnologia, dados e inteligência aplicados aos desafios empresariais. Conheça cada uma das 7 frentes de atuação com seus serviços detalhados.</p>
             </div>
-            <div class="hero-portfolio-visual">
+            <div class="hero-portfolio-image">
                 <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&h=600&w=800" alt="Portfólio VIGORRE">
             </div>
         </div>
     </section>
 
+    <style>
+        .hero-portfolio { padding: 8rem 0 4rem; background: var(--color-white); }
+        .hero-portfolio .container { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+        .hero-portfolio .hero-badge { display: inline-block; padding: 0.3rem 1rem; background: rgba(201,168,76,0.08); border: 1px solid rgba(201,168,76,0.15); border-radius: 50px; font-size: 0.7rem; font-weight: 600; color: var(--color-gold); text-transform: uppercase; margin-bottom: 1.5rem; }
+        .hero-portfolio h1 { font-size: 3.5rem; font-weight: 700; line-height: 1.1; color: var(--color-gray-900); margin-bottom: 1.5rem; }
+        .hero-portfolio .hero-lead { font-size: 1.15rem; line-height: 1.7; color: var(--color-gray-600); max-width: 560px; }
+        .hero-portfolio img { width: 100%; height: 400px; object-fit: cover; border-radius: 12px; box-shadow: 0 20px 60px rgba(0,0,0,0.1); }
+        @media (max-width: 1024px) { .hero-portfolio .container { grid-template-columns: 1fr; gap: 2rem; } .hero-portfolio h1 { font-size: 2.5rem; } .hero-portfolio img { height: 280px; } }
+        @media (max-width: 640px) { .hero-portfolio { padding: 6rem 0 2rem; } .hero-portfolio h1 { font-size: 2rem; } .hero-portfolio .hero-lead { font-size: 1rem; } .hero-portfolio img { height: 200px; } }
+    </style>
+
     <!-- ============================================================
        01 — RECRUTAMENTO & SELEÇÃO
        ============================================================ -->
-    <section id="recrutamento" class="section section-servico-detalhado">
+    <section id="recrutamento" class="section section-servico">
         <div class="container">
-            <div class="servico-detalhado-header">
+            <div class="servico-header">
                 <span class="servico-number">01</span>
                 <div>
                     <span class="section-tag">Frente de Atuação</span>
                     <h2>Recrutamento & <span class="gradient-text">Seleção</span></h2>
                 </div>
             </div>
-            <div class="servico-detalhado-grid">
-                <div class="servico-detalhado-info">
+            <div class="servico-grid">
+                <div class="servico-info">
                     <p class="servico-frase">"Encontrar as pessoas certas para os desafios certos."</p>
                     <p>A Vigorre atua na estruturação e execução de processos de recrutamento e seleção, buscando aumentar a assertividade das contratações e aproximar profissionais das necessidades reais das organizações.</p>
                     <div class="servico-impacto">
@@ -97,7 +113,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="servico-detalhado-servicos">
+                <div class="servico-servicos">
                     <h3>Serviços entregues</h3>
                     <ul class="servicos-lista">
                         <li>Recrutamento e seleção</li>
@@ -112,41 +128,50 @@
                         <li>Avaliação de candidatos</li>
                         <li>Apoio à tomada de decisão</li>
                     </ul>
-                    <div class="servico-flow">
-                        <span>PERFIL</span>
-                        <span class="flow-arrow">→</span>
-                        <span>ATRAÇÃO</span>
-                        <span class="flow-arrow">→</span>
-                        <span>TRIAGEM</span>
-                        <span class="flow-arrow">→</span>
-                        <span>ENTREVISTA</span>
-                        <span class="flow-arrow">→</span>
-                        <span>AVALIAÇÃO</span>
-                        <span class="flow-arrow">→</span>
-                        <span>SELEÇÃO</span>
-                    </div>
-                    <div class="servico-cta">
-                        <a href="#contato" class="btn btn-primary">Quero esta solução</a>
-                    </div>
+                    <a href="index.html#contato" class="btn btn-primary">Quero esta solução</a>
                 </div>
             </div>
         </div>
     </section>
 
+    <style>
+        .section-servico { padding: 5rem 0; background: var(--color-white); border-bottom: 1px solid var(--color-gray-100); }
+        .section-servico-gray { background: var(--color-gray-50); }
+        .servico-header { display: flex; align-items: center; gap: 2rem; margin-bottom: 2rem; }
+        .servico-number { font-family: var(--font-serif); font-size: 4rem; font-weight: 700; color: rgba(201,168,76,0.15); line-height: 1; }
+        .servico-header h2 { font-size: 2.5rem; margin: 0; }
+        .servico-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; }
+        .servico-frase { font-size: 1.2rem; font-weight: 600; color: var(--color-gray-900); margin-bottom: 1rem; font-style: italic; }
+        .servico-info p { font-size: 1rem; line-height: 1.8; color: var(--color-gray-600); margin-bottom: 1.5rem; }
+        .servico-impacto { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-top: 1rem; }
+        .impacto-item { text-align: center; padding: 1rem; background: var(--color-gray-50); border-radius: 8px; }
+        .impacto-numero { display: block; font-family: var(--font-serif); font-size: 2rem; font-weight: 700; color: var(--color-primary); }
+        .impacto-label { font-size: 0.7rem; color: var(--color-gray-500); }
+        .servico-servicos h3 { font-family: var(--font-primary); font-size: 1rem; font-weight: 700; color: var(--color-gray-900); margin-bottom: 1rem; }
+        .servicos-lista { display: grid; grid-template-columns: 1fr 1fr; gap: 0.25rem 1rem; list-style: none; margin-bottom: 1.5rem; }
+        .servicos-lista li { font-size: 0.9rem; color: var(--color-gray-700); padding: 0.25rem 0; display: flex; align-items: center; gap: 0.5rem; }
+        .servicos-lista li::before { content: '•'; color: var(--color-gold); font-weight: 700; }
+        .servico-flow { display: flex; flex-wrap: wrap; align-items: center; gap: 0.25rem; margin: 1.5rem 0; font-size: 0.7rem; font-weight: 600; color: var(--color-gray-500); text-transform: uppercase; letter-spacing: 0.05em; }
+        .flow-arrow { color: var(--color-gold); font-size: 0.8rem; }
+        .servico-flow span { padding: 0.25rem 0.5rem; background: var(--color-gray-50); border-radius: 4px; }
+        @media (max-width: 1024px) { .servico-grid { grid-template-columns: 1fr; gap: 2rem; } .servico-header h2 { font-size: 2rem; } .servico-number { font-size: 3rem; } }
+        @media (max-width: 640px) { .servico-header { gap: 1rem; flex-wrap: wrap; } .servico-header h2 { font-size: 1.6rem; } .servico-impacto { grid-template-columns: 1fr; } .servicos-lista { grid-template-columns: 1fr; } .servico-flow { font-size: 0.6rem; } }
+    </style>
+
     <!-- ============================================================
        02 — ANÁLISE COMPORTAMENTAL
        ============================================================ -->
-    <section id="analise" class="section section-servico-detalhado section-gray">
+    <section id="analise" class="section section-servico section-servico-gray">
         <div class="container">
-            <div class="servico-detalhado-header">
+            <div class="servico-header">
                 <span class="servico-number">02</span>
                 <div>
                     <span class="section-tag">Frente de Atuação</span>
                     <h2>Análise <span class="gradient-text">Comportamental</span></h2>
                 </div>
             </div>
-            <div class="servico-detalhado-grid">
-                <div class="servico-detalhado-info">
+            <div class="servico-grid">
+                <div class="servico-info">
                     <p class="servico-frase">"Conhecer pessoas para tomar melhores decisões."</p>
                     <p>A análise comportamental contribui para compreender características profissionais, padrões comportamentais, competências, pontos fortes e oportunidades de desenvolvimento.</p>
                     <div class="servico-impacto">
@@ -164,7 +189,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="servico-detalhado-servicos">
+                <div class="servico-servicos">
                     <h3>Serviços entregues</h3>
                     <ul class="servicos-lista">
                         <li>Análise DISC</li>
@@ -179,9 +204,7 @@
                         <li>Feedback estruturado</li>
                         <li>Recomendações de desenvolvimento</li>
                     </ul>
-                    <div class="servico-cta">
-                        <a href="#contato" class="btn btn-primary">Quero esta solução</a>
-                    </div>
+                    <a href="index.html#contato" class="btn btn-primary">Quero esta solução</a>
                 </div>
             </div>
         </div>
@@ -190,17 +213,17 @@
     <!-- ============================================================
        03 — GESTÃO ESTRATÉGICA DE PESSOAS
        ============================================================ -->
-    <section id="gestao" class="section section-servico-detalhado">
+    <section id="gestao" class="section section-servico">
         <div class="container">
-            <div class="servico-detalhado-header">
+            <div class="servico-header">
                 <span class="servico-number">03</span>
                 <div>
                     <span class="section-tag">Frente de Atuação</span>
                     <h2>Gestão Estratégica de <span class="gradient-text">Pessoas</span></h2>
                 </div>
             </div>
-            <div class="servico-detalhado-grid">
-                <div class="servico-detalhado-info">
+            <div class="servico-grid">
+                <div class="servico-info">
                     <p class="servico-frase">"Pessoas alinhadas à estratégia fortalecem a organização."</p>
                     <p>A Vigorre apoia organizações na transformação da gestão de pessoas em uma área estratégica, conectando talentos, competências e desenvolvimento aos objetivos do negócio.</p>
                     <div class="servico-impacto">
@@ -218,7 +241,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="servico-detalhado-servicos">
+                <div class="servico-servicos">
                     <h3>Serviços entregues</h3>
                     <ul class="servicos-lista">
                         <li>Diagnóstico de RH</li>
@@ -233,9 +256,7 @@
                         <li>Políticas e práticas de gestão</li>
                         <li>Apoio à liderança</li>
                     </ul>
-                    <div class="servico-cta">
-                        <a href="#contato" class="btn btn-primary">Quero esta solução</a>
-                    </div>
+                    <a href="index.html#contato" class="btn btn-primary">Quero esta solução</a>
                 </div>
             </div>
         </div>
@@ -244,17 +265,17 @@
     <!-- ============================================================
        04 — GESTÃO DE PROCESSOS
        ============================================================ -->
-    <section id="processos" class="section section-servico-detalhado section-gray">
+    <section id="processos" class="section section-servico section-servico-gray">
         <div class="container">
-            <div class="servico-detalhado-header">
+            <div class="servico-header">
                 <span class="servico-number">04</span>
                 <div>
                     <span class="section-tag">Frente de Atuação</span>
                     <h2>Gestão de <span class="gradient-text">Processos</span></h2>
                 </div>
             </div>
-            <div class="servico-detalhado-grid">
-                <div class="servico-detalhado-info">
+            <div class="servico-grid">
+                <div class="servico-info">
                     <p class="servico-frase">"Processos organizados geram clareza, eficiência e consistência."</p>
                     <p>A Vigorre apoia organizações na compreensão, estruturação, padronização e melhoria de seus processos, buscando reduzir gargalos, retrabalho e desperdícios.</p>
                     <div class="servico-impacto">
@@ -272,7 +293,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="servico-detalhado-servicos">
+                <div class="servico-servicos">
                     <h3>Serviços entregues</h3>
                     <ul class="servicos-lista">
                         <li>Mapeamento de processos</li>
@@ -287,22 +308,7 @@
                         <li>Melhoria contínua</li>
                         <li>Produtividade</li>
                     </ul>
-                    <div class="servico-flow">
-                        <span>MAPEAR</span>
-                        <span class="flow-arrow">→</span>
-                        <span>ANALISAR</span>
-                        <span class="flow-arrow">→</span>
-                        <span>MODELAR</span>
-                        <span class="flow-arrow">→</span>
-                        <span>PADRONIZAR</span>
-                        <span class="flow-arrow">→</span>
-                        <span>OTIMIZAR</span>
-                        <span class="flow-arrow">→</span>
-                        <span>MELHORAR</span>
-                    </div>
-                    <div class="servico-cta">
-                        <a href="#contato" class="btn btn-primary">Quero esta solução</a>
-                    </div>
+                    <a href="index.html#contato" class="btn btn-primary">Quero esta solução</a>
                 </div>
             </div>
         </div>
@@ -311,17 +317,17 @@
     <!-- ============================================================
        05 — CICLO DE VIDA DO COLABORADOR
        ============================================================ -->
-    <section id="ciclo" class="section section-servico-detalhado">
+    <section id="ciclo" class="section section-servico">
         <div class="container">
-            <div class="servico-detalhado-header">
+            <div class="servico-header">
                 <span class="servico-number">05</span>
                 <div>
                     <span class="section-tag">Frente de Atuação</span>
                     <h2>Ciclo de Vida do <span class="gradient-text">Colaborador</span></h2>
                 </div>
             </div>
-            <div class="servico-detalhado-grid">
-                <div class="servico-detalhado-info">
+            <div class="servico-grid">
+                <div class="servico-info">
                     <p class="servico-frase">"Da atração ao desligamento, cada etapa importa."</p>
                     <p>A Vigorre estrutura a jornada do profissional dentro da organização, desde a atração até o desligamento, com foco em experiência, desenvolvimento e retenção.</p>
                     <div class="servico-impacto">
@@ -339,7 +345,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="servico-detalhado-servicos">
+                <div class="servico-servicos">
                     <h3>Serviços entregues</h3>
                     <ul class="servicos-lista">
                         <li>Onboarding e integração</li>
@@ -352,24 +358,7 @@
                         <li>Entrevista de desligamento</li>
                         <li>Análise de turnover</li>
                     </ul>
-                    <div class="servico-flow ciclo-flow">
-                        <span>ATRAÇÃO</span>
-                        <span class="flow-arrow">→</span>
-                        <span>SELEÇÃO</span>
-                        <span class="flow-arrow">→</span>
-                        <span>INTEGRAÇÃO</span>
-                        <span class="flow-arrow">→</span>
-                        <span>DESENVOLVIMENTO</span>
-                        <span class="flow-arrow">→</span>
-                        <span>RETENÇÃO</span>
-                        <span class="flow-arrow">→</span>
-                        <span>SUCESSÃO</span>
-                        <span class="flow-arrow">→</span>
-                        <span>DESLIGAMENTO</span>
-                    </div>
-                    <div class="servico-cta">
-                        <a href="#contato" class="btn btn-primary">Quero esta solução</a>
-                    </div>
+                    <a href="index.html#contato" class="btn btn-primary">Quero esta solução</a>
                 </div>
             </div>
         </div>
@@ -378,17 +367,17 @@
     <!-- ============================================================
        06 — DESENVOLVIMENTO DE LIDERANÇAS
        ============================================================ -->
-    <section id="lideranca" class="section section-servico-detalhado section-gray">
+    <section id="lideranca" class="section section-servico section-servico-gray">
         <div class="container">
-            <div class="servico-detalhado-header">
+            <div class="servico-header">
                 <span class="servico-number">06</span>
                 <div>
                     <span class="section-tag">Frente de Atuação</span>
                     <h2>Desenvolvimento de <span class="gradient-text">Lideranças</span></h2>
                 </div>
             </div>
-            <div class="servico-detalhado-grid">
-                <div class="servico-detalhado-info">
+            <div class="servico-grid">
+                <div class="servico-info">
                     <p class="servico-frase">"Desenvolver líderes é desenvolver a capacidade da organização de evoluir."</p>
                     <p>A Vigorre apoia o desenvolvimento de líderes e gestores, preparando-os para os desafios atuais e futuros da organização.</p>
                     <div class="servico-impacto">
@@ -406,7 +395,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="servico-detalhado-servicos">
+                <div class="servico-servicos">
                     <h3>Serviços entregues</h3>
                     <ul class="servicos-lista">
                         <li>Desenvolvimento de líderes</li>
@@ -421,18 +410,7 @@
                         <li>Liderança estratégica</li>
                         <li>Delegação e gestão de equipes</li>
                     </ul>
-                    <div class="servico-flow">
-                        <span>DESENVOLVER</span>
-                        <span class="flow-arrow">→</span>
-                        <span>APLICAR</span>
-                        <span class="flow-arrow">→</span>
-                        <span>ACOMPANHAR</span>
-                        <span class="flow-arrow">→</span>
-                        <span>EVOLUIR</span>
-                    </div>
-                    <div class="servico-cta">
-                        <a href="#contato" class="btn btn-primary">Quero esta solução</a>
-                    </div>
+                    <a href="index.html#contato" class="btn btn-primary">Quero esta solução</a>
                 </div>
             </div>
         </div>
@@ -441,17 +419,17 @@
     <!-- ============================================================
        07 — GESTÃO ESTRATÉGICA & PERFORMANCE
        ============================================================ -->
-    <section id="performance" class="section section-servico-detalhado">
+    <section id="performance" class="section section-servico">
         <div class="container">
-            <div class="servico-detalhado-header">
+            <div class="servico-header">
                 <span class="servico-number">07</span>
                 <div>
                     <span class="section-tag">Frente de Atuação</span>
                     <h2>Gestão Estratégica & <span class="gradient-text">Performance</span></h2>
                 </div>
             </div>
-            <div class="servico-detalhado-grid">
-                <div class="servico-detalhado-info">
+            <div class="servico-grid">
+                <div class="servico-info">
                     <p class="servico-frase">"Transformar estratégia em execução mensurável."</p>
                     <p>A Vigorre apoia organizações na definição de objetivos, indicadores e planos de ação para transformar planejamento em resultados concretos.</p>
                     <div class="servico-impacto">
@@ -469,7 +447,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="servico-detalhado-servicos">
+                <div class="servico-servicos">
                     <h3>Serviços entregues</h3>
                     <ul class="servicos-lista">
                         <li>Diagnóstico empresarial</li>
@@ -483,9 +461,7 @@
                         <li>Melhoria contínua</li>
                         <li>Reestruturação organizacional</li>
                     </ul>
-                    <div class="servico-cta">
-                        <a href="#contato" class="btn btn-primary">Quero esta solução</a>
-                    </div>
+                    <a href="index.html#contato" class="btn btn-primary">Quero esta solução</a>
                 </div>
             </div>
         </div>
@@ -538,6 +514,19 @@
         </div>
     </section>
 
+    <style>
+        .section-conexao { padding: 5rem 0; background: var(--color-primary); color: var(--color-white); }
+        .conexao-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; max-width: 800px; margin: 2rem auto; }
+        .conexao-item { display: flex; align-items: center; gap: 0.5rem; padding: 0.75rem 1rem; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.06); border-radius: 8px; }
+        .conexao-num { font-family: var(--font-serif); font-size: 1.2rem; font-weight: 700; color: var(--color-gold); }
+        .conexao-item span:last-child { font-size: 0.8rem; color: rgba(255,255,255,0.7); }
+        .conexao-resultado { text-align: center; margin-top: 2rem; }
+        .conexao-arrow { display: block; font-size: 2rem; color: var(--color-gold); opacity: 0.5; }
+        .conexao-label { display: inline-block; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--color-gold); background: rgba(201,168,76,0.1); padding: 0.5rem 2rem; border-radius: 50px; border: 1px solid rgba(201,168,76,0.2); }
+        @media (max-width: 1024px) { .conexao-grid { grid-template-columns: repeat(2, 1fr); } }
+        @media (max-width: 640px) { .conexao-grid { grid-template-columns: 1fr; } }
+    </style>
+
     <!-- ============================================================
        CTA COMERCIAL
        ============================================================ -->
@@ -547,88 +536,26 @@
                 <h2>Pronto para <span class="gradient-text">transformar sua gestão?</span></h2>
                 <p>Fale com a VIGORRE e descubra como podemos construir juntos um caminho estruturado para evolução.</p>
                 <div class="cta-portfolio-buttons">
-                    <a href="#contato" class="btn btn-primary btn-lg">Fale com a VIGORRE</a>
-                    <a href="/" class="btn btn-outline btn-lg">Voltar ao início</a>
+                    <a href="index.html#contato" class="btn btn-primary btn-lg">Fale com a VIGORRE</a>
+                    <a href="index.html" class="btn btn-outline btn-lg">Voltar ao início</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ============================================================
-       CONTATO
-       ============================================================ -->
-    <section id="contato" class="section section-contato">
-        <div class="container">
-            <div class="contato-grid">
-                <div class="contato-info">
-                    <span class="section-tag">Contato</span>
-                    <h2>Vamos transformar <span class="gradient-text">pessoas em resultados</span></h2>
-                    <p>Fale com um especialista VIGORRE. Em até 2 horas úteis, nossa equipe entra em contato.</p>
-                    <div class="contato-methods">
-                        <a href="mailto:contato@vigorre.com.br" class="contato-method">
-                            <span class="contact-icon">✉️</span>
-                            <div><strong>E-mail</strong><span>contato@vigorre.com.br</span></div>
-                        </a>
-                        <a href="https://wa.me/5534991850735" target="_blank" class="contato-method">
-                            <span class="contact-icon">📱</span>
-                            <div><strong>WhatsApp</strong><span>+55 34 99185-0735</span></div>
-                        </a>
-                    </div>
-                </div>
-                <form class="contato-form" method="POST" action="https://formsubmit.co/contato@vigorre.com.br">
-                    <input type="hidden" name="_subject" value="📩 Novo contato pelo site VIGORRE">
-                    <input type="hidden" name="_captcha" value="false">
-                    <input type="hidden" name="_template" value="table">
-                    <input type="hidden" name="_next" value="https://vigorre.com.br/obrigado.html">
+    <style>
+        .section-cta-portfolio { padding: 5rem 0; background: var(--color-white); text-align: center; }
+        .section-cta-portfolio h2 { font-size: 2.8rem; margin-bottom: 1rem; }
+        .section-cta-portfolio p { font-size: 1.1rem; color: var(--color-gray-500); max-width: 600px; margin: 0 auto 2rem; }
+        .cta-portfolio-buttons { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+        @media (max-width: 640px) { .section-cta-portfolio h2 { font-size: 2rem; } .cta-portfolio-buttons { flex-direction: column; align-items: center; } .cta-portfolio-buttons .btn { width: 100%; max-width: 300px; justify-content: center; } }
+    </style>
 
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="nome2">Nome *</label>
-                            <input type="text" id="nome2" name="nome" required placeholder="Seu nome completo">
-                        </div>
-                        <div class="form-group">
-                            <label for="empresa2">Empresa *</label>
-                            <input type="text" id="empresa2" name="empresa" required placeholder="Nome da sua empresa">
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="email2">E-mail *</label>
-                            <input type="email" id="email2" name="email" required placeholder="seu@empresa.com.br">
-                        </div>
-                        <div class="form-group">
-                            <label for="telefone2">WhatsApp</label>
-                            <input type="tel" id="telefone2" name="telefone" placeholder="(00) 00000-0000">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="interesse2">Área de interesse *</label>
-                        <select id="interesse2" name="interesse" required>
-                            <option value="">Selecione...</option>
-                            <option value="Recrutamento & Seleção">Recrutamento & Seleção</option>
-                            <option value="Análise Comportamental">Análise Comportamental</option>
-                            <option value="Gestão Estratégica de Pessoas">Gestão Estratégica de Pessoas</option>
-                            <option value="Gestão de Processos">Gestão de Processos</option>
-                            <option value="Ciclo de Vida do Colaborador">Ciclo de Vida do Colaborador</option>
-                            <option value="Desenvolvimento de Lideranças">Desenvolvimento de Lideranças</option>
-                            <option value="Gestão & Performance">Gestão Estratégica & Performance</option>
-                            <option value="Diagnóstico">Solicitar Diagnóstico Estratégico</option>
-                            <option value="Proposta">Solicitar Proposta Comercial</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="mensagem2">Mensagem</label>
-                        <textarea id="mensagem2" name="mensagem" rows="4" placeholder="Conte-nos sobre sua empresa"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary btn-block btn-lg">Enviar para análise</button>
-                    <p class="form-notice">📌 Ao enviar, você concorda com nossa Política de Privacidade.</p>
-                </form>
-            </div>
-        </div>
-    </section>
 </main>
 
-<!-- FOOTER -->
+<!-- ============================================================
+   FOOTER (IGUAL AO INDEX)
+   ============================================================ -->
 <footer class="site-footer">
     <div class="container">
         <div class="footer-grid">
@@ -650,10 +577,11 @@
             <div class="footer-links">
                 <h4>Navegação</h4>
                 <ul>
-                    <li><a href="/">Início</a></li>
+                    <li><a href="index.html">Início</a></li>
                     <li><a href="quem-somos.html">Quem Somos</a></li>
                     <li><a href="portfolio.html">Portfólio</a></li>
-                    <li><a href="#contato">Contato</a></li>
+                    <li><a href="index.html#servicos">Serviços</a></li>
+                    <li><a href="index.html#contato">Contato</a></li>
                 </ul>
             </div>
             <div class="footer-links">
@@ -664,7 +592,7 @@
                 </ul>
             </div>
             <div class="footer-cta">
-                <a href="#contato" class="btn btn-primary btn-block">Fale com a VIGORRE</a>
+                <a href="index.html#contato" class="btn btn-primary btn-block">Fale com a VIGORRE</a>
             </div>
         </div>
         <div class="footer-bottom">
