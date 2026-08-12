@@ -12,11 +12,10 @@
 </head>
 <body>
 
-<!-- HEADER -->
 <header class="site-header" data-header>
     <div class="container header-inner">
-        <a href="/" class="logo-wrapper">
-            <img src="logo-vigorre.png" alt="VIGORRE" class="logo-img" width="120" height="40">
+        <a href="index.html" class="logo-wrapper">
+            <img src="logo-vigorre.png" alt="VIGORRE" class="logo-img">
             <div class="logo-text">
                 <span class="logo-name">Vigorre</span>
                 <span class="logo-tagline">Inteligência, Tecnologia e Gestão Estratégica</span>
@@ -24,7 +23,7 @@
         </a>
         <nav class="main-nav">
             <ul class="nav-list">
-                <li><a href="/">Início</a></li>
+                <li><a href="index.html">Início</a></li>
                 <li><a href="quem-somos.html">Quem Somos</a></li>
                 <li><a href="solucoes.html">Soluções</a></li>
                 <li><a href="portfolio.html">Portfólio</a></li>
@@ -38,14 +37,14 @@
                 Solicitar Diagnóstico
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
             </a>
-            <button class="mobile-toggle" aria-label="Abrir menu" aria-expanded="false">
+            <button class="mobile-toggle" aria-label="Abrir menu">
                 <span></span><span></span><span></span>
             </button>
         </div>
     </div>
-    <div class="mobile-menu" aria-hidden="true">
+    <div class="mobile-menu">
         <ul class="mobile-nav-list">
-            <li><a href="/">Início</a></li>
+            <li><a href="index.html">Início</a></li>
             <li><a href="quem-somos.html">Quem Somos</a></li>
             <li><a href="solucoes.html">Soluções</a></li>
             <li><a href="portfolio.html">Portfólio</a></li>
@@ -67,108 +66,117 @@
                 <p class="hero-lead">Ecosystema de soluções digitais para gestão estratégica de pessoas e negócios.</p>
             </div>
             <div class="hero-interna-visual">
-                <img src="assets/images/hero-plataformas.jpg" alt="Plataformas VIGORRE" onerror="this.src='https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&h=600&w=800'">
+                <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&h=600&w=800" alt="Plataformas VIGORRE" style="width:100%;height:400px;object-fit:cover;border-radius:12px;box-shadow:0 20px 60px rgba(0,0,0,0.1);">
             </div>
         </div>
     </section>
 
-    <section class="section section-plataformas">
+    <style>
+        .hero-interna { padding: 8rem 0 4rem; background: var(--color-white); }
+        .hero-interna-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; }
+        .hero-interna-content .badge { display: inline-block; padding: 0.3rem 1rem; background: rgba(201,168,76,0.08); border: 1px solid rgba(201,168,76,0.15); border-radius: 50px; font-size: 0.7rem; font-weight: 600; color: var(--color-gold); text-transform: uppercase; margin-bottom: 1.5rem; }
+        .hero-interna-content h1 { font-size: 3rem; font-weight: 700; line-height: 1.1; color: var(--color-gray-900); margin-bottom: 1.5rem; }
+        .hero-interna-content .hero-lead { font-size: 1.15rem; line-height: 1.7; color: var(--color-gray-600); max-width: 560px; }
+        @media (max-width: 1024px) { .hero-interna-grid { grid-template-columns: 1fr; gap: 2rem; } .hero-interna-content h1 { font-size: 2.5rem; } .hero-interna-visual img { height: 280px; } }
+        @media (max-width: 640px) { .hero-interna { padding: 6rem 0 2rem; } .hero-interna-content h1 { font-size: 2rem; } .hero-interna-content .hero-lead { font-size: 1rem; } .hero-interna-visual img { height: 200px; } }
+    </style>
+
+    <section class="section section-plataformas" style="padding:5rem 0;">
         <div class="container">
             <div class="section-header">
                 <span class="section-tag">Ecosystema Digital</span>
-                <h2>Tecnologia que <span class="gradient-text">impulsiona resultados</span></h2>
-                <p>Plataformas desenvolvidas pela VIGORRE para transformar a gestão de pessoas e negócios.</p>
+                <h2 style="font-size:2.8rem;margin-top:0.5rem;">Tecnologia que <span class="gradient-text">impulsiona resultados</span></h2>
+                <p style="font-size:1.1rem;color:var(--color-gray-500);margin-top:1rem;">Plataformas desenvolvidas pela VIGORRE para transformar a gestão de pessoas e negócios.</p>
             </div>
 
-            <div class="plataformas-grid">
-                <div class="plataforma-card">
-                    <div class="plataforma-icon">🎓</div>
-                    <h3>Vigorre Academy™</h3>
-                    <p>Universidade corporativa para formação e certificação em Inteligência Humana e Metodologia VIGOR®.</p>
-                    <div class="plataforma-status">
-                        <span class="status-dot"></span>
+            <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;">
+                <div style="background:var(--color-white);border:1px solid var(--color-gray-100);border-radius:12px;padding:2rem;text-align:center;transition:all 0.3s ease;">
+                    <div style="font-size:2.5rem;margin-bottom:1rem;">🎓</div>
+                    <h3 style="font-family:var(--font-primary);font-size:1.1rem;font-weight:700;color:var(--color-gray-900);margin-bottom:0.5rem;">Vigorre Academy™</h3>
+                    <p style="font-size:0.9rem;color:var(--color-gray-500);line-height:1.6;margin-bottom:1rem;">Universidade corporativa para formação e certificação em Inteligência Humana e Metodologia VIGOR®.</p>
+                    <div style="display:inline-flex;align-items:center;gap:0.5rem;padding:0.3rem 1rem;background:rgba(201,168,76,0.08);border-radius:50px;font-size:0.7rem;font-weight:600;color:var(--color-gold);">
+                        <span style="width:6px;height:6px;border-radius:50%;background:var(--color-gold);animation:pulse-dot 2s ease-in-out infinite;"></span>
                         <span>Em Desenvolvimento</span>
                     </div>
-                    <a href="contato.html" class="btn btn-outline">Solicitar demonstração</a>
                 </div>
-
-                <div class="plataforma-card">
-                    <div class="plataforma-icon">🤝</div>
-                    <h3>Vigorre Hire™</h3>
-                    <p>ATS com IA, banco de talentos, fit cultural e programa de afiliados para recrutamento estratégico.</p>
-                    <div class="plataforma-status">
-                        <span class="status-dot"></span>
+                <div style="background:var(--color-white);border:1px solid var(--color-gray-100);border-radius:12px;padding:2rem;text-align:center;transition:all 0.3s ease;">
+                    <div style="font-size:2.5rem;margin-bottom:1rem;">🤝</div>
+                    <h3 style="font-family:var(--font-primary);font-size:1.1rem;font-weight:700;color:var(--color-gray-900);margin-bottom:0.5rem;">Vigorre Hire™</h3>
+                    <p style="font-size:0.9rem;color:var(--color-gray-500);line-height:1.6;margin-bottom:1rem;">ATS com IA, banco de talentos, fit cultural e programa de afiliados para recrutamento estratégico.</p>
+                    <div style="display:inline-flex;align-items:center;gap:0.5rem;padding:0.3rem 1rem;background:rgba(201,168,76,0.08);border-radius:50px;font-size:0.7rem;font-weight:600;color:var(--color-gold);">
+                        <span style="width:6px;height:6px;border-radius:50%;background:var(--color-gold);animation:pulse-dot 2s ease-in-out infinite;"></span>
                         <span>Em Desenvolvimento</span>
                     </div>
-                    <a href="contato.html" class="btn btn-outline">Solicitar demonstração</a>
                 </div>
-
-                <div class="plataforma-card">
-                    <div class="plataforma-icon">💻</div>
-                    <h3>Vigorre Tech™</h3>
-                    <p>Divisão especializada em soluções digitais: sites, sistemas, dashboards, apps e IA para RH.</p>
-                    <div class="plataforma-status">
-                        <span class="status-dot"></span>
+                <div style="background:var(--color-white);border:1px solid var(--color-gray-100);border-radius:12px;padding:2rem;text-align:center;transition:all 0.3s ease;">
+                    <div style="font-size:2.5rem;margin-bottom:1rem;">💻</div>
+                    <h3 style="font-family:var(--font-primary);font-size:1.1rem;font-weight:700;color:var(--color-gray-900);margin-bottom:0.5rem;">Vigorre Tech™</h3>
+                    <p style="font-size:0.9rem;color:var(--color-gray-500);line-height:1.6;margin-bottom:1rem;">Divisão especializada em soluções digitais: sites, sistemas, dashboards, apps e IA para RH.</p>
+                    <div style="display:inline-flex;align-items:center;gap:0.5rem;padding:0.3rem 1rem;background:rgba(201,168,76,0.08);border-radius:50px;font-size:0.7rem;font-weight:600;color:var(--color-gold);">
+                        <span style="width:6px;height:6px;border-radius:50%;background:var(--color-gold);animation:pulse-dot 2s ease-in-out infinite;"></span>
                         <span>Em Desenvolvimento</span>
                     </div>
-                    <a href="contato.html" class="btn btn-outline">Solicitar demonstração</a>
                 </div>
-
-                <div class="plataforma-card">
-                    <div class="plataforma-icon">📊</div>
-                    <h3>Vigorre Analytics™</h3>
-                    <p>People Analytics com dashboards preditivos, KPIs e inteligência de dados para decisões estratégicas.</p>
-                    <div class="plataforma-status">
-                        <span class="status-dot"></span>
+                <div style="background:var(--color-white);border:1px solid var(--color-gray-100);border-radius:12px;padding:2rem;text-align:center;transition:all 0.3s ease;">
+                    <div style="font-size:2.5rem;margin-bottom:1rem;">📊</div>
+                    <h3 style="font-family:var(--font-primary);font-size:1.1rem;font-weight:700;color:var(--color-gray-900);margin-bottom:0.5rem;">Vigorre Analytics™</h3>
+                    <p style="font-size:0.9rem;color:var(--color-gray-500);line-height:1.6;margin-bottom:1rem;">People Analytics com dashboards preditivos, KPIs e inteligência de dados para decisões estratégicas.</p>
+                    <div style="display:inline-flex;align-items:center;gap:0.5rem;padding:0.3rem 1rem;background:rgba(201,168,76,0.08);border-radius:50px;font-size:0.7rem;font-weight:600;color:var(--color-gold);">
+                        <span style="width:6px;height:6px;border-radius:50%;background:var(--color-gold);animation:pulse-dot 2s ease-in-out infinite;"></span>
                         <span>Em Desenvolvimento</span>
                     </div>
-                    <a href="contato.html" class="btn btn-outline">Solicitar demonstração</a>
                 </div>
-
-                <div class="plataforma-card">
-                    <div class="plataforma-icon">💼</div>
-                    <h3>Vigorre Consulting™</h3>
-                    <p>Consultoria estratégica com metodologia proprietária e abordagem baseada em evidências científicas.</p>
-                    <div class="plataforma-status">
-                        <span class="status-dot"></span>
+                <div style="background:var(--color-white);border:1px solid var(--color-gray-100);border-radius:12px;padding:2rem;text-align:center;transition:all 0.3s ease;">
+                    <div style="font-size:2.5rem;margin-bottom:1rem;">💼</div>
+                    <h3 style="font-family:var(--font-primary);font-size:1.1rem;font-weight:700;color:var(--color-gray-900);margin-bottom:0.5rem;">Vigorre Consulting™</h3>
+                    <p style="font-size:0.9rem;color:var(--color-gray-500);line-height:1.6;margin-bottom:1rem;">Consultoria estratégica com metodologia proprietária e abordagem baseada em evidências científicas.</p>
+                    <div style="display:inline-flex;align-items:center;gap:0.5rem;padding:0.3rem 1rem;background:rgba(201,168,76,0.08);border-radius:50px;font-size:0.7rem;font-weight:600;color:var(--color-gold);">
+                        <span style="width:6px;height:6px;border-radius:50%;background:var(--color-gold);animation:pulse-dot 2s ease-in-out infinite;"></span>
                         <span>Em Desenvolvimento</span>
                     </div>
-                    <a href="contato.html" class="btn btn-outline">Solicitar demonstração</a>
                 </div>
-
-                <div class="plataforma-card">
-                    <div class="plataforma-icon">🧠</div>
-                    <h3>Vigorre One™</h3>
-                    <p>Inteligência Humana, Assessment, People Analytics, PDI e laudos por IA em uma única plataforma.</p>
-                    <div class="plataforma-status">
-                        <span class="status-dot"></span>
+                <div style="background:var(--color-white);border:1px solid var(--color-gray-100);border-radius:12px;padding:2rem;text-align:center;transition:all 0.3s ease;">
+                    <div style="font-size:2.5rem;margin-bottom:1rem;">🧠</div>
+                    <h3 style="font-family:var(--font-primary);font-size:1.1rem;font-weight:700;color:var(--color-gray-900);margin-bottom:0.5rem;">Vigorre One™</h3>
+                    <p style="font-size:0.9rem;color:var(--color-gray-500);line-height:1.6;margin-bottom:1rem;">Inteligência Humana, Assessment, People Analytics, PDI e laudos por IA em uma única plataforma.</p>
+                    <div style="display:inline-flex;align-items:center;gap:0.5rem;padding:0.3rem 1rem;background:rgba(201,168,76,0.08);border-radius:50px;font-size:0.7rem;font-weight:600;color:var(--color-gold);">
+                        <span style="width:6px;height:6px;border-radius:50%;background:var(--color-gold);animation:pulse-dot 2s ease-in-out infinite;"></span>
                         <span>Em Desenvolvimento</span>
                     </div>
-                    <a href="contato.html" class="btn btn-outline">Solicitar demonstração</a>
                 </div>
             </div>
         </div>
     </section>
+
+    <style>
+        @media (max-width:1024px){ .section-plataformas .container > div { grid-template-columns:1fr 1fr !important; } }
+        @media (max-width:640px){ .section-plataformas .container > div { grid-template-columns:1fr !important; } .section-plataformas .section-header h2 { font-size:2rem !important; } }
+    </style>
+
 </main>
 
-<!-- FOOTER -->
 <footer class="site-footer">
     <div class="container">
         <div class="footer-grid">
             <div class="footer-brand">
                 <div class="footer-logo-wrapper">
-                    <img src="logo-vigorre.png" alt="VIGORRE" class="footer-logo" width="100" height="33">
+                    <img src="logo-vigorre.png" alt="VIGORRE" class="footer-logo">
                     <div class="footer-logo-text">
                         <span class="footer-logo-name">Vigorre</span>
                         <span class="footer-logo-tagline">Inteligência, Tecnologia e Gestão Estratégica</span>
                     </div>
                 </div>
                 <p>Transformamos desafios empresariais em soluções estratégicas com inteligência humana, tecnologia e dados.</p>
+                <div class="footer-social">
+                    <a href="https://instagram.com/vigorre.oficial" aria-label="Instagram">📷</a>
+                    <a href="https://linkedin.com/company/vigorreoficial" aria-label="LinkedIn">💼</a>
+                    <a href="https://wa.me/5534991850735" aria-label="WhatsApp">📱</a>
+                </div>
             </div>
             <div class="footer-links">
                 <h4>Navegação</h4>
                 <ul>
-                    <li><a href="/">Início</a></li>
+                    <li><a href="index.html">Início</a></li>
                     <li><a href="quem-somos.html">Quem Somos</a></li>
                     <li><a href="solucoes.html">Soluções</a></li>
                     <li><a href="portfolio.html">Portfólio</a></li>
@@ -198,6 +206,7 @@
 
 <a href="https://wa.me/5534991850735" class="whatsapp-float" aria-label="Fale com a VIGORRE">
     <svg viewBox="0 0 32 32" width="28" height="28" fill="white"><path d="M16 2C8.268 2 2 8.268 2 16c0 2.58.704 5.002 1.936 7.104L2 29.5l6.58-1.92A13.94 13.94 0 0016 30c7.732 0 14-6.268 14-14S23.732 2 16 2zm0 25.5c-2.24 0-4.36-.62-6.2-1.72l-.44-.26-4.08 1.2 1.22-4.06-.26-.44A11.46 11.46 0 014.5 16c0-6.34 5.16-11.5 11.5-11.5s11.5 5.16 11.5 11.5-5.16 11.5-11.5 11.5z"/></svg>
+    <span class="whatsapp-tooltip">Fale com a VIGORRE</span>
 </a>
 
 <script src="script.js"></script>
