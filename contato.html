@@ -12,11 +12,10 @@
 </head>
 <body>
 
-<!-- HEADER -->
 <header class="site-header" data-header>
     <div class="container header-inner">
-        <a href="/" class="logo-wrapper">
-            <img src="logo-vigorre.png" alt="VIGORRE" class="logo-img" width="120" height="40">
+        <a href="index.html" class="logo-wrapper">
+            <img src="logo-vigorre.png" alt="VIGORRE" class="logo-img">
             <div class="logo-text">
                 <span class="logo-name">Vigorre</span>
                 <span class="logo-tagline">Inteligência, Tecnologia e Gestão Estratégica</span>
@@ -24,7 +23,7 @@
         </a>
         <nav class="main-nav">
             <ul class="nav-list">
-                <li><a href="/">Início</a></li>
+                <li><a href="index.html">Início</a></li>
                 <li><a href="quem-somos.html">Quem Somos</a></li>
                 <li><a href="solucoes.html">Soluções</a></li>
                 <li><a href="portfolio.html">Portfólio</a></li>
@@ -38,14 +37,14 @@
                 Solicitar Diagnóstico
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
             </a>
-            <button class="mobile-toggle" aria-label="Abrir menu" aria-expanded="false">
+            <button class="mobile-toggle" aria-label="Abrir menu">
                 <span></span><span></span><span></span>
             </button>
         </div>
     </div>
-    <div class="mobile-menu" aria-hidden="true">
+    <div class="mobile-menu">
         <ul class="mobile-nav-list">
-            <li><a href="/">Início</a></li>
+            <li><a href="index.html">Início</a></li>
             <li><a href="quem-somos.html">Quem Somos</a></li>
             <li><a href="solucoes.html">Soluções</a></li>
             <li><a href="portfolio.html">Portfólio</a></li>
@@ -59,7 +58,6 @@
 </header>
 
 <main>
-    <!-- HERO -->
     <section class="hero-interna">
         <div class="container hero-interna-grid">
             <div class="hero-interna-content">
@@ -68,108 +66,104 @@
                 <p class="hero-lead">Fale com um especialista VIGORRE. Em até 2 horas úteis, nossa equipe entra em contato para entender sua operação e apresentar a solução ideal.</p>
             </div>
             <div class="hero-interna-visual">
-                <img src="assets/images/hero-contato.jpg" alt="Contato VIGORRE" onerror="this.src='https://images.pexels.com/photos/3182819/pexels-photo-3182819.jpeg?auto=compress&cs=tinysrgb&h=600&w=800'">
+                <img src="https://images.pexels.com/photos/3182819/pexels-photo-3182819.jpeg?auto=compress&cs=tinysrgb&h=600&w=800" alt="Contato VIGORRE" style="width:100%;height:400px;object-fit:cover;border-radius:12px;box-shadow:0 20px 60px rgba(0,0,0,0.1);">
             </div>
         </div>
     </section>
 
-    <!-- FORMULÁRIO DE CONTATO -->
-    <section class="section section-contato">
+    <style>
+        .hero-interna { padding: 8rem 0 4rem; background: var(--color-white); }
+        .hero-interna-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; }
+        .hero-interna-content .badge { display: inline-block; padding: 0.3rem 1rem; background: rgba(201,168,76,0.08); border: 1px solid rgba(201,168,76,0.15); border-radius: 50px; font-size: 0.7rem; font-weight: 600; color: var(--color-gold); text-transform: uppercase; margin-bottom: 1.5rem; }
+        .hero-interna-content h1 { font-size: 3rem; font-weight: 700; line-height: 1.1; color: var(--color-gray-900); margin-bottom: 1.5rem; }
+        .hero-interna-content .hero-lead { font-size: 1.15rem; line-height: 1.7; color: var(--color-gray-600); max-width: 560px; }
+        @media (max-width: 1024px) { .hero-interna-grid { grid-template-columns: 1fr; gap: 2rem; } .hero-interna-content h1 { font-size: 2.5rem; } .hero-interna-visual img { height: 280px; } }
+        @media (max-width: 640px) { .hero-interna { padding: 6rem 0 2rem; } .hero-interna-content h1 { font-size: 2rem; } .hero-interna-content .hero-lead { font-size: 1rem; } .hero-interna-visual img { height: 200px; } }
+    </style>
+
+    <section class="section section-contato" style="padding:5rem 0;">
         <div class="container">
-            <div class="contato-grid">
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;">
                 <div class="contato-info">
                     <span class="section-tag">Fale Conosco</span>
-                    <h2>Solicite seu <span class="gradient-text">Diagnóstico Estratégico</span></h2>
-                    <p>Preencha o formulário e nossa equipe entrará em contato em até 2 horas úteis.</p>
+                    <h2 style="font-size:2.5rem;margin:0.5rem 0 1rem;">Solicite seu <span class="gradient-text">Diagnóstico Estratégico</span></h2>
+                    <p style="color:var(--color-gray-500);line-height:1.8;margin-bottom:1.5rem;">Preencha o formulário e nossa equipe entrará em contato em até 2 horas úteis.</p>
 
-                    <div class="contato-diferenciais">
-                        <div class="contato-diferencial">
-                            <span class="contato-dif-icon">✅</span>
+                    <div style="display:flex;flex-wrap:wrap;gap:1rem;margin-bottom:1.5rem;">
+                        <div style="display:flex;align-items:center;gap:0.5rem;font-size:0.9rem;color:var(--color-gray-700);">
+                            <span style="font-size:1.2rem;">✅</span>
                             <span>Diagnóstico gratuito</span>
                         </div>
-                        <div class="contato-diferencial">
-                            <span class="contato-dif-icon">✅</span>
+                        <div style="display:flex;align-items:center;gap:0.5rem;font-size:0.9rem;color:var(--color-gray-700);">
+                            <span style="font-size:1.2rem;">✅</span>
                             <span>Plano personalizado</span>
                         </div>
-                        <div class="contato-diferencial">
-                            <span class="contato-dif-icon">✅</span>
+                        <div style="display:flex;align-items:center;gap:0.5rem;font-size:0.9rem;color:var(--color-gray-700);">
+                            <span style="font-size:1.2rem;">✅</span>
                             <span>Acompanhamento contínuo</span>
                         </div>
                     </div>
 
-                    <div class="contato-methods">
-                        <a href="mailto:contato@vigorre.com.br" class="contato-method">
-                            <span class="contact-icon">✉️</span>
-                            <div>
-                                <strong>E-mail</strong>
-                                <span>contato@vigorre.com.br</span>
-                            </div>
+                    <div style="display:flex;flex-direction:column;gap:0.75rem;">
+                        <a href="mailto:contato@vigorre.com.br" style="display:flex;align-items:center;gap:1rem;padding:0.75rem 1rem;background:var(--color-gray-50);border-radius:8px;transition:all 0.15s ease;border:1px solid transparent;">
+                            <span style="font-size:1.5rem;flex-shrink:0;">✉️</span>
+                            <div><strong style="font-size:0.85rem;color:var(--color-gray-900);">E-mail</strong><span style="font-size:0.8rem;color:var(--color-gray-500);display:block;">contato@vigorre.com.br</span></div>
                         </a>
-                        <a href="https://wa.me/5534991850735" target="_blank" class="contato-method">
-                            <span class="contact-icon">📱</span>
-                            <div>
-                                <strong>WhatsApp</strong>
-                                <span>+55 34 99185-0735</span>
-                            </div>
+                        <a href="https://wa.me/5534991850735" target="_blank" style="display:flex;align-items:center;gap:1rem;padding:0.75rem 1rem;background:var(--color-gray-50);border-radius:8px;transition:all 0.15s ease;border:1px solid transparent;">
+                            <span style="font-size:1.5rem;flex-shrink:0;">📱</span>
+                            <div><strong style="font-size:0.85rem;color:var(--color-gray-900);">WhatsApp</strong><span style="font-size:0.8rem;color:var(--color-gray-500);display:block;">+55 34 99185-0735</span></div>
                         </a>
-                        <a href="https://instagram.com/vigorre.oficial" target="_blank" class="contato-method">
-                            <span class="contact-icon">📷</span>
-                            <div>
-                                <strong>Instagram</strong>
-                                <span>@vigorre.oficial</span>
-                            </div>
+                        <a href="https://instagram.com/vigorre.oficial" target="_blank" style="display:flex;align-items:center;gap:1rem;padding:0.75rem 1rem;background:var(--color-gray-50);border-radius:8px;transition:all 0.15s ease;border:1px solid transparent;">
+                            <span style="font-size:1.5rem;flex-shrink:0;">📷</span>
+                            <div><strong style="font-size:0.85rem;color:var(--color-gray-900);">Instagram</strong><span style="font-size:0.8rem;color:var(--color-gray-500);display:block;">@vigorre.oficial</span></div>
                         </a>
-                        <a href="https://linkedin.com/company/vigorreoficial" target="_blank" class="contato-method">
-                            <span class="contact-icon">💼</span>
-                            <div>
-                                <strong>LinkedIn</strong>
-                                <span>Vigorre Oficial</span>
-                            </div>
+                        <a href="https://linkedin.com/company/vigorreoficial" target="_blank" style="display:flex;align-items:center;gap:1rem;padding:0.75rem 1rem;background:var(--color-gray-50);border-radius:8px;transition:all 0.15s ease;border:1px solid transparent;">
+                            <span style="font-size:1.5rem;flex-shrink:0;">💼</span>
+                            <div><strong style="font-size:0.85rem;color:var(--color-gray-900);">LinkedIn</strong><span style="font-size:0.8rem;color:var(--color-gray-500);display:block;">Vigorre Oficial</span></div>
                         </a>
                     </div>
 
-                    <div class="contato-info-box">
-                        <p><strong>💡 Empresas que usam dados para contratar</strong> reduzem turnover em até 40% e aumentam a produtividade em 87%. Sua próxima contratação de alta performance está a uma mensagem de distância.</p>
+                    <div style="padding:1.5rem;background:var(--color-gray-50);border-radius:8px;border-left:4px solid var(--color-gold);margin-top:1.5rem;">
+                        <p style="margin:0;font-size:0.95rem;color:var(--color-gray-700);"><strong>💡 Empresas que usam dados para contratar</strong> reduzem turnover em até 40% e aumentam a produtividade em 87%. Sua próxima contratação de alta performance está a uma mensagem de distância.</p>
                     </div>
                 </div>
 
-                <!-- FORMULÁRIO - ENVIA PARA E-MAIL -->
-                <form class="contato-form" id="contatoForm" method="POST" action="https://formsubmit.co/contato@vigorre.com.br">
+                <form class="contato-form" method="POST" action="https://formsubmit.co/contato@vigorre.com.br" style="background:var(--color-white);border:1px solid var(--color-gray-100);border-radius:12px;padding:2rem;box-shadow:0 4px 12px rgba(10,22,40,0.08);">
                     <input type="hidden" name="_subject" value="📩 Novo contato pelo site VIGORRE">
                     <input type="hidden" name="_captcha" value="false">
                     <input type="hidden" name="_template" value="table">
                     <input type="hidden" name="_next" value="https://vigorre.com.br/obrigado.html">
 
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="nome">Nome *</label>
-                            <input type="text" id="nome" name="nome" required placeholder="Seu nome completo">
+                    <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;">
+                        <div class="form-group" style="margin-bottom:1rem;">
+                            <label for="nome" style="display:block;font-size:0.8rem;font-weight:600;color:var(--color-gray-700);margin-bottom:0.25rem;">Nome *</label>
+                            <input type="text" id="nome" name="nome" required style="width:100%;padding:0.7rem 1rem;font-family:var(--font-primary);font-size:0.9rem;border:1px solid var(--color-gray-200);border-radius:8px;transition:all 0.15s ease;background:var(--color-white);color:var(--color-gray-900);">
                         </div>
-                        <div class="form-group">
-                            <label for="empresa">Empresa *</label>
-                            <input type="text" id="empresa" name="empresa" required placeholder="Nome da sua empresa">
-                        </div>
-                    </div>
-
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="cargo">Cargo</label>
-                            <input type="text" id="cargo" name="cargo" placeholder="Seu cargo na empresa">
-                        </div>
-                        <div class="form-group">
-                            <label for="email">E-mail corporativo *</label>
-                            <input type="email" id="email" name="email" required placeholder="seu@empresa.com.br">
+                        <div class="form-group" style="margin-bottom:1rem;">
+                            <label for="empresa" style="display:block;font-size:0.8rem;font-weight:600;color:var(--color-gray-700);margin-bottom:0.25rem;">Empresa *</label>
+                            <input type="text" id="empresa" name="empresa" required style="width:100%;padding:0.7rem 1rem;font-family:var(--font-primary);font-size:0.9rem;border:1px solid var(--color-gray-200);border-radius:8px;transition:all 0.15s ease;background:var(--color-white);color:var(--color-gray-900);">
                         </div>
                     </div>
 
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="telefone">WhatsApp / Telefone</label>
-                            <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000">
+                    <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;">
+                        <div class="form-group" style="margin-bottom:1rem;">
+                            <label for="cargo" style="display:block;font-size:0.8rem;font-weight:600;color:var(--color-gray-700);margin-bottom:0.25rem;">Cargo</label>
+                            <input type="text" id="cargo" name="cargo" style="width:100%;padding:0.7rem 1rem;font-family:var(--font-primary);font-size:0.9rem;border:1px solid var(--color-gray-200);border-radius:8px;transition:all 0.15s ease;background:var(--color-white);color:var(--color-gray-900);">
                         </div>
-                        <div class="form-group">
-                            <label for="colaboradores">Número de colaboradores</label>
-                            <select id="colaboradores" name="colaboradores">
+                        <div class="form-group" style="margin-bottom:1rem;">
+                            <label for="email" style="display:block;font-size:0.8rem;font-weight:600;color:var(--color-gray-700);margin-bottom:0.25rem;">E-mail corporativo *</label>
+                            <input type="email" id="email" name="email" required style="width:100%;padding:0.7rem 1rem;font-family:var(--font-primary);font-size:0.9rem;border:1px solid var(--color-gray-200);border-radius:8px;transition:all 0.15s ease;background:var(--color-white);color:var(--color-gray-900);">
+                        </div>
+                    </div>
+
+                    <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;">
+                        <div class="form-group" style="margin-bottom:1rem;">
+                            <label for="telefone" style="display:block;font-size:0.8rem;font-weight:600;color:var(--color-gray-700);margin-bottom:0.25rem;">WhatsApp / Telefone</label>
+                            <input type="tel" id="telefone" name="telefone" style="width:100%;padding:0.7rem 1rem;font-family:var(--font-primary);font-size:0.9rem;border:1px solid var(--color-gray-200);border-radius:8px;transition:all 0.15s ease;background:var(--color-white);color:var(--color-gray-900);">
+                        </div>
+                        <div class="form-group" style="margin-bottom:1rem;">
+                            <label for="colaboradores" style="display:block;font-size:0.8rem;font-weight:600;color:var(--color-gray-700);margin-bottom:0.25rem;">Número de colaboradores</label>
+                            <select id="colaboradores" name="colaboradores" style="width:100%;padding:0.7rem 1rem;font-family:var(--font-primary);font-size:0.9rem;border:1px solid var(--color-gray-200);border-radius:8px;transition:all 0.15s ease;background:var(--color-white);color:var(--color-gray-900);">
                                 <option value="">Selecione...</option>
                                 <option value="1-10">1 - 10</option>
                                 <option value="11-50">11 - 50</option>
@@ -181,9 +175,9 @@
                         </div>
                     </div>
 
-                    <div class="form-group">
-                        <label for="interesse">Principal desafio ou área de interesse *</label>
-                        <select id="interesse" name="interesse" required>
+                    <div class="form-group" style="margin-bottom:1rem;">
+                        <label for="interesse" style="display:block;font-size:0.8rem;font-weight:600;color:var(--color-gray-700);margin-bottom:0.25rem;">Principal desafio ou área de interesse *</label>
+                        <select id="interesse" name="interesse" required style="width:100%;padding:0.7rem 1rem;font-family:var(--font-primary);font-size:0.9rem;border:1px solid var(--color-gray-200);border-radius:8px;transition:all 0.15s ease;background:var(--color-white);color:var(--color-gray-900);">
                             <option value="">Selecione...</option>
                             <option value="Diagnóstico Estratégico">Solicitar Diagnóstico Estratégico</option>
                             <option value="Recrutamento & Seleção">Recrutamento & Seleção</option>
@@ -202,71 +196,52 @@
                         </select>
                     </div>
 
-                    <div class="form-group">
-                        <label for="mensagem">Mensagem</label>
-                        <textarea id="mensagem" name="mensagem" rows="4" placeholder="Conte-nos sobre sua empresa e como podemos ajudar"></textarea>
+                    <div class="form-group" style="margin-bottom:1rem;">
+                        <label for="mensagem" style="display:block;font-size:0.8rem;font-weight:600;color:var(--color-gray-700);margin-bottom:0.25rem;">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" rows="4" style="width:100%;padding:0.7rem 1rem;font-family:var(--font-primary);font-size:0.9rem;border:1px solid var(--color-gray-200);border-radius:8px;transition:all 0.15s ease;background:var(--color-white);color:var(--color-gray-900);resize:vertical;min-height:80px;" placeholder="Conte-nos sobre sua empresa e como podemos ajudar"></textarea>
                     </div>
 
-                    <button type="submit" class="btn btn-primary btn-block btn-lg">
+                    <button type="submit" class="btn btn-primary btn-block btn-lg" style="width:100%;display:inline-flex;align-items:center;justify-content:center;gap:0.5rem;padding:0.9rem 2.2rem;font-size:0.95rem;font-weight:600;border-radius:8px;border:2px solid transparent;transition:all 0.3s ease;cursor:pointer;background:var(--color-primary);color:var(--color-white);border-color:var(--color-primary);font-family:var(--font-primary);">
                         Enviar para análise
                         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
                     </button>
 
-                    <p class="form-notice">📌 Ao enviar, você concorda com nossa Política de Privacidade e LGPD.</p>
-                    <p class="form-notice">🔒 Seus dados estão seguros e não serão compartilhados com terceiros.</p>
+                    <p style="font-size:0.7rem;color:var(--color-gray-400);text-align:center;margin-top:0.75rem;">📌 Ao enviar, você concorda com nossa Política de Privacidade e LGPD.</p>
+                    <p style="font-size:0.7rem;color:var(--color-gray-400);text-align:center;">🔒 Seus dados estão seguros e não serão compartilhados com terceiros.</p>
                 </form>
             </div>
         </div>
     </section>
 
-    <!-- MAPA / LOCALIZAÇÃO -->
-    <section class="section section-mapa">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Onde Estamos</span>
-                <h2>Estamos prontos para <span class="gradient-text">atender você</span></h2>
-            </div>
-            <div class="mapa-container">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3779.628329769824!2d-48.26659072335531!3d-18.904457605312795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94a444b2e1b13b5d%3A0x7b5e7b5e7b5e7b5e!2sUberl%C3%A2ndia%2C%20MG!5e0!3m2!1spt-BR!2sbr!4v1700000000000" width="100%" height="350" style="border:0; border-radius:12px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-            <div class="mapa-info">
-                <div class="mapa-info-item">
-                    <span class="mapa-icon">📍</span>
-                    <div>
-                        <strong>Uberlândia - MG</strong>
-                        <span>Atendimento presencial e remoto para todo o Brasil</span>
-                    </div>
-                </div>
-                <div class="mapa-info-item">
-                    <span class="mapa-icon">🕐</span>
-                    <div>
-                        <strong>Horário de Atendimento</strong>
-                        <span>Segunda a Sexta, das 8h às 18h</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <style>
+        @media (max-width:1024px){ .section-contato .container > div { grid-template-columns:1fr !important; gap:2rem !important; } }
+        @media (max-width:640px){ .contato-form { padding:1.5rem !important; } .section-contato .contato-info h2 { font-size:2rem !important; } .section-contato .container > div > .contato-form > div { grid-template-columns:1fr !important; } }
+    </style>
+
 </main>
 
-<!-- FOOTER -->
 <footer class="site-footer">
     <div class="container">
         <div class="footer-grid">
             <div class="footer-brand">
                 <div class="footer-logo-wrapper">
-                    <img src="logo-vigorre.png" alt="VIGORRE" class="footer-logo" width="100" height="33">
+                    <img src="logo-vigorre.png" alt="VIGORRE" class="footer-logo">
                     <div class="footer-logo-text">
                         <span class="footer-logo-name">Vigorre</span>
                         <span class="footer-logo-tagline">Inteligência, Tecnologia e Gestão Estratégica</span>
                     </div>
                 </div>
                 <p>Transformamos desafios empresariais em soluções estratégicas com inteligência humana, tecnologia e dados.</p>
+                <div class="footer-social">
+                    <a href="https://instagram.com/vigorre.oficial" aria-label="Instagram">📷</a>
+                    <a href="https://linkedin.com/company/vigorreoficial" aria-label="LinkedIn">💼</a>
+                    <a href="https://wa.me/5534991850735" aria-label="WhatsApp">📱</a>
+                </div>
             </div>
             <div class="footer-links">
                 <h4>Navegação</h4>
                 <ul>
-                    <li><a href="/">Início</a></li>
+                    <li><a href="index.html">Início</a></li>
                     <li><a href="quem-somos.html">Quem Somos</a></li>
                     <li><a href="solucoes.html">Soluções</a></li>
                     <li><a href="portfolio.html">Portfólio</a></li>
@@ -296,6 +271,7 @@
 
 <a href="https://wa.me/5534991850735" class="whatsapp-float" aria-label="Fale com a VIGORRE">
     <svg viewBox="0 0 32 32" width="28" height="28" fill="white"><path d="M16 2C8.268 2 2 8.268 2 16c0 2.58.704 5.002 1.936 7.104L2 29.5l6.58-1.92A13.94 13.94 0 0016 30c7.732 0 14-6.268 14-14S23.732 2 16 2zm0 25.5c-2.24 0-4.36-.62-6.2-1.72l-.44-.26-4.08 1.2 1.22-4.06-.26-.44A11.46 11.46 0 014.5 16c0-6.34 5.16-11.5 11.5-11.5s11.5 5.16 11.5 11.5-5.16 11.5-11.5 11.5z"/></svg>
+    <span class="whatsapp-tooltip">Fale com a VIGORRE</span>
 </a>
 
 <script src="script.js"></script>
