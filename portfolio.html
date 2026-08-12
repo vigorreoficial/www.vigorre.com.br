@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio | VIGORRE</title>
-    <meta name="description" content="Portfólio completo da VIGORRE — 7 frentes de atuação com serviços detalhados para transformar sua gestão.">
+    <meta name="description" content="Portfólio completo da VIGORRE — 7 frentes de atuação com serviços detalhados.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
@@ -13,7 +13,7 @@
 </head>
 <body>
 
-<!-- HEADER PADRÃO -->
+<!-- HEADER -->
 <header class="site-header" data-header>
     <div class="container header-inner">
         <a href="index.html" class="logo-wrapper">
@@ -27,8 +27,8 @@
             <ul class="nav-list">
                 <li><a href="index.html">Início</a></li>
                 <li><a href="quem-somos.html">Quem Somos</a></li>
+                <li><a href="solucoes.html">Soluções</a></li>
                 <li><a href="portfolio.html" class="active">Portfólio</a></li>
-                <li><a href="index.html#servicos">Serviços</a></li>
                 <li><a href="index.html#contato">Contato</a></li>
             </ul>
         </nav>
@@ -43,8 +43,8 @@
         <ul class="mobile-nav-list">
             <li><a href="index.html">Início</a></li>
             <li><a href="quem-somos.html">Quem Somos</a></li>
+            <li><a href="solucoes.html">Soluções</a></li>
             <li><a href="portfolio.html">Portfólio</a></li>
-            <li><a href="index.html#servicos">Serviços</a></li>
             <li><a href="index.html#contato">Contato</a></li>
             <li class="mobile-divider"></li>
             <li><a href="index.html#contato" class="btn btn-primary btn-block">Solicitar Diagnóstico</a></li>
@@ -58,8 +58,8 @@
         <div class="container">
             <div class="hero-portfolio-content">
                 <span class="hero-badge">Portfólio de Serviços</span>
-                <h1>Conheça o ecossistema <span class="highlight">VIGORRE</span></h1>
-                <p class="hero-lead">Estratégia, pessoas, tecnologia, dados e inteligência aplicados aos desafios empresariais. Conheça cada uma das 7 frentes de atuação com seus serviços detalhados.</p>
+                <h1>O que a <span class="highlight">VIGORRE</span> entrega</h1>
+                <p class="hero-lead">Cada solução com serviços detalhados, metodologia e diferenciais. Veja o que podemos fazer pela sua empresa.</p>
             </div>
             <div class="hero-portfolio-image">
                 <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&h=600&w=800" alt="Portfólio VIGORRE">
@@ -78,7 +78,9 @@
         @media (max-width:640px){ .hero-portfolio { padding:6rem 0 2rem; } .hero-portfolio h1 { font-size:2rem; } .hero-portfolio .hero-lead { font-size:1rem; } .hero-portfolio img { height:200px; } }
     </style>
 
-    <!-- 01 RECRUTAMENTO & SELEÇÃO -->
+    <!-- ============================================================
+       01 — RECRUTAMENTO & SELEÇÃO
+       ============================================================ -->
     <section id="recrutamento" class="section section-servico">
         <div class="container">
             <div class="servico-header">
@@ -97,6 +99,10 @@
                         <div class="impacto-item"><span class="impacto-numero">40%</span><span class="impacto-label">redução turnover</span></div>
                         <div class="impacto-item"><span class="impacto-numero">15</span><span class="impacto-label">dias para formar time</span></div>
                     </div>
+                    <div class="servico-diferencial">
+                        <h4>🔄 Como funciona</h4>
+                        <p>Diagnóstico da necessidade → Definição de perfil → Atração de candidatos → Triagem qualificada → Entrevistas estruturadas → Seleção e acompanhamento.</p>
+                    </div>
                 </div>
                 <div class="servico-servicos">
                     <h3>Serviços entregues</h3>
@@ -106,8 +112,16 @@
                         <li>Recrutamento administrativo</li><li>Recrutamento técnico</li>
                         <li>Recrutamento de lideranças</li><li>Definição de perfil</li>
                         <li>Descrição de vagas</li><li>Avaliação de candidatos</li>
-                        <li>Apoio à tomada de decisão</li>
                     </ul>
+                    <div class="servico-entrega">
+                        <h4>✅ O que você recebe</h4>
+                        <ul>
+                            <li>Processo seletivo estruturado</li>
+                            <li>Candidatos alinhados ao perfil</li>
+                            <li>Redução de risco de contratação</li>
+                            <li>Suporte durante o período de experiência</li>
+                        </ul>
+                    </div>
                     <a href="index.html#contato" class="btn btn-primary">Quero esta solução</a>
                 </div>
             </div>
@@ -127,15 +141,25 @@
         .impacto-item { text-align: center; padding: 1rem; background: var(--color-gray-50); border-radius: 8px; }
         .impacto-numero { display: block; font-family: var(--font-serif); font-size: 2rem; font-weight: 700; color: var(--color-primary); }
         .impacto-label { font-size: 0.7rem; color: var(--color-gray-500); }
+        .servico-diferencial { margin-top: 1.5rem; padding: 1.5rem; background: var(--color-gray-50); border-radius: 8px; border-left: 4px solid var(--color-gold); }
+        .servico-diferencial h4 { font-family: var(--font-primary); font-size: 0.9rem; font-weight: 700; color: var(--color-gray-900); margin-bottom: 0.25rem; }
+        .servico-diferencial p { font-size: 0.9rem; color: var(--color-gray-600); margin: 0; }
         .servico-servicos h3 { font-family: var(--font-primary); font-size: 1rem; font-weight: 700; color: var(--color-gray-900); margin-bottom: 1rem; }
         .servicos-lista { display: grid; grid-template-columns: 1fr 1fr; gap: 0.25rem 1rem; list-style: none; margin-bottom: 1.5rem; }
         .servicos-lista li { font-size: 0.9rem; color: var(--color-gray-700); padding: 0.25rem 0; display: flex; align-items: center; gap: 0.5rem; }
         .servicos-lista li::before { content: '•'; color: var(--color-gold); font-weight: 700; }
+        .servico-entrega { margin-bottom: 1.5rem; padding: 1rem; background: rgba(217,119,6,0.04); border-radius: 8px; border: 1px solid rgba(217,119,6,0.1); }
+        .servico-entrega h4 { font-family: var(--font-primary); font-size: 0.8rem; font-weight: 700; color: var(--color-gray-700); margin-bottom: 0.5rem; }
+        .servico-entrega ul { list-style: none; display: flex; flex-wrap: wrap; gap: 0.25rem 1rem; }
+        .servico-entrega ul li { font-size: 0.8rem; color: var(--color-gray-600); display: flex; align-items: center; gap: 0.25rem; }
+        .servico-entrega ul li::before { content: '✅'; }
         @media (max-width:1024px){ .servico-grid { grid-template-columns:1fr; gap:2rem; } .servico-header h2 { font-size:2rem; } .servico-number { font-size:3rem; } }
         @media (max-width:640px){ .servico-header { gap:1rem; flex-wrap:wrap; } .servico-header h2 { font-size:1.6rem; } .servico-impacto { grid-template-columns:1fr; } .servicos-lista { grid-template-columns:1fr; } }
     </style>
 
-    <!-- 02 ANÁLISE COMPORTAMENTAL -->
+    <!-- ============================================================
+       02 — ANÁLISE COMPORTAMENTAL
+       ============================================================ -->
     <section id="analise" class="section section-servico section-servico-gray">
         <div class="container">
             <div class="servico-header">
@@ -154,6 +178,10 @@
                         <div class="impacto-item"><span class="impacto-numero">65%</span><span class="impacto-label">redução conflitos</span></div>
                         <div class="impacto-item"><span class="impacto-numero">3x</span><span class="impacto-label">assertividade</span></div>
                     </div>
+                    <div class="servico-diferencial">
+                        <h4>🔄 Como funciona</h4>
+                        <p>Aplicação de instrumentos científicos → Análise de perfis → Mapeamento de competências → Relatório estruturado → Recomendações de desenvolvimento.</p>
+                    </div>
                 </div>
                 <div class="servico-servicos">
                     <h3>Serviços entregues</h3>
@@ -162,16 +190,26 @@
                         <li>Avaliação de competências</li><li>Inteligência Emocional</li>
                         <li>Valores profissionais</li><li>Aderência ao cargo</li>
                         <li>Pontos fortes</li><li>Pontos de desenvolvimento</li>
-                        <li>Apoio à tomada de decisão</li><li>Feedback estruturado</li>
-                        <li>Recomendações de desenvolvimento</li>
+                        <li>Feedback estruturado</li><li>Recomendações</li>
                     </ul>
+                    <div class="servico-entrega">
+                        <h4>✅ O que você recebe</h4>
+                        <ul>
+                            <li>Perfil detalhado do profissional</li>
+                            <li>Mapeamento de competências</li>
+                            <li>Recomendações de desenvolvimento</li>
+                            <li>Base para decisões de carreira</li>
+                        </ul>
+                    </div>
                     <a href="index.html#contato" class="btn btn-primary">Quero esta solução</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 03 GESTÃO ESTRATÉGICA DE PESSOAS -->
+    <!-- ============================================================
+       03 — GESTÃO ESTRATÉGICA DE PESSOAS
+       ============================================================ -->
     <section id="gestao" class="section section-servico">
         <div class="container">
             <div class="servico-header">
@@ -190,6 +228,10 @@
                         <div class="impacto-item"><span class="impacto-numero">82%</span><span class="impacto-label">satisfação</span></div>
                         <div class="impacto-item"><span class="impacto-numero">4x</span><span class="impacto-label">ROI em talentos</span></div>
                     </div>
+                    <div class="servico-diferencial">
+                        <h4>🔄 Como funciona</h4>
+                        <p>Diagnóstico de RH → Estruturação de processos → Definição de competências → Implementação de práticas → Acompanhamento de indicadores.</p>
+                    </div>
                 </div>
                 <div class="servico-servicos">
                     <h3>Serviços entregues</h3>
@@ -198,16 +240,26 @@
                         <li>Gestão por competências</li><li>Desenvolvimento de talentos</li>
                         <li>Planejamento de sucessão</li><li>Gestão de desempenho</li>
                         <li>Indicadores de RH</li><li>PDI</li>
-                        <li>Estruturação de processos de RH</li><li>Políticas de gestão</li>
-                        <li>Apoio à liderança</li>
+                        <li>Políticas de gestão</li><li>Apoio à liderança</li>
                     </ul>
+                    <div class="servico-entrega">
+                        <h4>✅ O que você recebe</h4>
+                        <ul>
+                            <li>RH estruturado e estratégico</li>
+                            <li>Processos de gestão de pessoas</li>
+                            <li>Indicadores e métricas</li>
+                            <li>Plano de desenvolvimento de talentos</li>
+                        </ul>
+                    </div>
                     <a href="index.html#contato" class="btn btn-primary">Quero esta solução</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 04 GESTÃO DE PROCESSOS -->
+    <!-- ============================================================
+       04 — GESTÃO DE PROCESSOS
+       ============================================================ -->
     <section id="processos" class="section section-servico section-servico-gray">
         <div class="container">
             <div class="servico-header">
@@ -226,6 +278,10 @@
                         <div class="impacto-item"><span class="impacto-numero">45%</span><span class="impacto-label">redução gargalos</span></div>
                         <div class="impacto-item"><span class="impacto-numero">2.5x</span><span class="impacto-label">produtividade</span></div>
                     </div>
+                    <div class="servico-diferencial">
+                        <h4>🔄 Como funciona</h4>
+                        <p>Mapeamento de processos → Análise de gargalos → Modelagem e padronização → Implementação → Monitoramento e melhoria contínua.</p>
+                    </div>
                 </div>
                 <div class="servico-servicos">
                     <h3>Serviços entregues</h3>
@@ -233,17 +289,27 @@
                         <li>Mapeamento de processos</li><li>Modelagem</li>
                         <li>Fluxos de trabalho</li><li>Padronização</li>
                         <li>POPs</li><li>Definição de responsabilidades</li>
-                        <li>Identificação de gargalos</li><li>Análise de processos</li>
-                        <li>Otimização</li><li>Melhoria contínua</li>
-                        <li>Produtividade</li>
+                        <li>Identificação de gargalos</li><li>Otimização</li>
+                        <li>Melhoria contínua</li><li>Produtividade</li>
                     </ul>
+                    <div class="servico-entrega">
+                        <h4>✅ O que você recebe</h4>
+                        <ul>
+                            <li>Processos mapeados e documentados</li>
+                            <li>Fluxos otimizados</li>
+                            <li>Responsabilidades definidas</li>
+                            <li>Base para melhoria contínua</li>
+                        </ul>
+                    </div>
                     <a href="index.html#contato" class="btn btn-primary">Quero esta solução</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 05 CICLO DE VIDA DO COLABORADOR -->
+    <!-- ============================================================
+       05 — CICLO DE VIDA DO COLABORADOR
+       ============================================================ -->
     <section id="ciclo" class="section section-servico">
         <div class="container">
             <div class="servico-header">
@@ -262,6 +328,10 @@
                         <div class="impacto-item"><span class="impacto-numero">68%</span><span class="impacto-label">engajamento</span></div>
                         <div class="impacto-item"><span class="impacto-numero">3x</span><span class="impacto-label">produtividade</span></div>
                     </div>
+                    <div class="servico-diferencial">
+                        <h4>🔄 Como funciona</h4>
+                        <p>Mapeamento da jornada → Estruturação de cada etapa → Implementação de práticas → Acompanhamento e evolução.</p>
+                    </div>
                 </div>
                 <div class="servico-servicos">
                     <h3>Serviços entregues</h3>
@@ -272,13 +342,24 @@
                         <li>Offboarding</li><li>Entrevista de desligamento</li>
                         <li>Análise de turnover</li>
                     </ul>
+                    <div class="servico-entrega">
+                        <h4>✅ O que você recebe</h4>
+                        <ul>
+                            <li>Jornada do colaborador estruturada</li>
+                            <li>Processos de onboarding e offboarding</li>
+                            <li>Plano de desenvolvimento</li>
+                            <li>Análise de retenção</li>
+                        </ul>
+                    </div>
                     <a href="index.html#contato" class="btn btn-primary">Quero esta solução</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 06 DESENVOLVIMENTO DE LIDERANÇAS -->
+    <!-- ============================================================
+       06 — DESENVOLVIMENTO DE LIDERANÇAS
+       ============================================================ -->
     <section id="lideranca" class="section section-servico section-servico-gray">
         <div class="container">
             <div class="servico-header">
@@ -297,6 +378,10 @@
                         <div class="impacto-item"><span class="impacto-numero">72%</span><span class="impacto-label">clima organizacional</span></div>
                         <div class="impacto-item"><span class="impacto-numero">4x</span><span class="impacto-label">ROI em desenvolvimento</span></div>
                     </div>
+                    <div class="servico-diferencial">
+                        <h4>🔄 Como funciona</h4>
+                        <p>Diagnóstico de competências → Plano de desenvolvimento individual → Workshops e treinamentos → Acompanhamento e evolução.</p>
+                    </div>
                 </div>
                 <div class="servico-servicos">
                     <h3>Serviços entregues</h3>
@@ -306,15 +391,25 @@
                         <li>Coaching executivo</li><li>Desenvolvimento de equipes</li>
                         <li>Comunicação e conflitos</li><li>Tomada de decisão</li>
                         <li>Competências de liderança</li><li>Liderança estratégica</li>
-                        <li>Delegação e gestão de equipes</li>
                     </ul>
+                    <div class="servico-entrega">
+                        <h4>✅ O que você recebe</h4>
+                        <ul>
+                            <li>Líderes preparados para o futuro</li>
+                            <li>Competências de liderança desenvolvidas</li>
+                            <li>Equipes mais engajadas</li>
+                            <li>Plano de desenvolvimento individual</li>
+                        </ul>
+                    </div>
                     <a href="index.html#contato" class="btn btn-primary">Quero esta solução</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 07 GESTÃO ESTRATÉGICA & PERFORMANCE -->
+    <!-- ============================================================
+       07 — GESTÃO ESTRATÉGICA & PERFORMANCE
+       ============================================================ -->
     <section id="performance" class="section section-servico">
         <div class="container">
             <div class="servico-header">
@@ -333,6 +428,10 @@
                         <div class="impacto-item"><span class="impacto-numero">56%</span><span class="impacto-label">crescimento</span></div>
                         <div class="impacto-item"><span class="impacto-numero">4.2</span><span class="impacto-label">NPS médio</span></div>
                     </div>
+                    <div class="servico-diferencial">
+                        <h4>🔄 Como funciona</h4>
+                        <p>Diagnóstico empresarial → Definição de objetivos → Criação de KPIs → Planos de ação → Acompanhamento e ajustes.</p>
+                    </div>
                 </div>
                 <div class="servico-servicos">
                     <h3>Serviços entregues</h3>
@@ -343,6 +442,15 @@
                         <li>Planos de ação</li><li>Acompanhamento</li>
                         <li>Melhoria contínua</li><li>Reestruturação organizacional</li>
                     </ul>
+                    <div class="servico-entrega">
+                        <h4>✅ O que você recebe</h4>
+                        <ul>
+                            <li>Planejamento estratégico estruturado</li>
+                            <li>Indicadores e metas definidas</li>
+                            <li>Acompanhamento de performance</li>
+                            <li>Base para crescimento sustentável</li>
+                        </ul>
+                    </div>
                     <a href="index.html#contato" class="btn btn-primary">Quero esta solução</a>
                 </div>
             </div>
@@ -366,7 +474,7 @@
     </style>
 </main>
 
-<!-- FOOTER BRANCO COM LETRAS AZUIS -->
+<!-- FOOTER -->
 <footer class="site-footer">
     <div class="container">
         <div class="footer-grid">
@@ -390,8 +498,8 @@
                 <ul>
                     <li><a href="index.html">Início</a></li>
                     <li><a href="quem-somos.html">Quem Somos</a></li>
+                    <li><a href="solucoes.html">Soluções</a></li>
                     <li><a href="portfolio.html">Portfólio</a></li>
-                    <li><a href="index.html#servicos">Serviços</a></li>
                     <li><a href="index.html#contato">Contato</a></li>
                 </ul>
             </div>
