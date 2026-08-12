@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Soluções | VIGORRE</title>
+    <meta name="description" content="Conheça as 7 frentes de atuação da VIGORRE para transformar sua gestão.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
@@ -12,6 +13,7 @@
 </head>
 <body>
 
+<!-- HEADER -->
 <header class="site-header" data-header>
     <div class="container header-inner">
         <a href="index.html" class="logo-wrapper">
@@ -27,16 +29,11 @@
                 <li><a href="quem-somos.html">Quem Somos</a></li>
                 <li><a href="solucoes.html" class="active">Soluções</a></li>
                 <li><a href="portfolio.html">Portfólio</a></li>
-                <li><a href="plataformas.html">Plataformas</a></li>
-                <li><a href="inteligencia.html">Inteligência</a></li>
-                <li><a href="contato.html">Contato</a></li>
+                <li><a href="index.html#contato">Contato</a></li>
             </ul>
         </nav>
         <div class="header-actions">
-            <a href="contato.html" class="btn btn-primary btn-diagnostico">
-                Solicitar Diagnóstico
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
-            </a>
+            <a href="index.html#contato" class="btn btn-primary">Solicitar Diagnóstico</a>
             <button class="mobile-toggle" aria-label="Abrir menu">
                 <span></span><span></span><span></span>
             </button>
@@ -48,233 +45,165 @@
             <li><a href="quem-somos.html">Quem Somos</a></li>
             <li><a href="solucoes.html">Soluções</a></li>
             <li><a href="portfolio.html">Portfólio</a></li>
-            <li><a href="plataformas.html">Plataformas</a></li>
-            <li><a href="inteligencia.html">Inteligência</a></li>
-            <li><a href="contato.html">Contato</a></li>
+            <li><a href="index.html#contato">Contato</a></li>
             <li class="mobile-divider"></li>
-            <li><a href="contato.html" class="btn btn-primary btn-block">Solicitar Diagnóstico</a></li>
+            <li><a href="index.html#contato" class="btn btn-primary btn-block">Solicitar Diagnóstico</a></li>
         </ul>
     </div>
 </header>
 
 <main>
-    <section class="hero-interna">
-        <div class="container hero-interna-grid">
-            <div class="hero-interna-content">
-                <span class="badge">Soluções</span>
-                <h1>Soluções estratégicas para <span class="highlight">desafios reais</span></h1>
-                <p class="hero-lead">Cada solução foi desenhada para eliminar achismos, reduzir turnover e elevar a performance da sua empresa.</p>
+    <!-- HERO SOLUÇÕES -->
+    <section class="hero-solucoes">
+        <div class="container">
+            <div class="hero-solucoes-content">
+                <span class="hero-badge">Nossas Soluções</span>
+                <h1>O que a <span class="highlight">VIGORRE</span> faz por você</h1>
+                <p class="hero-lead">Conheça as 7 frentes de atuação com serviços detalhados para transformar sua gestão.</p>
             </div>
-            <div class="hero-interna-visual">
-                <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&h=600&w=800" alt="Soluções VIGORRE" style="width:100%;height:400px;object-fit:cover;border-radius:12px;box-shadow:0 20px 60px rgba(0,0,0,0.1);">
+            <div class="hero-solucoes-image">
+                <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&h=600&w=800" alt="Soluções VIGORRE">
             </div>
         </div>
     </section>
 
     <style>
-        .hero-interna { padding: 8rem 0 4rem; background: var(--color-white); }
-        .hero-interna-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; }
-        .hero-interna-content .badge { display: inline-block; padding: 0.3rem 1rem; background: rgba(201,168,76,0.08); border: 1px solid rgba(201,168,76,0.15); border-radius: 50px; font-size: 0.7rem; font-weight: 600; color: var(--color-gold); text-transform: uppercase; margin-bottom: 1.5rem; }
-        .hero-interna-content h1 { font-size: 3rem; font-weight: 700; line-height: 1.1; color: var(--color-gray-900); margin-bottom: 1.5rem; }
-        .hero-interna-content .hero-lead { font-size: 1.15rem; line-height: 1.7; color: var(--color-gray-600); max-width: 560px; }
-        @media (max-width: 1024px) { .hero-interna-grid { grid-template-columns: 1fr; gap: 2rem; } .hero-interna-content h1 { font-size: 2.5rem; } .hero-interna-visual img { height: 280px; } }
-        @media (max-width: 640px) { .hero-interna { padding: 6rem 0 2rem; } .hero-interna-content h1 { font-size: 2rem; } .hero-interna-content .hero-lead { font-size: 1rem; } .hero-interna-visual img { height: 200px; } }
+        .hero-solucoes { padding: 8rem 0 4rem; background: var(--color-white); }
+        .hero-solucoes .container { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+        .hero-solucoes .hero-badge { display: inline-block; padding: 0.3rem 1rem; background: rgba(217,119,6,0.08); border: 1px solid rgba(217,119,6,0.15); border-radius: 50px; font-size: 0.7rem; font-weight: 600; color: var(--color-gold); text-transform: uppercase; margin-bottom: 1.5rem; }
+        .hero-solucoes h1 { font-size: 3.5rem; font-weight: 700; line-height: 1.1; color: var(--color-gray-900); margin-bottom: 1.5rem; }
+        .hero-solucoes .hero-lead { font-size: 1.15rem; line-height: 1.7; color: var(--color-gray-600); max-width: 560px; }
+        .hero-solucoes img { width: 100%; height: 400px; object-fit: cover; border-radius: 12px; box-shadow: 0 20px 60px rgba(0,0,0,0.1); }
+        @media (max-width:1024px){ .hero-solucoes .container { grid-template-columns:1fr; gap:2rem; } .hero-solucoes h1 { font-size:2.5rem; } .hero-solucoes img { height:280px; } }
+        @media (max-width:640px){ .hero-solucoes { padding:6rem 0 2rem; } .hero-solucoes h1 { font-size:2rem; } .hero-solucoes .hero-lead { font-size:1rem; } .hero-solucoes img { height:200px; } }
     </style>
 
-    <section class="section section-solucoes" style="padding:5rem 0;">
+    <!-- GRID DE SOLUÇÕES (RESUMO) -->
+    <section class="section section-solucoes-grid">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">7 Eixos Estratégicos</span>
-                <h2 style="font-size:2.8rem;margin-top:0.5rem;">Conheça nossas <span class="gradient-text">soluções</span></h2>
-                <p style="font-size:1.1rem;color:var(--color-gray-500);margin-top:1rem;">Cada solução foi desenhada para eliminar achismos, reduzir turnover e elevar a performance.</p>
+                <span class="section-tag">7 Frentes de Atuação</span>
+                <h2>Soluções <span class="gradient-text">estratégicas</span> para sua empresa</h2>
+                <p>Clique em cada solução para ver os serviços detalhados.</p>
             </div>
 
-            <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;">
-                <!-- 01 -->
-                <div style="background:var(--color-white);border:1px solid var(--color-gray-100);border-radius:12px;padding:2rem;transition:all 0.4s ease;">
-                    <span style="font-family:var(--font-serif);font-size:2.5rem;font-weight:700;color:rgba(201,168,76,0.15);display:block;line-height:1;margin-bottom:0.25rem;">01</span>
-                    <div style="font-size:1.8rem;display:block;margin-bottom:0.5rem;">🎯</div>
-                    <h3 style="font-family:var(--font-primary);font-size:1.1rem;font-weight:700;color:var(--color-gray-900);margin-bottom:0.5rem;">Recrutamento & Seleção</h3>
-                    <p style="font-size:0.9rem;color:var(--color-gray-500);line-height:1.6;margin-bottom:1rem;">Encontrar as pessoas certas para os desafios certos.</p>
-                    <div style="display:flex;flex-wrap:wrap;gap:0.5rem;margin-bottom:1.5rem;">
-                        <span style="font-size:0.7rem;font-weight:500;color:var(--color-gray-500);background:var(--color-gray-50);padding:0.2rem 0.6rem;border-radius:50px;border:1px solid var(--color-gray-100);">✅ +94% assertividade</span>
-                        <span style="font-size:0.7rem;font-weight:500;color:var(--color-gray-500);background:var(--color-gray-50);padding:0.2rem 0.6rem;border-radius:50px;border:1px solid var(--color-gray-100);">✅ Redução de 40% no turnover</span>
-                        <span style="font-size:0.7rem;font-weight:500;color:var(--color-gray-500);background:var(--color-gray-50);padding:0.2rem 0.6rem;border-radius:50px;border:1px solid var(--color-gray-100);">✅ Time formado em 15 dias</span>
-                    </div>
-                    <div style="margin-bottom:1.5rem;">
-                        <h4 style="font-family:var(--font-primary);font-size:0.8rem;font-weight:700;color:var(--color-gray-400);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.5rem;">Serviços</h4>
-                        <ul style="display:grid;grid-template-columns:1fr 1fr;gap:0.25rem 1rem;list-style:none;">
-                            <li style="font-size:0.9rem;color:var(--color-gray-700);padding:0.25rem 0;display:flex;align-items:center;gap:0.5rem;">• Recrutamento e seleção</li>
-                            <li style="font-size:0.9rem;color:var(--color-gray-700);padding:0.25rem 0;display:flex;align-items:center;gap:0.5rem;">• Definição de perfil</li>
-                            <li style="font-size:0.9rem;color:var(--color-gray-700);padding:0.25rem 0;display:flex;align-items:center;gap:0.5rem;">• Descrição de vagas</li>
-                            <li style="font-size:0.9rem;color:var(--color-gray-700);padding:0.25rem 0;display:flex;align-items:center;gap:0.5rem;">• Triagem de currículos</li>
-                            <li style="font-size:0.9rem;color:var(--color-gray-700);padding:0.25rem 0;display:flex;align-items:center;gap:0.5rem;">• Entrevistas por competências</li>
-                            <li style="font-size:0.9rem;color:var(--color-gray-700);padding:0.25rem 0;display:flex;align-items:center;gap:0.5rem;">• Hunting</li>
+            <div class="solucoes-grid">
+                <a href="portfolio.html#recrutamento" class="solucao-card-link">
+                    <div class="solucao-card">
+                        <span class="solucao-num">01</span>
+                        <div class="solucao-icon">🎯</div>
+                        <h3>Recrutamento & Seleção</h3>
+                        <p>Encontre as pessoas certas para os desafios certos.</p>
+                        <ul class="solucao-benefits">
+                            <li>✅ +94% de assertividade</li>
+                            <li>✅ Redução de 40% no turnover</li>
                         </ul>
+                        <span class="solucao-cta">Ver detalhes →</span>
                     </div>
-                    <a href="contato.html" class="btn btn-primary" style="display:inline-flex;align-items:center;justify-content:center;gap:0.5rem;padding:0.6rem 1.4rem;font-size:0.8rem;font-weight:600;border-radius:8px;border:2px solid transparent;transition:all 0.3s ease;cursor:pointer;background:var(--color-primary);color:var(--color-white);border-color:var(--color-primary);font-family:var(--font-primary);">Quero essa solução</a>
-                </div>
-
-                <!-- 02 -->
-                <div style="background:var(--color-white);border:1px solid var(--color-gray-100);border-radius:12px;padding:2rem;transition:all 0.4s ease;">
-                    <span style="font-family:var(--font-serif);font-size:2.5rem;font-weight:700;color:rgba(201,168,76,0.15);display:block;line-height:1;margin-bottom:0.25rem;">02</span>
-                    <div style="font-size:1.8rem;display:block;margin-bottom:0.5rem;">🧠</div>
-                    <h3 style="font-family:var(--font-primary);font-size:1.1rem;font-weight:700;color:var(--color-gray-900);margin-bottom:0.5rem;">Análise Comportamental</h3>
-                    <p style="font-size:0.9rem;color:var(--color-gray-500);line-height:1.6;margin-bottom:1rem;">Pessoas diferentes. Potenciais diferentes. Decisões melhores.</p>
-                    <div style="display:flex;flex-wrap:wrap;gap:0.5rem;margin-bottom:1.5rem;">
-                        <span style="font-size:0.7rem;font-weight:500;color:var(--color-gray-500);background:var(--color-gray-50);padding:0.2rem 0.6rem;border-radius:50px;border:1px solid var(--color-gray-100);">✅ +87% fit cultural</span>
-                        <span style="font-size:0.7rem;font-weight:500;color:var(--color-gray-500);background:var(--color-gray-50);padding:0.2rem 0.6rem;border-radius:50px;border:1px solid var(--color-gray-100);">✅ Redução de conflitos</span>
-                        <span style="font-size:0.7rem;font-weight:500;color:var(--color-gray-500);background:var(--color-gray-50);padding:0.2rem 0.6rem;border-radius:50px;border:1px solid var(--color-gray-100);">✅ Decisões mais assertivas</span>
-                    </div>
-                    <div style="margin-bottom:1.5rem;">
-                        <h4 style="font-family:var(--font-primary);font-size:0.8rem;font-weight:700;color:var(--color-gray-400);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.5rem;">Serviços</h4>
-                        <ul style="display:grid;grid-template-columns:1fr 1fr;gap:0.25rem 1rem;list-style:none;">
-                            <li style="font-size:0.9rem;color:var(--color-gray-700);padding:0.25rem 0;display:flex;align-items:center;gap:0.5rem;">• Análise comportamental</li>
-                            <li style="font-size:0.9rem;color:var(--color-gray-700);padding:0.25rem 0;display:flex;align-items:center;gap:0.5rem;">• Perfil DISC</li>
-                            <li style="font-size:0.9rem;color:var(--color-gray-700);padding:0.25rem 0;display:flex;align-items:center;gap:0.5rem;">• Inteligência emocional</li>
-                            <li style="font-size:0.9rem;color:var(--color-gray-700);padding:0.25rem 0;display:flex;align-items:center;gap:0.5rem;">• Avaliação de competências</li>
-                            <li style="font-size:0.9rem;color:var(--color-gray-700);padding:0.25rem 0;display:flex;align-items:center;gap:0.5rem;">• Feedback estruturado</li>
-                            <li style="font-size:0.9rem;color:var(--color-gray-700);padding:0.25rem 0;display:flex;align-items:center;gap:0.5rem;">• Recomendações de desenvolvimento</li>
+                </a>
+                <a href="portfolio.html#analise" class="solucao-card-link">
+                    <div class="solucao-card">
+                        <span class="solucao-num">02</span>
+                        <div class="solucao-icon">🧠</div>
+                        <h3>Análise Comportamental</h3>
+                        <p>Conheça perfis e tome decisões mais assertivas.</p>
+                        <ul class="solucao-benefits">
+                            <li>✅ +87% de fit cultural</li>
+                            <li>✅ Redução de conflitos</li>
                         </ul>
+                        <span class="solucao-cta">Ver detalhes →</span>
                     </div>
-                    <a href="contato.html" class="btn btn-primary">Quero essa solução</a>
-                </div>
-
-                <!-- 03 -->
-                <div style="background:var(--color-white);border:1px solid var(--color-gray-100);border-radius:12px;padding:2rem;transition:all 0.4s ease;">
-                    <span style="font-family:var(--font-serif);font-size:2.5rem;font-weight:700;color:rgba(201,168,76,0.15);display:block;line-height:1;margin-bottom:0.25rem;">03</span>
-                    <div style="font-size:1.8rem;display:block;margin-bottom:0.5rem;">📊</div>
-                    <h3 style="font-family:var(--font-primary);font-size:1.1rem;font-weight:700;color:var(--color-gray-900);margin-bottom:0.5rem;">Gestão Estratégica de Pessoas</h3>
-                    <p style="font-size:0.9rem;color:var(--color-gray-500);line-height:1.6;margin-bottom:1rem;">Pessoas alinhadas à estratégia fazem a empresa avançar.</p>
-                    <div style="display:flex;flex-wrap:wrap;gap:0.5rem;margin-bottom:1.5rem;">
-                        <span style="font-size:0.7rem;font-weight:500;color:var(--color-gray-500);background:var(--color-gray-50);padding:0.2rem 0.6rem;border-radius:50px;border:1px solid var(--color-gray-100);">✅ +76% engajamento</span>
-                        <span style="font-size:0.7rem;font-weight:500;color:var(--color-gray-500);background:var(--color-gray-50);padding:0.2rem 0.6rem;border-radius:50px;border:1px solid var(--color-gray-100);">✅ RH estratégico</span>
-                        <span style="font-size:0.7rem;font-weight:500;color:var(--color-gray-500);background:var(--color-gray-50);padding:0.2rem 0.6rem;border-radius:50px;border:1px solid var(--color-gray-100);">✅ Decisões baseadas em dados</span>
-                    </div>
-                    <div style="margin-bottom:1.5rem;">
-                        <h4 style="font-family:var(--font-primary);font-size:0.8rem;font-weight:700;color:var(--color-gray-400);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.5rem;">Serviços</h4>
-                        <ul style="display:grid;grid-template-columns:1fr 1fr;gap:0.25rem 1rem;list-style:none;">
-                            <li style="font-size:0.9rem;color:var(--color-gray-700);padding:0.25rem 0;display:flex;align-items:center;gap:0.5rem;">• Diagnóstico de RH</li>
-                            <li style="font-size:0.9rem;color:var(--color-gray-700);padding:0.25rem 0;display:flex;align-items:center;gap:0.5rem;">• Estruturação de RH estratégico</li>
-                            <li style="font-size:0.9rem;color:var(--color-gray-700);padding:0.25rem 0;display:flex;align-items:center;gap:0.5rem;">• Gestão por competências</li>
-                            <li style="font-size:0.9rem;color:var(--color-gray-700);padding:0.25rem 0;display:flex;align-items:center;gap:0.5rem;">• Gestão de talentos</li>
-                            <li style="font-size:0.9rem;color:var(--color-gray-700);padding:0.25rem 0;display:flex;align-items:center;gap:0.5rem;">• Planejamento de pessoas</li>
-                            <li style="font-size:0.9rem;color:var(--color-gray-700);padding:0.25rem 0;display:flex;align-items:center;gap:0.5rem;">• Indicadores de RH</li>
+                </a>
+                <a href="portfolio.html#gestao" class="solucao-card-link">
+                    <div class="solucao-card">
+                        <span class="solucao-num">03</span>
+                        <div class="solucao-icon">📊</div>
+                        <h3>Gestão Estratégica de Pessoas</h3>
+                        <p>Transforme seu RH em vantagem competitiva.</p>
+                        <ul class="solucao-benefits">
+                            <li>✅ +76% de engajamento</li>
+                            <li>✅ RH estratégico</li>
                         </ul>
+                        <span class="solucao-cta">Ver detalhes →</span>
                     </div>
-                    <a href="contato.html" class="btn btn-primary">Quero essa solução</a>
-                </div>
-
-                <!-- 04 -->
-                <div style="background:var(--color-white);border:1px solid var(--color-gray-100);border-radius:12px;padding:2rem;transition:all 0.4s ease;">
-                    <span style="font-family:var(--font-serif);font-size:2.5rem;font-weight:700;color:rgba(201,168,76,0.15);display:block;line-height:1;margin-bottom:0.25rem;">04</span>
-                    <div style="font-size:1.8rem;display:block;margin-bottom:0.5rem;">🔄</div>
-                    <h3 style="font-family:var(--font-primary);font-size:1.1rem;font-weight:700;color:var(--color-gray-900);margin-bottom:0.5rem;">Gestão de Processos</h3>
-                    <p style="font-size:0.9rem;color:var(--color-gray-500);line-height:1.6;margin-bottom:1rem;">Processos organizados geram eficiência e previsibilidade.</p>
-                    <div style="display:flex;flex-wrap:wrap;gap:0.5rem;margin-bottom:1.5rem;">
-                        <span style="font-size:0.7rem;font-weight:500;color:var(--color-gray-500);background:var(--color-gray-50);padding:0.2rem 0.6rem;border-radius:50px;border:1px solid var(--color-gray-100);">✅ +53% eficiência</span>
-                        <span style="font-size:0.7rem;font-weight:500;color:var(--color-gray-500);background:var(--color-gray-50);padding:0.2rem 0.6rem;border-radius:50px;border:1px solid var(--color-gray-100);">✅ Redução de gargalos</span>
-                        <span style="font-size:0.7rem;font-weight:500;color:var(--color-gray-500);background:var(--color-gray-50);padding:0.2rem 0.6rem;border-radius:50px;border:1px solid var(--color-gray-100);">✅ Operação mais organizada</span>
-                    </div>
-                    <div style="margin-bottom:1.5rem;">
-                        <h4 style="font-family:var(--font-primary);font-size:0.8rem;font-weight:700;color:var(--color-gray-400);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.5rem;">Serviços</h4>
-                        <ul style="display:grid;grid-template-columns:1fr 1fr;gap:0.25rem 1rem;list-style:none;">
-                            <li style="font-size:0.9rem;color:var(--color-gray-700);padding:0.25rem 0;display:flex;align-items:center;gap:0.5rem;">• Mapeamento de processos</li>
-                            <li style="font-size:0.9rem;color:var(--color-gray-700);padding:0.25rem 0;display:flex;align-items:center;gap:0.5rem;">• Modelagem e análise</li>
-                            <li style="font-size:0.9rem;color:var(--color-gray-700);padding:0.25rem 0;display:flex;align-items:center;gap:0.5rem;">• Padronização e POPs</li>
-                            <li style="font-size:0.9rem;color:var(--color-gray-700);padding:0.25rem 0;display:flex;align-items:center;gap:0.5rem;">• Fluxos de trabalho</li>
-                            <li style="font-size:0.9rem;color:var(--color-gray-700);padding:0.25rem 0;display:flex;align-items:center;gap:0.5rem;">• Definição de responsabilidades</li>
-                            <li style="font-size:0.9rem;color:var(--color-gray-700);padding:0.25rem 0;display:flex;align-items:center;gap:0.5rem;">• Melhoria de produtividade</li>
+                </a>
+                <a href="portfolio.html#processos" class="solucao-card-link">
+                    <div class="solucao-card">
+                        <span class="solucao-num">04</span>
+                        <div class="solucao-icon">🔄</div>
+                        <h3>Gestão de Processos</h3>
+                        <p>Organize fluxos e aumente a eficiência.</p>
+                        <ul class="solucao-benefits">
+                            <li>✅ +53% de eficiência</li>
+                            <li>✅ Redução de gargalos</li>
                         </ul>
+                        <span class="solucao-cta">Ver detalhes →</span>
                     </div>
-                    <a href="contato.html" class="btn btn-primary">Quero essa solução</a>
-                </div>
-
-                <!-- 05 -->
-                <div style="background:var(--color-white);border:1px solid var(--color-gray-100);border-radius:12px;padding:2rem;transition:all 0.4s ease;">
-                    <span style="font-family:var(--font-serif);font-size:2.5rem;font-weight:700;color:rgba(201,168,76,0.15);display:block;line-height:1;margin-bottom:0.25rem;">05</span>
-                    <div style="font-size:1.8rem;display:block;margin-bottom:0.5rem;">🌱</div>
-                    <h3 style="font-family:var(--font-primary);font-size:1.1rem;font-weight:700;color:var(--color-gray-900);margin-bottom:0.5rem;">Ciclo de Vida do Colaborador</h3>
-                    <p style="font-size:0.9rem;color:var(--color-gray-500);line-height:1.6;margin-bottom:1rem;">Da entrada à saída, cada etapa importa.</p>
-                    <div style="display:flex;flex-wrap:wrap;gap:0.5rem;margin-bottom:1.5rem;">
-                        <span style="font-size:0.7rem;font-weight:500;color:var(--color-gray-500);background:var(--color-gray-50);padding:0.2rem 0.6rem;border-radius:50px;border:1px solid var(--color-gray-100);">✅ +94% retenção</span>
-                        <span style="font-size:0.7rem;font-weight:500;color:var(--color-gray-500);background:var(--color-gray-50);padding:0.2rem 0.6rem;border-radius:50px;border:1px solid var(--color-gray-100);">✅ Jornada estruturada</span>
-                        <span style="font-size:0.7rem;font-weight:500;color:var(--color-gray-500);background:var(--color-gray-50);padding:0.2rem 0.6rem;border-radius:50px;border:1px solid var(--color-gray-100);">✅ Experiência do colaborador</span>
-                    </div>
-                    <div style="margin-bottom:1.5rem;">
-                        <h4 style="font-family:var(--font-primary);font-size:0.8rem;font-weight:700;color:var(--color-gray-400);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.5rem;">Serviços</h4>
-                        <ul style="display:grid;grid-template-columns:1fr 1fr;gap:0.25rem 1rem;list-style:none;">
-                            <li style="font-size:0.9rem;color:var(--color-gray-700);padding:0.25rem 0;display:flex;align-items:center;gap:0.5rem;">• Onboarding e integração</li>
-                            <li style="font-size:0.9rem;color:var(--color-gray-700);padding:0.25rem 0;display:flex;align-items:center;gap:0.5rem;">• Desenvolvimento e avaliação</li>
-                            <li style="font-size:0.9rem;color:var(--color-gray-700);padding:0.25rem 0;display:flex;align-items:center;gap:0.5rem;">• PDI e plano de carreira</li>
-                            <li style="font-size:0.9rem;color:var(--color-gray-700);padding:0.25rem 0;display:flex;align-items:center;gap:0.5rem;">• Engajamento e retenção</li>
-                            <li style="font-size:0.9rem;color:var(--color-gray-700);padding:0.25rem 0;display:flex;align-items:center;gap:0.5rem;">• Sucessão e offboarding</li>
-                            <li style="font-size:0.9rem;color:var(--color-gray-700);padding:0.25rem 0;display:flex;align-items:center;gap:0.5rem;">• Análise de turnover</li>
+                </a>
+                <a href="portfolio.html#ciclo" class="solucao-card-link">
+                    <div class="solucao-card">
+                        <span class="solucao-num">05</span>
+                        <div class="solucao-icon">🌱</div>
+                        <h3>Ciclo de Vida do Colaborador</h3>
+                        <p>Da atração ao desligamento com excelência.</p>
+                        <ul class="solucao-benefits">
+                            <li>✅ +94% de retenção</li>
+                            <li>✅ Jornada estruturada</li>
                         </ul>
+                        <span class="solucao-cta">Ver detalhes →</span>
                     </div>
-                    <a href="contato.html" class="btn btn-primary">Quero essa solução</a>
-                </div>
-
-                <!-- 06 -->
-                <div style="background:var(--color-white);border:1px solid var(--color-gray-100);border-radius:12px;padding:2rem;transition:all 0.4s ease;">
-                    <span style="font-family:var(--font-serif);font-size:2.5rem;font-weight:700;color:rgba(201,168,76,0.15);display:block;line-height:1;margin-bottom:0.25rem;">06</span>
-                    <div style="font-size:1.8rem;display:block;margin-bottom:0.5rem;">🚀</div>
-                    <h3 style="font-family:var(--font-primary);font-size:1.1rem;font-weight:700;color:var(--color-gray-900);margin-bottom:0.5rem;">Desenvolvimento de Lideranças</h3>
-                    <p style="font-size:0.9rem;color:var(--color-gray-500);line-height:1.6;margin-bottom:1rem;">Desenvolver pessoas é desenvolver a organização.</p>
-                    <div style="display:flex;flex-wrap:wrap;gap:0.5rem;margin-bottom:1.5rem;">
-                        <span style="font-size:0.7rem;font-weight:500;color:var(--color-gray-500);background:var(--color-gray-50);padding:0.2rem 0.6rem;border-radius:50px;border:1px solid var(--color-gray-100);">✅ +68% performance</span>
-                        <span style="font-size:0.7rem;font-weight:500;color:var(--color-gray-500);background:var(--color-gray-50);padding:0.2rem 0.6rem;border-radius:50px;border:1px solid var(--color-gray-100);">✅ Líderes preparados</span>
-                        <span style="font-size:0.7rem;font-weight:500;color:var(--color-gray-500);background:var(--color-gray-50);padding:0.2rem 0.6rem;border-radius:50px;border:1px solid var(--color-gray-100);">✅ Equipes mais engajadas</span>
-                    </div>
-                    <div style="margin-bottom:1.5rem;">
-                        <h4 style="font-family:var(--font-primary);font-size:0.8rem;font-weight:700;color:var(--color-gray-400);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.5rem;">Serviços</h4>
-                        <ul style="display:grid;grid-template-columns:1fr 1fr;gap:0.25rem 1rem;list-style:none;">
-                            <li style="font-size:0.9rem;color:var(--color-gray-700);padding:0.25rem 0;display:flex;align-items:center;gap:0.5rem;">• Desenvolvimento de lideranças</li>
-                            <li style="font-size:0.9rem;color:var(--color-gray-700);padding:0.25rem 0;display:flex;align-items:center;gap:0.5rem;">• Formação de gestores</li>
-                            <li style="font-size:0.9rem;color:var(--color-gray-700);padding:0.25rem 0;display:flex;align-items:center;gap:0.5rem;">• Liderança estratégica</li>
-                            <li style="font-size:0.9rem;color:var(--color-gray-700);padding:0.25rem 0;display:flex;align-items:center;gap:0.5rem;">• Gestão de equipes</li>
-                            <li style="font-size:0.9rem;color:var(--color-gray-700);padding:0.25rem 0;display:flex;align-items:center;gap:0.5rem;">• Comunicação e conflitos</li>
-                            <li style="font-size:0.9rem;color:var(--color-gray-700);padding:0.25rem 0;display:flex;align-items:center;gap:0.5rem;">• PDI e treinamentos</li>
+                </a>
+                <a href="portfolio.html#lideranca" class="solucao-card-link">
+                    <div class="solucao-card">
+                        <span class="solucao-num">06</span>
+                        <div class="solucao-icon">🚀</div>
+                        <h3>Desenvolvimento de Lideranças</h3>
+                        <p>Prepare seus líderes para o futuro.</p>
+                        <ul class="solucao-benefits">
+                            <li>✅ +68% de performance</li>
+                            <li>✅ Líderes preparados</li>
                         </ul>
+                        <span class="solucao-cta">Ver detalhes →</span>
                     </div>
-                    <a href="contato.html" class="btn btn-primary">Quero essa solução</a>
-                </div>
-
-                <!-- 07 -->
-                <div style="background:var(--color-white);border:1px solid var(--color-gray-100);border-radius:12px;padding:2rem;transition:all 0.4s ease;">
-                    <span style="font-family:var(--font-serif);font-size:2.5rem;font-weight:700;color:rgba(201,168,76,0.15);display:block;line-height:1;margin-bottom:0.25rem;">07</span>
-                    <div style="font-size:1.8rem;display:block;margin-bottom:0.5rem;">📈</div>
-                    <h3 style="font-family:var(--font-primary);font-size:1.1rem;font-weight:700;color:var(--color-gray-900);margin-bottom:0.5rem;">Gestão Estratégica & Performance</h3>
-                    <p style="font-size:0.9rem;color:var(--color-gray-500);line-height:1.6;margin-bottom:1rem;">Estratégia sem execução é apenas planejamento.</p>
-                    <div style="display:flex;flex-wrap:wrap;gap:0.5rem;margin-bottom:1.5rem;">
-                        <span style="font-size:0.7rem;font-weight:500;color:var(--color-gray-500);background:var(--color-gray-50);padding:0.2rem 0.6rem;border-radius:50px;border:1px solid var(--color-gray-100);">✅ +3.8x ROI</span>
-                        <span style="font-size:0.7rem;font-weight:500;color:var(--color-gray-500);background:var(--color-gray-50);padding:0.2rem 0.6rem;border-radius:50px;border:1px solid var(--color-gray-100);">✅ Resultados sustentáveis</span>
-                        <span style="font-size:0.7rem;font-weight:500;color:var(--color-gray-500);background:var(--color-gray-50);padding:0.2rem 0.6rem;border-radius:50px;border:1px solid var(--color-gray-100);">✅ Crescimento estruturado</span>
-                    </div>
-                    <div style="margin-bottom:1.5rem;">
-                        <h4 style="font-family:var(--font-primary);font-size:0.8rem;font-weight:700;color:var(--color-gray-400);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.5rem;">Serviços</h4>
-                        <ul style="display:grid;grid-template-columns:1fr 1fr;gap:0.25rem 1rem;list-style:none;">
-                            <li style="font-size:0.9rem;color:var(--color-gray-700);padding:0.25rem 0;display:flex;align-items:center;gap:0.5rem;">• Diagnóstico empresarial</li>
-                            <li style="font-size:0.9rem;color:var(--color-gray-700);padding:0.25rem 0;display:flex;align-items:center;gap:0.5rem;">• Planejamento estratégico</li>
-                            <li style="font-size:0.9rem;color:var(--color-gray-700);padding:0.25rem 0;display:flex;align-items:center;gap:0.5rem;">• Definição de KPIs</li>
-                            <li style="font-size:0.9rem;color:var(--color-gray-700);padding:0.25rem 0;display:flex;align-items:center;gap:0.5rem;">• Gestão de performance</li>
-                            <li style="font-size:0.9rem;color:var(--color-gray-700);padding:0.25rem 0;display:flex;align-items:center;gap:0.5rem;">• Reestruturação organizacional</li>
-                            <li style="font-size:0.9rem;color:var(--color-gray-700);padding:0.25rem 0;display:flex;align-items:center;gap:0.5rem;">• Melhoria contínua</li>
+                </a>
+                <a href="portfolio.html#performance" class="solucao-card-link">
+                    <div class="solucao-card">
+                        <span class="solucao-num">07</span>
+                        <div class="solucao-icon">📈</div>
+                        <h3>Gestão Estratégica & Performance</h3>
+                        <p>Transforme estratégia em execução mensurável.</p>
+                        <ul class="solucao-benefits">
+                            <li>✅ +3.8x ROI médio</li>
+                            <li>✅ Resultados sustentáveis</li>
                         </ul>
+                        <span class="solucao-cta">Ver detalhes →</span>
                     </div>
-                    <a href="contato.html" class="btn btn-primary">Quero essa solução</a>
-                </div>
+                </a>
             </div>
         </div>
     </section>
 
     <style>
-        @media (max-width:1024px){ .section-solucoes .container > div { grid-template-columns:1fr 1fr !important; } }
-        @media (max-width:640px){ .section-solucoes .container > div { grid-template-columns:1fr !important; } .section-solucoes .section-header h2 { font-size:2rem !important; } .section-solucoes .container > div > div { padding:1.5rem !important; } .section-solucoes .container > div > div ul { grid-template-columns:1fr !important; } }
+        .section-solucoes-grid { padding: 5rem 0; background: var(--color-white); }
+        .solucoes-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+        .solucao-card-link { text-decoration: none; color: inherit; display: block; }
+        .solucao-card { background: var(--color-white); border: 1px solid var(--color-gray-100); border-radius: var(--radius-lg); padding: 2rem; transition: all 0.4s ease; height: 100%; }
+        .solucao-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-xl); border-color: var(--color-gold); }
+        .solucao-num { font-family: var(--font-serif); font-size: 2.5rem; font-weight: 700; color: rgba(217,119,6,0.12); display: block; line-height: 1; margin-bottom: 0.25rem; }
+        .solucao-icon { font-size: 1.8rem; display: block; margin-bottom: 0.5rem; }
+        .solucao-card h3 { font-family: var(--font-primary); font-size: 1.1rem; font-weight: 700; color: var(--color-gray-900); margin-bottom: 0.5rem; }
+        .solucao-card p { font-size: 0.9rem; color: var(--color-gray-500); line-height: 1.6; margin-bottom: 1rem; }
+        .solucao-benefits { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.5rem; list-style: none; }
+        .solucao-benefits li { font-size: 0.7rem; font-weight: 500; color: var(--color-gray-500); background: var(--color-gray-50); padding: 0.2rem 0.6rem; border-radius: 50px; border: 1px solid var(--color-gray-100); }
+        .solucao-cta { font-weight: 600; color: var(--color-gold); transition: all 0.15s ease; font-size: 0.85rem; display: inline-flex; align-items: center; gap: 0.25rem; }
+        .solucao-card:hover .solucao-cta { transform: translateX(4px); }
+        @media (max-width:1024px){ .solucoes-grid { grid-template-columns:1fr 1fr; } }
+        @media (max-width:640px){ .solucoes-grid { grid-template-columns:1fr; } .section-solucoes-grid .section-header h2 { font-size:2rem; } }
     </style>
 
 </main>
 
+<!-- FOOTER -->
 <footer class="site-footer">
     <div class="container">
         <div class="footer-grid">
@@ -300,9 +229,7 @@
                     <li><a href="quem-somos.html">Quem Somos</a></li>
                     <li><a href="solucoes.html">Soluções</a></li>
                     <li><a href="portfolio.html">Portfólio</a></li>
-                    <li><a href="plataformas.html">Plataformas</a></li>
-                    <li><a href="inteligencia.html">Inteligência</a></li>
-                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="index.html#contato">Contato</a></li>
                 </ul>
             </div>
             <div class="footer-links">
@@ -313,7 +240,7 @@
                 </ul>
             </div>
             <div class="footer-cta">
-                <a href="contato.html" class="btn btn-primary btn-block">Solicitar Diagnóstico</a>
+                <a href="index.html#contato" class="btn btn-primary btn-block">Fale com a VIGORRE</a>
             </div>
         </div>
         <div class="footer-bottom">
