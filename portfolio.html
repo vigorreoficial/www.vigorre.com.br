@@ -13,9 +13,7 @@
 </head>
 <body>
 
-<!-- ============================================================
-   HEADER (IGUAL AO INDEX)
-   ============================================================ -->
+<!-- HEADER PADRÃO -->
 <header class="site-header" data-header>
     <div class="container header-inner">
         <a href="index.html" class="logo-wrapper">
@@ -35,7 +33,7 @@
             </ul>
         </nav>
         <div class="header-actions">
-            <a href="index.html#contato" class="btn btn-primary">Solicitar Proposta</a>
+            <a href="index.html#contato" class="btn btn-primary">Solicitar Diagnóstico</a>
             <button class="mobile-toggle" aria-label="Abrir menu">
                 <span></span><span></span><span></span>
             </button>
@@ -49,15 +47,13 @@
             <li><a href="index.html#servicos">Serviços</a></li>
             <li><a href="index.html#contato">Contato</a></li>
             <li class="mobile-divider"></li>
-            <li><a href="index.html#contato" class="btn btn-primary btn-block">Solicitar Proposta</a></li>
+            <li><a href="index.html#contato" class="btn btn-primary btn-block">Solicitar Diagnóstico</a></li>
         </ul>
     </div>
 </header>
 
 <main>
-    <!-- ============================================================
-       HERO PORTFOLIO
-       ============================================================ -->
+    <!-- HERO PORTFOLIO -->
     <section class="hero-portfolio">
         <div class="container">
             <div class="hero-portfolio-content">
@@ -74,17 +70,15 @@
     <style>
         .hero-portfolio { padding: 8rem 0 4rem; background: var(--color-white); }
         .hero-portfolio .container { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
-        .hero-portfolio .hero-badge { display: inline-block; padding: 0.3rem 1rem; background: rgba(201,168,76,0.08); border: 1px solid rgba(201,168,76,0.15); border-radius: 50px; font-size: 0.7rem; font-weight: 600; color: var(--color-gold); text-transform: uppercase; margin-bottom: 1.5rem; }
+        .hero-portfolio .hero-badge { display: inline-block; padding: 0.3rem 1rem; background: rgba(217,119,6,0.08); border: 1px solid rgba(217,119,6,0.15); border-radius: 50px; font-size: 0.7rem; font-weight: 600; color: var(--color-gold); text-transform: uppercase; margin-bottom: 1.5rem; }
         .hero-portfolio h1 { font-size: 3.5rem; font-weight: 700; line-height: 1.1; color: var(--color-gray-900); margin-bottom: 1.5rem; }
         .hero-portfolio .hero-lead { font-size: 1.15rem; line-height: 1.7; color: var(--color-gray-600); max-width: 560px; }
         .hero-portfolio img { width: 100%; height: 400px; object-fit: cover; border-radius: 12px; box-shadow: 0 20px 60px rgba(0,0,0,0.1); }
-        @media (max-width: 1024px) { .hero-portfolio .container { grid-template-columns: 1fr; gap: 2rem; } .hero-portfolio h1 { font-size: 2.5rem; } .hero-portfolio img { height: 280px; } }
-        @media (max-width: 640px) { .hero-portfolio { padding: 6rem 0 2rem; } .hero-portfolio h1 { font-size: 2rem; } .hero-portfolio .hero-lead { font-size: 1rem; } .hero-portfolio img { height: 200px; } }
+        @media (max-width:1024px){ .hero-portfolio .container { grid-template-columns:1fr; gap:2rem; } .hero-portfolio h1 { font-size:2.5rem; } .hero-portfolio img { height:280px; } }
+        @media (max-width:640px){ .hero-portfolio { padding:6rem 0 2rem; } .hero-portfolio h1 { font-size:2rem; } .hero-portfolio .hero-lead { font-size:1rem; } .hero-portfolio img { height:200px; } }
     </style>
 
-    <!-- ============================================================
-       01 — RECRUTAMENTO & SELEÇÃO
-       ============================================================ -->
+    <!-- 01 RECRUTAMENTO & SELEÇÃO -->
     <section id="recrutamento" class="section section-servico">
         <div class="container">
             <div class="servico-header">
@@ -99,33 +93,19 @@
                     <p class="servico-frase">"Encontrar as pessoas certas para os desafios certos."</p>
                     <p>A Vigorre atua na estruturação e execução de processos de recrutamento e seleção, buscando aumentar a assertividade das contratações e aproximar profissionais das necessidades reais das organizações.</p>
                     <div class="servico-impacto">
-                        <div class="impacto-item">
-                            <span class="impacto-numero">94%</span>
-                            <span class="impacto-label">de assertividade</span>
-                        </div>
-                        <div class="impacto-item">
-                            <span class="impacto-numero">40%</span>
-                            <span class="impacto-label">redução no turnover</span>
-                        </div>
-                        <div class="impacto-item">
-                            <span class="impacto-numero">15</span>
-                            <span class="impacto-label">dias para formar time</span>
-                        </div>
+                        <div class="impacto-item"><span class="impacto-numero">94%</span><span class="impacto-label">assertividade</span></div>
+                        <div class="impacto-item"><span class="impacto-numero">40%</span><span class="impacto-label">redução turnover</span></div>
+                        <div class="impacto-item"><span class="impacto-numero">15</span><span class="impacto-label">dias para formar time</span></div>
                     </div>
                 </div>
                 <div class="servico-servicos">
                     <h3>Serviços entregues</h3>
                     <ul class="servicos-lista">
-                        <li>Recrutamento e seleção</li>
-                        <li>Triagem de currículos</li>
-                        <li>Entrevistas por competências</li>
-                        <li>Hunting e busca de talentos</li>
-                        <li>Recrutamento administrativo</li>
-                        <li>Recrutamento técnico</li>
-                        <li>Recrutamento de lideranças</li>
-                        <li>Definição de perfil profissional</li>
-                        <li>Descrição de vagas</li>
-                        <li>Avaliação de candidatos</li>
+                        <li>Recrutamento e seleção</li><li>Triagem de currículos</li>
+                        <li>Entrevistas por competências</li><li>Hunting</li>
+                        <li>Recrutamento administrativo</li><li>Recrutamento técnico</li>
+                        <li>Recrutamento de lideranças</li><li>Definição de perfil</li>
+                        <li>Descrição de vagas</li><li>Avaliação de candidatos</li>
                         <li>Apoio à tomada de decisão</li>
                     </ul>
                     <a href="index.html#contato" class="btn btn-primary">Quero esta solução</a>
@@ -138,7 +118,7 @@
         .section-servico { padding: 5rem 0; background: var(--color-white); border-bottom: 1px solid var(--color-gray-100); }
         .section-servico-gray { background: var(--color-gray-50); }
         .servico-header { display: flex; align-items: center; gap: 2rem; margin-bottom: 2rem; }
-        .servico-number { font-family: var(--font-serif); font-size: 4rem; font-weight: 700; color: rgba(201,168,76,0.15); line-height: 1; }
+        .servico-number { font-family: var(--font-serif); font-size: 4rem; font-weight: 700; color: rgba(217,119,6,0.12); line-height: 1; }
         .servico-header h2 { font-size: 2.5rem; margin: 0; }
         .servico-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; }
         .servico-frase { font-size: 1.2rem; font-weight: 600; color: var(--color-gray-900); margin-bottom: 1rem; font-style: italic; }
@@ -151,16 +131,11 @@
         .servicos-lista { display: grid; grid-template-columns: 1fr 1fr; gap: 0.25rem 1rem; list-style: none; margin-bottom: 1.5rem; }
         .servicos-lista li { font-size: 0.9rem; color: var(--color-gray-700); padding: 0.25rem 0; display: flex; align-items: center; gap: 0.5rem; }
         .servicos-lista li::before { content: '•'; color: var(--color-gold); font-weight: 700; }
-        .servico-flow { display: flex; flex-wrap: wrap; align-items: center; gap: 0.25rem; margin: 1.5rem 0; font-size: 0.7rem; font-weight: 600; color: var(--color-gray-500); text-transform: uppercase; letter-spacing: 0.05em; }
-        .flow-arrow { color: var(--color-gold); font-size: 0.8rem; }
-        .servico-flow span { padding: 0.25rem 0.5rem; background: var(--color-gray-50); border-radius: 4px; }
-        @media (max-width: 1024px) { .servico-grid { grid-template-columns: 1fr; gap: 2rem; } .servico-header h2 { font-size: 2rem; } .servico-number { font-size: 3rem; } }
-        @media (max-width: 640px) { .servico-header { gap: 1rem; flex-wrap: wrap; } .servico-header h2 { font-size: 1.6rem; } .servico-impacto { grid-template-columns: 1fr; } .servicos-lista { grid-template-columns: 1fr; } .servico-flow { font-size: 0.6rem; } }
+        @media (max-width:1024px){ .servico-grid { grid-template-columns:1fr; gap:2rem; } .servico-header h2 { font-size:2rem; } .servico-number { font-size:3rem; } }
+        @media (max-width:640px){ .servico-header { gap:1rem; flex-wrap:wrap; } .servico-header h2 { font-size:1.6rem; } .servico-impacto { grid-template-columns:1fr; } .servicos-lista { grid-template-columns:1fr; } }
     </style>
 
-    <!-- ============================================================
-       02 — ANÁLISE COMPORTAMENTAL
-       ============================================================ -->
+    <!-- 02 ANÁLISE COMPORTAMENTAL -->
     <section id="analise" class="section section-servico section-servico-gray">
         <div class="container">
             <div class="servico-header">
@@ -175,33 +150,19 @@
                     <p class="servico-frase">"Conhecer pessoas para tomar melhores decisões."</p>
                     <p>A análise comportamental contribui para compreender características profissionais, padrões comportamentais, competências, pontos fortes e oportunidades de desenvolvimento.</p>
                     <div class="servico-impacto">
-                        <div class="impacto-item">
-                            <span class="impacto-numero">87%</span>
-                            <span class="impacto-label">fit cultural</span>
-                        </div>
-                        <div class="impacto-item">
-                            <span class="impacto-numero">65%</span>
-                            <span class="impacto-label">redução de conflitos</span>
-                        </div>
-                        <div class="impacto-item">
-                            <span class="impacto-numero">3x</span>
-                            <span class="impacto-label">mais assertividade</span>
-                        </div>
+                        <div class="impacto-item"><span class="impacto-numero">87%</span><span class="impacto-label">fit cultural</span></div>
+                        <div class="impacto-item"><span class="impacto-numero">65%</span><span class="impacto-label">redução conflitos</span></div>
+                        <div class="impacto-item"><span class="impacto-numero">3x</span><span class="impacto-label">assertividade</span></div>
                     </div>
                 </div>
                 <div class="servico-servicos">
                     <h3>Serviços entregues</h3>
                     <ul class="servicos-lista">
-                        <li>Análise DISC</li>
-                        <li>Perfil profissional</li>
-                        <li>Avaliação de competências</li>
-                        <li>Inteligência Emocional</li>
-                        <li>Valores profissionais</li>
-                        <li>Aderência ao cargo</li>
-                        <li>Pontos fortes e de desenvolvimento</li>
-                        <li>Apoio à tomada de decisão</li>
-                        <li>Desenvolvimento profissional</li>
-                        <li>Feedback estruturado</li>
+                        <li>Análise DISC</li><li>Perfil profissional</li>
+                        <li>Avaliação de competências</li><li>Inteligência Emocional</li>
+                        <li>Valores profissionais</li><li>Aderência ao cargo</li>
+                        <li>Pontos fortes</li><li>Pontos de desenvolvimento</li>
+                        <li>Apoio à tomada de decisão</li><li>Feedback estruturado</li>
                         <li>Recomendações de desenvolvimento</li>
                     </ul>
                     <a href="index.html#contato" class="btn btn-primary">Quero esta solução</a>
@@ -210,9 +171,7 @@
         </div>
     </section>
 
-    <!-- ============================================================
-       03 — GESTÃO ESTRATÉGICA DE PESSOAS
-       ============================================================ -->
+    <!-- 03 GESTÃO ESTRATÉGICA DE PESSOAS -->
     <section id="gestao" class="section section-servico">
         <div class="container">
             <div class="servico-header">
@@ -227,33 +186,19 @@
                     <p class="servico-frase">"Pessoas alinhadas à estratégia fortalecem a organização."</p>
                     <p>A Vigorre apoia organizações na transformação da gestão de pessoas em uma área estratégica, conectando talentos, competências e desenvolvimento aos objetivos do negócio.</p>
                     <div class="servico-impacto">
-                        <div class="impacto-item">
-                            <span class="impacto-numero">76%</span>
-                            <span class="impacto-label">engajamento</span>
-                        </div>
-                        <div class="impacto-item">
-                            <span class="impacto-numero">82%</span>
-                            <span class="impacto-label">satisfação</span>
-                        </div>
-                        <div class="impacto-item">
-                            <span class="impacto-numero">4x</span>
-                            <span class="impacto-label">ROI em talentos</span>
-                        </div>
+                        <div class="impacto-item"><span class="impacto-numero">76%</span><span class="impacto-label">engajamento</span></div>
+                        <div class="impacto-item"><span class="impacto-numero">82%</span><span class="impacto-label">satisfação</span></div>
+                        <div class="impacto-item"><span class="impacto-numero">4x</span><span class="impacto-label">ROI em talentos</span></div>
                     </div>
                 </div>
                 <div class="servico-servicos">
                     <h3>Serviços entregues</h3>
                     <ul class="servicos-lista">
-                        <li>Diagnóstico de RH</li>
-                        <li>Estruturação de RH estratégico</li>
-                        <li>Gestão por competências</li>
-                        <li>Desenvolvimento de talentos</li>
-                        <li>Planejamento de sucessão</li>
-                        <li>Gestão de desempenho</li>
-                        <li>Indicadores de RH</li>
-                        <li>PDI — Plano de Desenvolvimento Individual</li>
-                        <li>Estruturação de processos de RH</li>
-                        <li>Políticas e práticas de gestão</li>
+                        <li>Diagnóstico de RH</li><li>Estruturação de RH estratégico</li>
+                        <li>Gestão por competências</li><li>Desenvolvimento de talentos</li>
+                        <li>Planejamento de sucessão</li><li>Gestão de desempenho</li>
+                        <li>Indicadores de RH</li><li>PDI</li>
+                        <li>Estruturação de processos de RH</li><li>Políticas de gestão</li>
                         <li>Apoio à liderança</li>
                     </ul>
                     <a href="index.html#contato" class="btn btn-primary">Quero esta solução</a>
@@ -262,9 +207,7 @@
         </div>
     </section>
 
-    <!-- ============================================================
-       04 — GESTÃO DE PROCESSOS
-       ============================================================ -->
+    <!-- 04 GESTÃO DE PROCESSOS -->
     <section id="processos" class="section section-servico section-servico-gray">
         <div class="container">
             <div class="servico-header">
@@ -279,33 +222,19 @@
                     <p class="servico-frase">"Processos organizados geram clareza, eficiência e consistência."</p>
                     <p>A Vigorre apoia organizações na compreensão, estruturação, padronização e melhoria de seus processos, buscando reduzir gargalos, retrabalho e desperdícios.</p>
                     <div class="servico-impacto">
-                        <div class="impacto-item">
-                            <span class="impacto-numero">53%</span>
-                            <span class="impacto-label">mais eficiência</span>
-                        </div>
-                        <div class="impacto-item">
-                            <span class="impacto-numero">45%</span>
-                            <span class="impacto-label">redução de gargalos</span>
-                        </div>
-                        <div class="impacto-item">
-                            <span class="impacto-numero">2.5x</span>
-                            <span class="impacto-label">produtividade</span>
-                        </div>
+                        <div class="impacto-item"><span class="impacto-numero">53%</span><span class="impacto-label">mais eficiência</span></div>
+                        <div class="impacto-item"><span class="impacto-numero">45%</span><span class="impacto-label">redução gargalos</span></div>
+                        <div class="impacto-item"><span class="impacto-numero">2.5x</span><span class="impacto-label">produtividade</span></div>
                     </div>
                 </div>
                 <div class="servico-servicos">
                     <h3>Serviços entregues</h3>
                     <ul class="servicos-lista">
-                        <li>Mapeamento de processos</li>
-                        <li>Modelagem</li>
-                        <li>Fluxos de trabalho</li>
-                        <li>Padronização</li>
-                        <li>POPs — Procedimentos Operacionais Padrão</li>
-                        <li>Definição de responsabilidades</li>
-                        <li>Identificação de gargalos</li>
-                        <li>Análise de processos</li>
-                        <li>Otimização</li>
-                        <li>Melhoria contínua</li>
+                        <li>Mapeamento de processos</li><li>Modelagem</li>
+                        <li>Fluxos de trabalho</li><li>Padronização</li>
+                        <li>POPs</li><li>Definição de responsabilidades</li>
+                        <li>Identificação de gargalos</li><li>Análise de processos</li>
+                        <li>Otimização</li><li>Melhoria contínua</li>
                         <li>Produtividade</li>
                     </ul>
                     <a href="index.html#contato" class="btn btn-primary">Quero esta solução</a>
@@ -314,9 +243,7 @@
         </div>
     </section>
 
-    <!-- ============================================================
-       05 — CICLO DE VIDA DO COLABORADOR
-       ============================================================ -->
+    <!-- 05 CICLO DE VIDA DO COLABORADOR -->
     <section id="ciclo" class="section section-servico">
         <div class="container">
             <div class="servico-header">
@@ -331,31 +258,18 @@
                     <p class="servico-frase">"Da atração ao desligamento, cada etapa importa."</p>
                     <p>A Vigorre estrutura a jornada do profissional dentro da organização, desde a atração até o desligamento, com foco em experiência, desenvolvimento e retenção.</p>
                     <div class="servico-impacto">
-                        <div class="impacto-item">
-                            <span class="impacto-numero">94%</span>
-                            <span class="impacto-label">retenção</span>
-                        </div>
-                        <div class="impacto-item">
-                            <span class="impacto-numero">68%</span>
-                            <span class="impacto-label">engajamento</span>
-                        </div>
-                        <div class="impacto-item">
-                            <span class="impacto-numero">3x</span>
-                            <span class="impacto-label">produtividade</span>
-                        </div>
+                        <div class="impacto-item"><span class="impacto-numero">94%</span><span class="impacto-label">retenção</span></div>
+                        <div class="impacto-item"><span class="impacto-numero">68%</span><span class="impacto-label">engajamento</span></div>
+                        <div class="impacto-item"><span class="impacto-numero">3x</span><span class="impacto-label">produtividade</span></div>
                     </div>
                 </div>
                 <div class="servico-servicos">
                     <h3>Serviços entregues</h3>
                     <ul class="servicos-lista">
-                        <li>Onboarding e integração</li>
-                        <li>Desenvolvimento e avaliação</li>
-                        <li>PDI — Plano de Desenvolvimento Individual</li>
-                        <li>Plano de carreira</li>
-                        <li>Engajamento e retenção</li>
-                        <li>Sucessão</li>
-                        <li>Offboarding</li>
-                        <li>Entrevista de desligamento</li>
+                        <li>Onboarding e integração</li><li>Desenvolvimento e avaliação</li>
+                        <li>PDI</li><li>Plano de carreira</li>
+                        <li>Engajamento e retenção</li><li>Sucessão</li>
+                        <li>Offboarding</li><li>Entrevista de desligamento</li>
                         <li>Análise de turnover</li>
                     </ul>
                     <a href="index.html#contato" class="btn btn-primary">Quero esta solução</a>
@@ -364,9 +278,7 @@
         </div>
     </section>
 
-    <!-- ============================================================
-       06 — DESENVOLVIMENTO DE LIDERANÇAS
-       ============================================================ -->
+    <!-- 06 DESENVOLVIMENTO DE LIDERANÇAS -->
     <section id="lideranca" class="section section-servico section-servico-gray">
         <div class="container">
             <div class="servico-header">
@@ -381,33 +293,19 @@
                     <p class="servico-frase">"Desenvolver líderes é desenvolver a capacidade da organização de evoluir."</p>
                     <p>A Vigorre apoia o desenvolvimento de líderes e gestores, preparando-os para os desafios atuais e futuros da organização.</p>
                     <div class="servico-impacto">
-                        <div class="impacto-item">
-                            <span class="impacto-numero">68%</span>
-                            <span class="impacto-label">performance</span>
-                        </div>
-                        <div class="impacto-item">
-                            <span class="impacto-numero">72%</span>
-                            <span class="impacto-label">clima organizacional</span>
-                        </div>
-                        <div class="impacto-item">
-                            <span class="impacto-numero">4x</span>
-                            <span class="impacto-label">ROI em desenvolvimento</span>
-                        </div>
+                        <div class="impacto-item"><span class="impacto-numero">68%</span><span class="impacto-label">performance</span></div>
+                        <div class="impacto-item"><span class="impacto-numero">72%</span><span class="impacto-label">clima organizacional</span></div>
+                        <div class="impacto-item"><span class="impacto-numero">4x</span><span class="impacto-label">ROI em desenvolvimento</span></div>
                     </div>
                 </div>
                 <div class="servico-servicos">
                     <h3>Serviços entregues</h3>
                     <ul class="servicos-lista">
-                        <li>Desenvolvimento de líderes</li>
-                        <li>Formação de gestores</li>
-                        <li>Plano de Desenvolvimento Individual — PDI</li>
-                        <li>Workshops e treinamentos</li>
-                        <li>Coaching executivo</li>
-                        <li>Desenvolvimento de equipes</li>
-                        <li>Comunicação e gestão de conflitos</li>
-                        <li>Tomada de decisão</li>
-                        <li>Competências de liderança</li>
-                        <li>Liderança estratégica</li>
+                        <li>Desenvolvimento de líderes</li><li>Formação de gestores</li>
+                        <li>PDI</li><li>Workshops e treinamentos</li>
+                        <li>Coaching executivo</li><li>Desenvolvimento de equipes</li>
+                        <li>Comunicação e conflitos</li><li>Tomada de decisão</li>
+                        <li>Competências de liderança</li><li>Liderança estratégica</li>
                         <li>Delegação e gestão de equipes</li>
                     </ul>
                     <a href="index.html#contato" class="btn btn-primary">Quero esta solução</a>
@@ -416,9 +314,7 @@
         </div>
     </section>
 
-    <!-- ============================================================
-       07 — GESTÃO ESTRATÉGICA & PERFORMANCE
-       ============================================================ -->
+    <!-- 07 GESTÃO ESTRATÉGICA & PERFORMANCE -->
     <section id="performance" class="section section-servico">
         <div class="container">
             <div class="servico-header">
@@ -433,33 +329,19 @@
                     <p class="servico-frase">"Transformar estratégia em execução mensurável."</p>
                     <p>A Vigorre apoia organizações na definição de objetivos, indicadores e planos de ação para transformar planejamento em resultados concretos.</p>
                     <div class="servico-impacto">
-                        <div class="impacto-item">
-                            <span class="impacto-numero">3.8x</span>
-                            <span class="impacto-label">ROI médio</span>
-                        </div>
-                        <div class="impacto-item">
-                            <span class="impacto-numero">56%</span>
-                            <span class="impacto-label">crescimento</span>
-                        </div>
-                        <div class="impacto-item">
-                            <span class="impacto-numero">4.2</span>
-                            <span class="impacto-label">NPS médio</span>
-                        </div>
+                        <div class="impacto-item"><span class="impacto-numero">3.8x</span><span class="impacto-label">ROI médio</span></div>
+                        <div class="impacto-item"><span class="impacto-numero">56%</span><span class="impacto-label">crescimento</span></div>
+                        <div class="impacto-item"><span class="impacto-numero">4.2</span><span class="impacto-label">NPS médio</span></div>
                     </div>
                 </div>
                 <div class="servico-servicos">
                     <h3>Serviços entregues</h3>
                     <ul class="servicos-lista">
-                        <li>Diagnóstico empresarial</li>
-                        <li>Planejamento estratégico</li>
-                        <li>Definição de objetivos e metas</li>
-                        <li>KPIs e indicadores</li>
-                        <li>Monitoramento de performance</li>
-                        <li>Gestão de desempenho</li>
-                        <li>Planos de ação</li>
-                        <li>Acompanhamento</li>
-                        <li>Melhoria contínua</li>
-                        <li>Reestruturação organizacional</li>
+                        <li>Diagnóstico empresarial</li><li>Planejamento estratégico</li>
+                        <li>Definição de objetivos e metas</li><li>KPIs e indicadores</li>
+                        <li>Monitoramento de performance</li><li>Gestão de desempenho</li>
+                        <li>Planos de ação</li><li>Acompanhamento</li>
+                        <li>Melhoria contínua</li><li>Reestruturação organizacional</li>
                     </ul>
                     <a href="index.html#contato" class="btn btn-primary">Quero esta solução</a>
                 </div>
@@ -467,95 +349,24 @@
         </div>
     </section>
 
-    <!-- ============================================================
-       CONEXÃO DAS 7 FRENTES
-       ============================================================ -->
-    <section class="section section-conexao section-blue">
+    <!-- CTA FINAL -->
+    <section class="section section-cta-portfolio" style="padding:5rem 0;background:var(--color-white);text-align:center;">
         <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Visão Integrada</span>
-                <h2>7 frentes. <span class="gradient-text">Uma visão integrada.</span></h2>
-                <p>Todas as frentes convergem para um único objetivo: resultados sustentáveis para sua organização.</p>
-            </div>
-            <div class="conexao-grid">
-                <div class="conexao-item">
-                    <span class="conexao-num">01</span>
-                    <span>Recrutamento & Seleção</span>
-                </div>
-                <div class="conexao-item">
-                    <span class="conexao-num">02</span>
-                    <span>Análise Comportamental</span>
-                </div>
-                <div class="conexao-item">
-                    <span class="conexao-num">03</span>
-                    <span>Gestão Estratégica de Pessoas</span>
-                </div>
-                <div class="conexao-item">
-                    <span class="conexao-num">04</span>
-                    <span>Gestão de Processos</span>
-                </div>
-                <div class="conexao-item">
-                    <span class="conexao-num">05</span>
-                    <span>Ciclo de Vida do Colaborador</span>
-                </div>
-                <div class="conexao-item">
-                    <span class="conexao-num">06</span>
-                    <span>Desenvolvimento de Lideranças</span>
-                </div>
-                <div class="conexao-item">
-                    <span class="conexao-num">07</span>
-                    <span>Gestão Estratégica & Performance</span>
-                </div>
-            </div>
-            <div class="conexao-resultado">
-                <span class="conexao-arrow">↓</span>
-                <span class="conexao-label">RESULTADOS SUSTENTÁVEIS</span>
+            <h2 style="font-size:2.8rem;margin-bottom:1rem;">Pronto para <span class="gradient-text">transformar sua gestão?</span></h2>
+            <p style="font-size:1.1rem;color:var(--color-gray-500);max-width:600px;margin:0 auto 2rem;">Fale com a VIGORRE e descubra como podemos construir juntos um caminho estruturado para evolução.</p>
+            <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+                <a href="index.html#contato" class="btn btn-primary btn-lg">Fale com a VIGORRE</a>
+                <a href="index.html" class="btn btn-outline btn-lg">Voltar ao início</a>
             </div>
         </div>
     </section>
 
     <style>
-        .section-conexao { padding: 5rem 0; background: var(--color-primary); color: var(--color-white); }
-        .conexao-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; max-width: 800px; margin: 2rem auto; }
-        .conexao-item { display: flex; align-items: center; gap: 0.5rem; padding: 0.75rem 1rem; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.06); border-radius: 8px; }
-        .conexao-num { font-family: var(--font-serif); font-size: 1.2rem; font-weight: 700; color: var(--color-gold); }
-        .conexao-item span:last-child { font-size: 0.8rem; color: rgba(255,255,255,0.7); }
-        .conexao-resultado { text-align: center; margin-top: 2rem; }
-        .conexao-arrow { display: block; font-size: 2rem; color: var(--color-gold); opacity: 0.5; }
-        .conexao-label { display: inline-block; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--color-gold); background: rgba(201,168,76,0.1); padding: 0.5rem 2rem; border-radius: 50px; border: 1px solid rgba(201,168,76,0.2); }
-        @media (max-width: 1024px) { .conexao-grid { grid-template-columns: repeat(2, 1fr); } }
-        @media (max-width: 640px) { .conexao-grid { grid-template-columns: 1fr; } }
+        @media (max-width:640px){ .section-cta-portfolio h2 { font-size:2rem !important; } .section-cta-portfolio .btn { width:100%; max-width:300px; justify-content:center; } }
     </style>
-
-    <!-- ============================================================
-       CTA COMERCIAL
-       ============================================================ -->
-    <section class="section section-cta-portfolio">
-        <div class="container">
-            <div class="cta-portfolio-content">
-                <h2>Pronto para <span class="gradient-text">transformar sua gestão?</span></h2>
-                <p>Fale com a VIGORRE e descubra como podemos construir juntos um caminho estruturado para evolução.</p>
-                <div class="cta-portfolio-buttons">
-                    <a href="index.html#contato" class="btn btn-primary btn-lg">Fale com a VIGORRE</a>
-                    <a href="index.html" class="btn btn-outline btn-lg">Voltar ao início</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <style>
-        .section-cta-portfolio { padding: 5rem 0; background: var(--color-white); text-align: center; }
-        .section-cta-portfolio h2 { font-size: 2.8rem; margin-bottom: 1rem; }
-        .section-cta-portfolio p { font-size: 1.1rem; color: var(--color-gray-500); max-width: 600px; margin: 0 auto 2rem; }
-        .cta-portfolio-buttons { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
-        @media (max-width: 640px) { .section-cta-portfolio h2 { font-size: 2rem; } .cta-portfolio-buttons { flex-direction: column; align-items: center; } .cta-portfolio-buttons .btn { width: 100%; max-width: 300px; justify-content: center; } }
-    </style>
-
 </main>
 
-<!-- ============================================================
-   FOOTER (IGUAL AO INDEX)
-   ============================================================ -->
+<!-- FOOTER BRANCO COM LETRAS AZUIS -->
 <footer class="site-footer">
     <div class="container">
         <div class="footer-grid">
