@@ -3,12 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VIGORRE | Consultoria Estratégica</title>
+    <meta name="description" content="VIGORRE | Consultoria estratégica com tecnologia proprietária. People Analytics, Recrutamento Inteligente, Assessment Comportamental e Metodologia VIGOR®.">
+    <meta name="keywords" content="Vigorre, People Analytics, Consultoria Empresarial, Recrutamento Estratégico, Assessment Comportamental, Tecnologia para RH, Inteligência Humana">
+    <meta name="author" content="Vigorre Consultoria">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0A1628">
+    <meta property="og:title" content="VIGORRE | Consultoria Estratégica em Inteligência Humana">
+    <meta property="og:description" content="Transformamos inteligência humana em resultado empresarial.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://vigorre.com.br">
+    <meta property="og:locale" content="pt_BR">
+    <title>VIGORRE | Consultoria Estratégica • Inteligência Humana • Tecnologia</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="logo-vigorre.png">
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"ProfessionalService","name":"VIGORRE","description":"Consultoria estratégica com tecnologia proprietária.","url":"https://vigorre.com.br","brand":{"@type":"Brand","name":"Vigorre"}}
+    </script>
 </head>
 <body>
 
@@ -23,7 +36,7 @@
         </a>
         <nav class="main-nav">
             <ul class="nav-list">
-                <li><a href="index.html">Início</a></li>
+                <li><a href="index.html" class="active">Início</a></li>
                 <li><a href="quem-somos.html">Quem Somos</a></li>
                 <li><a href="portfolio.html">Portfólio</a></li>
                 <li><a href="#plataformas">Plataformas</a></li>
@@ -37,15 +50,33 @@
             </button>
         </div>
     </div>
+    <div class="mobile-menu" aria-hidden="true">
+        <ul class="mobile-nav-list">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="quem-somos.html">Quem Somos</a></li>
+            <li><a href="portfolio.html">Portfólio</a></li>
+            <li><a href="#plataformas">Plataformas</a></li>
+            <li><a href="#contato">Contato</a></li>
+            <li class="mobile-divider"></li>
+            <li class="mobile-label">Plataformas Vigorre™</li>
+            <li><a href="#plataformas">Academy™ <span class="badge-dev">Em Desenv.</span></a></li>
+            <li><a href="#plataformas">Hire™ <span class="badge-dev">Em Desenv.</span></a></li>
+            <li><a href="#plataformas">Tech™ <span class="badge-dev">Em Desenv.</span></a></li>
+        </ul>
+    </div>
 </header>
 
 <main>
+    <!-- HERO -->
     <section class="hero-section">
+        <div class="hero-bg-gradient"></div>
+        <div class="hero-orb orb-1"></div>
+        <div class="hero-orb orb-2"></div>
         <div class="container hero-grid">
             <div class="hero-content">
                 <span class="badge">Inteligência Humana & Tecnologia</span>
                 <h1>Transformamos <span class="highlight">inteligência humana</span> em resultado empresarial.</h1>
-                <p class="hero-lead">A <strong>Vigorre</strong> é uma consultoria estratégica com tecnologia proprietária. Unimos ciência comportamental, People Analytics e IA para ajudar empresas a contratar melhor, desenvolver líderes e construir equipes de alta performance.</p>
+                <p class="hero-lead">A <strong>Vigorre</strong> é uma consultoria estratégica com tecnologia proprietária. Unimos ciência comportamental, People Analytics e IA para ajudar empresas a <strong>contratar melhor</strong>, <strong>desenvolver líderes</strong> e construir <strong>equipes de alta performance</strong>.</p>
                 <div class="hero-stats">
                     <div class="stat-item">
                         <span class="stat-number" data-count="94">0%</span>
@@ -61,10 +92,20 @@
                         <span class="stat-number" data-count="3.8">0x</span>
                         <span class="stat-label">ROI médio em 12 meses</span>
                     </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="96">0%</span>
+                        <span class="stat-label">retenção de talentos</span>
+                    </div>
                 </div>
                 <div class="hero-cta">
                     <a href="#contato" class="btn btn-primary btn-lg">Solicitar Diagnóstico Gratuito</a>
                     <a href="portfolio.html" class="btn btn-outline btn-lg">Ver Portfólio</a>
+                </div>
+                <div class="hero-closing">
+                    <p>Imagine reduzir o <span class="highlight-gold">turnover</span> em até 40% e aumentar a <span class="highlight-pink">produtividade</span> das suas equipes com decisões baseadas em dados reais, não em achismos.</p>
+                    <p class="hero-closing-bold">Você já imaginou como seria contratar a pessoa certa, na hora certa, todas as vezes?</p>
+                    <a href="#contato" class="btn-inline">Sim, quero um diagnóstico gratuito →</a>
                 </div>
             </div>
             <div class="hero-visual">
@@ -76,6 +117,7 @@
         </div>
     </section>
 
+    <!-- RESUMO COMERCIAL -->
     <section class="section section-resumo">
         <div class="container">
             <div class="resumo-content">
@@ -91,6 +133,7 @@
         </div>
     </section>
 
+    <!-- PLATAFORMAS -->
     <section id="plataformas" class="section section-dark">
         <div class="container">
             <div class="section-header">
@@ -102,44 +145,70 @@
                 <div class="platform-card">
                     <div class="platform-icon">🎓</div>
                     <h3>Vigorre Academy™</h3>
-                    <p>Universidade corporativa para formação e certificação</p>
+                    <p>Universidade corporativa para formação e certificação em Inteligência Humana e Metodologia VIGOR®.</p>
                     <div class="platform-status"><span class="status-dot"></span><span>Em Desenvolvimento</span></div>
                 </div>
                 <div class="platform-card">
                     <div class="platform-icon">🤝</div>
                     <h3>Vigorre Hire™</h3>
-                    <p>ATS com IA, banco de talentos e fit cultural</p>
+                    <p>ATS com IA, banco de talentos, fit cultural e programa de afiliados para recrutamento estratégico.</p>
                     <div class="platform-status"><span class="status-dot"></span><span>Em Desenvolvimento</span></div>
                 </div>
                 <div class="platform-card">
                     <div class="platform-icon">💻</div>
                     <h3>Vigorre Tech™</h3>
-                    <p>Soluções digitais: sites, sistemas, dashboards e IA</p>
+                    <p>Divisão especializada em soluções digitais: sites, sistemas, dashboards, apps e IA para RH.</p>
                     <div class="platform-status"><span class="status-dot"></span><span>Em Desenvolvimento</span></div>
                 </div>
                 <div class="platform-card">
                     <div class="platform-icon">📊</div>
                     <h3>Vigorre Analytics™</h3>
-                    <p>People Analytics com dashboards preditivos</p>
+                    <p>People Analytics com dashboards preditivos, KPIs e inteligência de dados para decisões estratégicas.</p>
                     <div class="platform-status"><span class="status-dot"></span><span>Em Desenvolvimento</span></div>
                 </div>
                 <div class="platform-card">
                     <div class="platform-icon">💼</div>
                     <h3>Vigorre Consulting™</h3>
-                    <p>Consultoria estratégica com metodologia proprietária</p>
+                    <p>Consultoria estratégica com metodologia proprietária e abordagem baseada em evidências científicas.</p>
                     <div class="platform-status"><span class="status-dot"></span><span>Em Desenvolvimento</span></div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- SETORES -->
+    <section class="section section-setores">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Especialização Setorial</span>
+                <h2>Metodologia adaptada para cada <span class="gradient-text">cadeia produtiva</span></h2>
+            </div>
+            <div class="sectors-grid">
+                <div class="sector-card"><span class="sector-icon">🌾</span><h3>Agro</h3><p>Operações de campo e gestão rural</p></div>
+                <div class="sector-card"><span class="sector-icon">🏗️</span><h3>Construção Civil</h3><p>Engenharia, obras e compliance NR</p></div>
+                <div class="sector-card"><span class="sector-icon">🏭</span><h3>Indústria</h3><p>Produção, qualidade e manutenção</p></div>
+                <div class="sector-card"><span class="sector-icon">💻</span><h3>Tecnologia</h3><p>Dev, dados e ambientes ágeis</p></div>
+                <div class="sector-card"><span class="sector-icon">🏥</span><h3>Saúde</h3><p>Hospitais, clínicas e laboratórios</p></div>
+                <div class="sector-card"><span class="sector-icon">🛒</span><h3>Varejo</h3><p>Lojas, e-commerce e operações</p></div>
+                <div class="sector-card"><span class="sector-icon">🤝</span><h3>Serviços</h3><p>Consultorias, BPO e suporte</p></div>
+                <div class="sector-card"><span class="sector-icon">🚚</span><h3>Logística</h3><p>Transporte e supply chain</p></div>
+                <div class="sector-card"><span class="sector-icon">🎓</span><h3>Educação</h3><p>Escolas, universidades e edtechs</p></div>
+                <div class="sector-card"><span class="sector-icon">🌱</span><h3>Cooperativas</h3><p>Cooperativismo rural e crédito</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTATO -->
     <section id="contato" class="section">
         <div class="container">
             <div class="contact-grid">
                 <div class="contact-info">
                     <span class="section-tag">Contato</span>
                     <h2>Vamos transformar <span class="gradient-text">pessoas em resultados?</span></h2>
-                    <p>Fale com um especialista Vigorre. Em até 2 horas úteis, nossa equipe entra em contato.</p>
+                    <p>Fale com um especialista Vigorre. Em até 2 horas úteis, nossa equipe entra em contato para entender sua operação e apresentar a solução ideal.</p>
+                    <div class="contact-nlp">
+                        <p>💡 <strong>Empresas que usam dados para contratar</strong> reduzem turnover em até 40% e aumentam a produtividade em 87%. Sua próxima contratação de alta performance está a uma mensagem de distância.</p>
+                    </div>
                     <div class="contact-methods">
                         <a href="mailto:contato@vigorre.com.br" class="contact-item">
                             <span class="contact-icon">✉️</span>
@@ -149,34 +218,57 @@
                             <span class="contact-icon">📱</span>
                             <div><strong>WhatsApp</strong><span>+55 34 99185-0735</span></div>
                         </a>
+                        <a href="https://instagram.com/vigorre.oficial" target="_blank" class="contact-item">
+                            <span class="contact-icon">📷</span>
+                            <div><strong>Instagram</strong><span>@vigorre.oficial</span></div>
+                        </a>
+                        <a href="https://linkedin.com/company/vigorreoficial" target="_blank" class="contact-item">
+                            <span class="contact-icon">💼</span>
+                            <div><strong>LinkedIn</strong><span>Vigorre Oficial</span></div>
+                        </a>
                     </div>
                 </div>
-                <form class="contact-form" id="contactForm">
+                <form class="contact-form" id="contactForm" novalidate>
                     <div class="form-row">
                         <div class="form-group">
                             <label for="name">Nome *</label>
-                            <input type="text" id="name" required placeholder="Seu nome completo">
+                            <input type="text" id="name" name="name" required placeholder="Seu nome completo">
                         </div>
                         <div class="form-group">
                             <label for="company">Empresa *</label>
-                            <input type="text" id="company" required placeholder="Nome da sua empresa">
+                            <input type="text" id="company" name="company" required placeholder="Nome da sua empresa">
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group">
                             <label for="email">E-mail corporativo *</label>
-                            <input type="email" id="email" required placeholder="seu@empresa.com.br">
+                            <input type="email" id="email" name="email" required placeholder="seu@empresa.com.br">
                         </div>
                         <div class="form-group">
-                            <label for="phone">WhatsApp</label>
-                            <input type="tel" id="phone" placeholder="(00) 00000-0000">
+                            <label for="phone">WhatsApp / Telefone</label>
+                            <input type="tel" id="phone" name="phone" placeholder="(00) 00000-0000">
                         </div>
                     </div>
                     <div class="form-group">
+                        <label for="interest">Interesse principal</label>
+                        <select id="interest" name="interest">
+                            <option value="">Selecione...</option>
+                            <option value="diagnostico">Solicitar Diagnóstico Gratuito</option>
+                            <option value="demo">Solicitar Demonstração</option>
+                            <option value="academy">Vigorre Academy™</option>
+                            <option value="hire">Vigorre Hire™</option>
+                            <option value="tech">Vigorre Tech™</option>
+                            <option value="analytics">Vigorre Analytics™</option>
+                            <option value="consulting">Vigorre Consulting™</option>
+                            <option value="pricing">Proposta Comercial</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
                         <label for="message">Mensagem</label>
-                        <textarea id="message" rows="4" placeholder="Como podemos ajudar?"></textarea>
+                        <textarea id="message" name="message" rows="4" placeholder="Conte-nos sobre sua empresa e como podemos ajudar"></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary btn-block">Enviar Solicitação</button>
+                    <p class="form-notice">Ao enviar, você concorda com nossa Política de Privacidade e LGPD.</p>
                 </form>
             </div>
         </div>
@@ -195,13 +287,26 @@
                     </div>
                 </div>
                 <p>Consultoria estratégica com tecnologia proprietária.</p>
+                <div class="footer-social">
+                    <a href="https://instagram.com/vigorre.oficial" aria-label="Instagram">📷</a>
+                    <a href="https://linkedin.com/company/vigorreoficial" aria-label="LinkedIn">💼</a>
+                    <a href="https://wa.me/5534991850735" aria-label="WhatsApp">📱</a>
+                </div>
             </div>
             <div class="footer-links">
-                <h4>Empresa</h4>
+                <h4>Quem Somos</h4>
                 <ul>
-                    <li><a href="quem-somos.html">Quem Somos</a></li>
-                    <li><a href="portfolio.html">Portfólio</a></li>
-                    <li><a href="#contato">Contato</a></li>
+                    <li><a href="quem-somos.html">Missão</a></li>
+                    <li><a href="quem-somos.html">Visão</a></li>
+                    <li><a href="quem-somos.html">Valores</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Portfólio</h4>
+                <ul>
+                    <li><a href="portfolio.html">Recrutamento & Seleção</a></li>
+                    <li><a href="portfolio.html">Análise Comportamental</a></li>
+                    <li><a href="portfolio.html">Gestão de Pessoas</a></li>
                 </ul>
             </div>
             <div class="footer-links">
@@ -212,16 +317,42 @@
                     <li><a href="#plataformas">Tech™ <span class="badge-dev">Em Desenv.</span></a></li>
                 </ul>
             </div>
-            <div class="footer-links">
-                <h4>Contato</h4>
-                <ul>
-                    <li><a href="mailto:contato@vigorre.com.br">contato@vigorre.com.br</a></li>
-                    <li><a href="https://wa.me/5534991850735">(34) 99185-0735</a></li>
-                </ul>
+        </div>
+        <div class="footer-qr">
+            <div class="qr-wrapper">
+                <div class="qr-code">
+                    <svg viewBox="0 0 100 100" style="width:80px;height:80px;">
+                        <rect width="100" height="100" fill="white"/>
+                        <rect x="10" y="10" width="10" height="10" fill="#0A1628"/>
+                        <rect x="30" y="10" width="10" height="10" fill="#0A1628"/>
+                        <rect x="50" y="10" width="10" height="10" fill="#0A1628"/>
+                        <rect x="10" y="30" width="10" height="10" fill="#0A1628"/>
+                        <rect x="50" y="30" width="10" height="10" fill="#0A1628"/>
+                        <rect x="10" y="50" width="10" height="10" fill="#0A1628"/>
+                        <rect x="30" y="50" width="10" height="10" fill="#0A1628"/>
+                        <rect x="50" y="50" width="10" height="10" fill="#0A1628"/>
+                        <rect x="70" y="10" width="10" height="10" fill="#0A1628"/>
+                        <rect x="70" y="30" width="10" height="10" fill="#0A1628"/>
+                        <rect x="70" y="50" width="10" height="10" fill="#0A1628"/>
+                        <rect x="10" y="70" width="10" height="10" fill="#0A1628"/>
+                        <rect x="30" y="70" width="10" height="10" fill="#0A1628"/>
+                        <rect x="50" y="70" width="10" height="10" fill="#0A1628"/>
+                        <rect x="70" y="70" width="10" height="10" fill="#0A1628"/>
+                        <rect x="90" y="10" width="6" height="6" fill="#0A1628"/>
+                        <rect x="90" y="30" width="6" height="6" fill="#0A1628"/>
+                        <rect x="90" y="50" width="6" height="6" fill="#0A1628"/>
+                        <rect x="90" y="70" width="6" height="6" fill="#0A1628"/>
+                    </svg>
+                </div>
+                <div class="qr-text">
+                    <strong>Baixe nosso Portfólio</strong>
+                    <span>Escaneie o QR Code ou <a href="assets/docs/portfolio-vigorre.pdf" download>clique aqui para baixar</a></span>
+                </div>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 <strong>VIGORRE</strong> — Criado por <strong>Vigorre Tech™</strong></p>
+            <p>&copy; 2026 <strong>VIGORRE</strong> — Inteligência, Tecnologia e Gestão Estratégica</p>
+            <p class="footer-credit">Criado por <strong>Vigorre Tech™</strong></p>
             <p class="footer-contact">📞 (34) 99185-0735 • ✉ contato@vigorre.com.br</p>
         </div>
     </div>
